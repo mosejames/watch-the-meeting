@@ -105,6 +105,7 @@
     border-bottom: 1px solid rgba(201,162,39,0.2);
     padding: 0.6rem 1rem;
     display: flex;
+    justify-content: center;
     gap: 0.5rem;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -297,7 +298,19 @@
     opacity: 0;
     pointer-events: none;
   }
-  .vid-placeholder:hover { background: #0d1f38; }
+  .vid-placeholder:hover { background: rgba(9,23,41,0.55); }
+  .vid-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .vid-bg img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    filter: brightness(0.6);
+  }
+  .vid-placeholder > * { position: relative; z-index: 1; }
   .vid-time-big {
     font-family: var(--mono);
     font-size: clamp(1.8rem, 4vw, 2.8rem);
@@ -498,6 +511,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '7793')" id="vp-7793">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">2:09:53</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -532,6 +546,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '9624')" id="vp-9624">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">2:40:24</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -565,6 +580,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '6118')" id="vp-6118">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">1:41:58</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -598,6 +614,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '11178')" id="vp-11178">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">3:06:18</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -629,6 +646,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '12397')" id="vp-12397">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">3:26:37</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -675,6 +693,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '9591')" id="vp-9591">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">2:39:51</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -708,6 +727,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '661')" id="vp-661">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">0:11:01</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -739,6 +759,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '2843')" id="vp-2843">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">0:47:23</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -772,6 +793,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '3071')" id="vp-3071">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">0:51:11</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -814,6 +836,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '2795')" id="vp-2795">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">0:46:35</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -845,6 +868,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '3694')" id="vp-3694">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">1:01:34</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -876,6 +900,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '4021')" id="vp-4021">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">1:07:01</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -918,6 +943,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '12130')" id="vp-12130">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">3:22:10</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -946,6 +972,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '11929')" id="vp-11929">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">3:18:49</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -974,6 +1001,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '8369')" id="vp-8369">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">2:19:29</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
@@ -1002,6 +1030,7 @@
       <div class="finding-content">
         <div class="video-player" onclick="loadVideo(this, '10048')" id="vp-10048">
           <div class="vid-placeholder">
+            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
             <div class="vid-time-big">2:47:28</div>
             <div class="vid-cue">cued to this moment</div>
             <div class="vid-play-btn"></div>
