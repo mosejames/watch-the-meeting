@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Watch the Meeting — College Park Council, March 2, 2026 | CP Money Trail</title>
-<meta name="description" content="Every key moment from the March 2, 2026 College Park City Council meeting — timestamped, documented, and linked to the video. See it for yourself.">
+<title>Watch the Meeting — College Park Council, March 2, 2026</title>
+<meta name="description" content="Every key moment from the March 2, 2026 College Park City Council meeting — timestamped and linked to the video.">
 <meta property="og:title" content="Watch the Meeting — College Park Council, March 2, 2026">
-<meta property="og:description" content="Public funds for a private funeral. $500 gift cards. Spending without council approval. Every key moment, timestamped and linked to the video.">
+<meta property="og:description" content="Public funds for a private funeral. $500 gift cards. 'It ain't illegal to make a friend rich.' 14 key moments, timestamped.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <style>
   :root {
     --navy: #0f2440;
@@ -17,7 +17,7 @@
     --navy-mid: #1a3a5c;
     --gold: #c9a227;
     --gold-light: #e8d48b;
-    --gold-dim: rgba(201,162,39,0.15);
+    --gold-dim: rgba(201,162,39,0.10);
     --white: #fafaf8;
     --off-white: #f4f3f0;
     --light-gray: #e8e6e1;
@@ -28,1074 +28,867 @@
     --sans: 'DM Sans', sans-serif;
     --serif: 'DM Serif Display', serif;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+  html { scroll-behavior: smooth; }
   body {
     font-family: var(--sans);
     background: var(--white);
     color: var(--dark-gray);
-    line-height: 1.6;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ── HEADER ── */
-  header {
+  /* ═══ HERO ═══ */
+  .hero {
     background: var(--navy-deep);
-    padding: 3rem 1.5rem 2.5rem;
+    padding: 4.5rem 1.5rem 3.5rem;
     text-align: center;
     position: relative;
     overflow: hidden;
   }
-  header::before {
+  .hero::after {
     content: '';
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 40px,
-      rgba(201,162,39,0.03) 40px,
-      rgba(201,162,39,0.03) 41px
-    );
-    pointer-events: none;
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--red-flag), var(--gold), var(--navy-mid));
   }
-  .header-label {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1rem;
-    position: relative;
-  }
-  .header-title {
-    font-family: var(--serif);
-    font-size: clamp(1.8rem, 5vw, 3rem);
-    color: #fff;
-    margin-bottom: 0.5rem;
-    position: relative;
-  }
-  .header-sub {
-    font-family: var(--sans);
-    font-size: 1rem;
-    color: rgba(255,255,255,0.6);
-    max-width: 600px;
-    margin: 0 auto 1.5rem;
-    position: relative;
-  }
-  .header-meta {
+  .hero-eyebrow {
     font-family: var(--mono);
     font-size: 0.55rem;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    color: #fff;
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.5);
+    max-width: 560px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+  }
+  .hero-source {
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+  }
+  .hero-source a { color: var(--gold); text-decoration: none; }
+
+  /* ═══ FEATURED FINDING ═══ */
+  .featured {
+    background: var(--navy);
+    padding: 3rem 1.5rem;
+    text-align: center;
     position: relative;
   }
-  .header-meta a {
+  .featured-label {
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--red-flag);
+    margin-bottom: 1rem;
+  }
+  .featured-quote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.3rem, 3.5vw, 2rem);
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto 1rem;
+    line-height: 1.4;
+  }
+  .featured-attr {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 1.5rem;
+  }
+  .featured-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: var(--gold);
     text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid rgba(201,162,39,0.3);
+    transition: all 0.2s;
+  }
+  .featured-cta:hover {
+    background: rgba(201,162,39,0.1);
+    border-color: var(--gold);
+  }
+  .featured-cta .dot {
+    width: 8px; height: 8px;
+    background: var(--red-flag);
+    border-radius: 50%;
   }
 
-  /* ── STICKY NAV ── */
+  /* ═══ STICKY NAV ═══ */
   .sticky-nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--navy);
-    border-bottom: 1px solid rgba(201,162,39,0.2);
-    padding: 0.6rem 1rem;
+    background: var(--navy-deep);
+    border-bottom: 1px solid rgba(201,162,39,0.15);
+    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
   }
-  .sticky-nav::-webkit-scrollbar { display: none; }
   .nav-pill {
     font-family: var(--mono);
     font-size: 0.5rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.4);
     text-decoration: none;
-    padding: 0.35rem 0.7rem;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 2px;
-    white-space: nowrap;
+    padding: 0.7rem 1rem;
+    border-bottom: 2px solid transparent;
     transition: all 0.2s;
-    flex-shrink: 0;
+    white-space: nowrap;
   }
-  .nav-pill:hover, .nav-pill.active {
-    color: var(--gold);
-    border-color: var(--gold);
-    background: rgba(201,162,39,0.08);
-  }
-  .nav-pill.tier-1 { border-left: 2px solid var(--red-flag); }
-  .nav-pill.tier-2 { border-left: 2px solid var(--gold); }
-  .nav-pill.tier-3 { border-left: 2px solid var(--navy-mid); }
+  .nav-pill:hover { color: rgba(255,255,255,0.7); }
+  .nav-pill.active { color: var(--gold); border-bottom-color: var(--gold); }
+  .nav-pill.t1 { border-left: none; }
 
-  /* ── INTRO ── */
+  /* ═══ INTRO ═══ */
   .intro {
-    max-width: 740px;
+    max-width: 680px;
     margin: 0 auto;
-    padding: 2.5rem 1.5rem 2rem;
+    padding: 2.5rem 1.5rem 1.5rem;
   }
   .intro p {
     font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 1rem;
-    line-height: 1.75;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
   }
   .intro strong { color: var(--dark-gray); }
+  .intro-hint {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid-gray);
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-gray);
+  }
 
-  /* ── TIER DIVIDERS ── */
+  /* ═══ SECTION DIVIDERS ═══ */
   .tier-divider {
-    max-width: 860px;
-    margin: 2rem auto 0;
-    padding: 1.2rem 1.5rem;
+    max-width: 780px;
+    margin: 3rem auto 1rem;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .tier-badge {
     font-family: var(--mono);
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.7rem;
     border-radius: 2px;
     white-space: nowrap;
-    flex-shrink: 0;
   }
   .tier-badge.t1 { background: var(--red-flag); color: #fff; }
   .tier-badge.t2 { background: var(--gold); color: var(--navy-deep); }
   .tier-badge.t3 { background: var(--navy-mid); color: #fff; }
-  .tier-label {
+  .tier-badge.tc { background: var(--dark-gray); color: #fff; }
+  .tier-name {
     font-family: var(--mono);
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--mid-gray);
   }
-  .tier-line {
-    flex: 1;
-    height: 1px;
-    background: var(--light-gray);
-  }
+  .tier-line { flex: 1; height: 1px; background: var(--light-gray); }
 
-  /* ── FINDING CARDS ── */
-  .findings {
-    max-width: 860px;
+  /* ═══ CARDS ═══ */
+  .cards {
+    max-width: 780px;
     margin: 0 auto;
-    padding: 0 1.5rem 2rem;
+    padding: 0 1.5rem 1rem;
   }
-
-  .finding-card {
+  .card {
     background: #fff;
     border: 1px solid var(--light-gray);
-    margin-bottom: 1rem;
-    transition: all 0.25s;
+    margin-bottom: 0.75rem;
+    transition: all 0.2s;
   }
-  .finding-card:hover {
-    border-color: #ccc;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  }
+  .card:hover { border-color: #ccc; }
+  .card.open { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
 
-  .finding-header {
-    padding: 1.2rem 1.5rem;
-    cursor: pointer;
+  /* Card header — always visible */
+  .card-head {
     display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    gap: 0.8rem;
     user-select: none;
+    transition: background 0.15s;
   }
-  .finding-header:hover { background: var(--off-white); }
+  .card-head:hover { background: var(--off-white); }
 
-  .finding-number {
+  .card-num {
     font-family: var(--mono);
     font-size: 0.6rem;
     font-weight: 700;
-    color: var(--gold);
     letter-spacing: 0.05em;
-    padding-top: 0.15rem;
     flex-shrink: 0;
+    width: 2rem;
   }
-  .finding-card.tier-1 .finding-number { color: var(--red-flag); }
-  .finding-card.tier-2 .finding-number { color: var(--gold); }
-  .finding-card.tier-3 .finding-number { color: var(--navy-mid); }
+  .card.t1 .card-num { color: var(--red-flag); }
+  .card.t2 .card-num { color: var(--gold); }
+  .card.t3 .card-num { color: var(--navy-mid); }
+  .card.tc .card-num { color: var(--mid-gray); }
 
-  .finding-info { flex: 1; }
-
-  .finding-title {
+  .card-info { flex: 1; min-width: 0; }
+  .card-title {
     font-family: var(--sans);
     font-size: 0.95rem;
     font-weight: 700;
     color: var(--dark-gray);
-    margin-bottom: 0.25rem;
-    line-height: 1.4;
+    line-height: 1.35;
   }
-
-  .finding-timestamp {
+  .card-time {
     font-family: var(--mono);
-    font-size: 0.55rem;
-    letter-spacing: 0.08em;
+    font-size: 0.5rem;
     color: var(--mid-gray);
+    letter-spacing: 0.05em;
+    margin-top: 0.15rem;
   }
 
-  .finding-toggle {
-    font-size: 0.8rem;
-    color: var(--mid-gray);
-    transition: transform 0.25s;
+  .card-arrow {
     flex-shrink: 0;
-    padding-top: 0.1rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    color: var(--mid-gray);
+    transition: all 0.25s;
   }
-  .finding-card.open .finding-toggle { transform: rotate(180deg); }
+  .card-head:hover .card-arrow { background: var(--light-gray); }
+  .card.open .card-arrow {
+    background: var(--navy);
+    color: #fff;
+    transform: rotate(180deg);
+  }
 
-  .finding-body {
+  /* Card body — hidden by default */
+  .card-body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
   }
-  .finding-card.open .finding-body {
-    max-height: 3000px;
+  .card.open .card-body { max-height: 4000px; }
+
+  .card-inner {
+    padding: 0 1.2rem 1.5rem;
+    padding-left: calc(1.2rem + 2.8rem);
   }
 
-  .finding-content {
-    padding: 0 1.5rem 1.5rem;
-    padding-left: calc(1.5rem + 2.5rem);
-  }
-
-  /* Video player container */
-  .video-player {
+  /* Video */
+  .vid {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
-    margin-bottom: 1rem;
+    padding-bottom: 56.25%;
     background: var(--navy-deep);
-    border: 1px solid rgba(255,255,255,0.08);
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .video-player iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-  .video-player .vid-placeholder {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--navy-deep);
-    z-index: 2;
-    transition: opacity 0.3s;
-  }
-  .video-player.loaded .vid-placeholder {
-    opacity: 0;
-    pointer-events: none;
-  }
-  .vid-placeholder:hover { background: rgba(9,23,41,0.55); }
-  .vid-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-  }
-  .vid-bg img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    opacity: 0.4;
-    filter: brightness(0.6);
-  }
-  .vid-placeholder > * { position: relative; z-index: 1; }
-  .vid-time-big {
-    font-family: var(--mono);
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.4rem;
-  }
-  .vid-cue {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--gold);
+    border: 1px solid var(--light-gray);
     margin-bottom: 1.2rem;
   }
-  .vid-play-btn {
-    width: 60px;
-    height: 60px;
-    background: var(--red-flag);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
-    transition: transform 0.2s;
-  }
-  .vid-placeholder:hover .vid-play-btn { transform: scale(1.1); }
-  .vid-play-btn::after {
-    content: '';
-    width: 0; height: 0;
-    border-left: 16px solid #fff;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    margin-left: 3px;
-  }
-  .vid-hint {
-    font-family: var(--mono);
-    font-size: 0.5rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
-    margin-top: 1rem;
+  .vid iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
   }
 
-  .finding-prose {
+  /* Labels */
+  .lbl {
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  .card.t1 .lbl { color: var(--red-flag); }
+  .card.t2 .lbl { color: var(--gold); }
+  .card.t3 .lbl { color: var(--navy-mid); }
+  .card.tc .lbl { color: var(--mid-gray); }
+
+  /* Prose */
+  .card-inner p {
     font-size: 0.88rem;
     color: #555;
     line-height: 1.75;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
-  .finding-prose strong { color: var(--dark-gray); }
+  .card-inner p strong { color: var(--dark-gray); }
 
-  .finding-label {
+  /* Pull quotes — big and bold */
+  .pull {
+    position: relative;
+    margin: 1.2rem 0;
+    padding: 1.2rem 1.2rem 1.2rem 1.5rem;
+    background: var(--off-white);
+    border-left: 3px solid var(--light-gray);
+  }
+  .card.t1 .pull { border-left-color: var(--red-flag); background: rgba(168,50,50,0.04); }
+  .card.t2 .pull { border-left-color: var(--gold); background: var(--gold-dim); }
+
+  .pull-text {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+    line-height: 1.5;
+  }
+  .pull-attr {
     font-family: var(--mono);
-    font-size: 0.55rem;
-    font-weight: 600;
+    font-size: 0.45rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.3rem;
-    margin-top: 1rem;
+    color: var(--mid-gray);
+    margin-top: 0.5rem;
   }
-  .finding-card.tier-1 .finding-label { color: var(--red-flag); }
 
-  .finding-quote {
-    font-family: var(--sans);
-    font-style: italic;
-    font-size: 0.88rem;
-    color: #555;
-    padding-left: 1rem;
-    border-left: 2px solid var(--gold);
-    margin: 0.5rem 0 1rem;
-    line-height: 1.6;
-  }
-  .finding-card.tier-1 .finding-quote { border-left-color: var(--red-flag); }
-
-  .yt-link {
+  /* YouTube button */
+  .yt-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     font-family: var(--mono);
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--navy-mid);
     text-decoration: none;
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 0.8rem;
     border: 1px solid var(--light-gray);
+    margin-top: 0.8rem;
     transition: all 0.2s;
-    margin-top: 0.5rem;
   }
-  .yt-link:hover {
+  .yt-btn:hover {
     border-color: var(--gold);
     color: var(--gold);
     background: var(--gold-dim);
   }
-  .yt-link .play-icon {
-    width: 18px; height: 18px;
+  .yt-btn .yt-dot {
+    width: 8px; height: 8px;
     background: var(--red-flag);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .yt-link .play-icon::after {
-    content: '';
-    width: 0; height: 0;
-    border-left: 6px solid #fff;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    margin-left: 1px;
   }
 
-  /* ── FOOTER ── */
+  /* ═══ FOOTER ═══ */
   footer {
     background: var(--navy-deep);
-    padding: 2.5rem 1.5rem;
+    padding: 3rem 1.5rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    position: relative;
+  }
+  footer::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--red-flag), var(--gold), var(--navy-mid));
   }
   footer p {
-    font-family: var(--sans);
     font-size: 0.8rem;
-    color: rgba(255,255,255,0.45);
-    max-width: 600px;
+    color: rgba(255,255,255,0.4);
+    max-width: 550px;
     margin: 0 auto 0.8rem;
     line-height: 1.6;
   }
-  footer a {
-    color: var(--gold);
-    text-decoration: none;
-  }
-  footer .footer-label {
+  footer a { color: var(--gold); text-decoration: none; }
+  .footer-sig {
     font-family: var(--mono);
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.2);
     margin-top: 1.5rem;
   }
 
-  /* ── RESPONSIVE ── */
+  /* ═══ RESPONSIVE ═══ */
   @media (max-width: 600px) {
-    .finding-content { padding-left: 1.5rem; }
-    .finding-header { gap: 0.6rem; }
-    header { padding: 2rem 1rem 1.5rem; }
+    .card-inner { padding-left: 1.2rem; }
+    .featured-quote { font-size: 1.2rem; }
+    .hero { padding: 3rem 1rem 2.5rem; }
+    .nav-pill { padding: 0.6rem 0.6rem; font-size: 0.45rem; }
   }
 </style>
 </head>
 <body>
 
-<!-- ═══════ HEADER ═══════ -->
-<header>
-  <div class="header-label">CP Money Trail · Council Meeting Review</div>
-  <h1 class="header-title">Watch the Meeting.</h1>
-  <p class="header-sub">Every key moment from the March 2, 2026 College Park City Council meeting — timestamped, sourced, and linked to the video. See it for yourself.</p>
-  <div class="header-meta">
-    Video source: <a href="https://www.youtube.com/live/wupGM588Gnk" target="_blank">City of College Park YouTube</a> · Meeting called to order 7:32 PM
-  </div>
-</header>
+<!-- ═══════════════════════════════ HERO ═══ -->
+<div class="hero">
+  <div class="hero-eyebrow">CP Money Trail · Council Meeting Review</div>
+  <h1>Watch the Meeting.</h1>
+  <p class="hero-sub">14 key moments from the March 2, 2026 College Park City Council meeting — timestamped, sourced, and linked to the video.</p>
+  <div class="hero-source">Source: <a href="https://www.youtube.com/live/wupGM588Gnk" target="_blank">City of College Park YouTube</a> · 3.5-hour meeting</div>
+</div>
 
-<!-- ═══════ STICKY NAV ═══════ -->
+<!-- ═══════════════════════════════ FEATURED ═══ -->
+<div class="featured">
+  <div class="featured-label">From the meeting — Council Member Gay, 3:26:37</div>
+  <div class="featured-quote">"It ain't illegal to make a friend rich."</div>
+  <div class="featured-attr">— Said on the record, in a public meeting, about city contracting</div>
+  <a class="featured-cta" href="#f1e"><span class="dot"></span> See this moment</a>
+</div>
+
+<!-- ═══════════════════════════════ STICKY NAV ═══ -->
 <nav class="sticky-nav">
-  <a href="#tier1" class="nav-pill tier-1">Financial Violations</a>
-  <a href="#tier2" class="nav-pill tier-2">Power Plays</a>
-  <a href="#tier3" class="nav-pill tier-3">Public Testimony</a>
-  <a href="#context" class="nav-pill">Context</a>
+  <a href="#tier1" class="nav-pill active">Financial Violations</a>
+  <a href="#tier2" class="nav-pill">Power Plays</a>
+  <a href="#tier3" class="nav-pill">Public Testimony</a>
+  <a href="#ctx" class="nav-pill">Context</a>
 </nav>
 
-<!-- ═══════ INTRO ═══════ -->
+<!-- ═══════════════════════════════ INTRO ═══ -->
 <div class="intro">
-  <p>On March 2, 2026, the College Park City Council met for over three and a half hours. What follows are the most significant exchanges from that meeting — moments where <strong>public money was spent without authorization</strong>, where <strong>the council imposed unprecedented restrictions on the mayor's office</strong>, where <strong>residents demanded answers</strong>, and where the city's own attorney confirmed that certain expenditures crossed legal lines.</p>
-  <p>Each finding below includes the <strong>embedded video</strong> cued to the exact moment it happens, a summary of what was said, and why it matters. Click any card to expand.</p>
+  <p>On March 2, 2026, the College Park City Council met for over three and a half hours. What follows are the most significant exchanges — moments where <strong>public money was spent without authorization</strong>, where <strong>the council imposed restrictions on the mayor for raising concerns</strong>, and where <strong>residents demanded accountability</strong>.</p>
+  <p>Each finding includes the <strong>video cued to the exact moment</strong> it happens.</p>
+  <div class="intro-hint">Click any finding to expand · 14 total</div>
 </div>
 
-<!-- ═══════ TIER 1: FINANCIAL VIOLATIONS ═══════ -->
+<!-- ═══════════════════════════════════════════ -->
+<!--  TIER 1                                    -->
+<!-- ═══════════════════════════════════════════ -->
 <div class="tier-divider" id="tier1">
   <span class="tier-badge t1">Tier 1</span>
-  <span class="tier-label">Direct Financial Violations & Irregularities</span>
+  <span class="tier-name">Direct Financial Violations</span>
   <span class="tier-line"></span>
 </div>
 
-<div class="findings">
+<div class="cards">
 
-  <!-- ── 1A: FUNERAL PAYMENT ── -->
-  <div class="finding-card tier-1" id="finding-1a">
-    <div class="finding-header" onclick="toggleCard('finding-1a')">
-      <span class="finding-number">1A</span>
-      <div class="finding-info">
-        <div class="finding-title">City Paid ~$3,000 for a Private Funeral Using Public Funds</div>
-        <div class="finding-timestamp">Video: 2:09:53 – 2:38:15</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 1A -->
+<div class="card t1" id="f1a">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">1A</span>
+    <div class="card-info">
+      <div class="card-title">City Paid ~$3,000 for a Private Funeral Using Public Funds</div>
+      <div class="card-time">2:09:53 – 2:38:15</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '7793')" id="vp-7793">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">2:09:53</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">A council member discovered a <strong>$2,995 payment to "Atlanta Funeral Assistance, LLC"</strong> listed under contractual services in the general ledger. The interim city manager (Hicks) acknowledged authorizing the payment for a long-time city employee whose son died and whose family could not cover funeral costs. The city attorney warned on the record that <strong>public funds cannot legally be used for private charitable purposes</strong>, regardless of how sympathetic the circumstances.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">This is a textbook misuse of public funds. The city attorney's own legal opinion, delivered in real-time, confirmed it crosses a legal line. The city manager admitted to making the decision <strong>unilaterally</strong>. The payment was buried in a contractual services line item — not disclosed to council — suggesting it was not meant to be found.</p>
-        <div class="finding-label">Key Quotes</div>
-        <p class="finding-quote">"We are paying for a funeral service, full stop, is an issue... We don't have the authority to do that with public money."</p>
-        <p class="finding-quote">City Attorney confirmed that the law is strict about using public money for private purposes, regardless of the worthiness of the cause.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=7793" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 2:09:53
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=7793&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="lbl">What Happened</div>
+    <p>A council member discovered a <strong>$2,995 payment to "Atlanta Funeral Assistance, LLC"</strong> under contractual services. The interim city manager acknowledged authorizing it unilaterally for an employee whose son died. The city attorney confirmed on the record that <strong>public funds cannot legally be used for private charitable purposes</strong>.</p>
+    <div class="pull">
+      <div class="pull-text">"We are paying for a funeral service, full stop, is an issue... We don't have the authority to do that with public money."</div>
+      <div class="pull-attr">City Attorney — on the record</div>
+    </div>
+    <div class="lbl">Why It Matters</div>
+    <p>Textbook misuse of public funds, confirmed by the city's own attorney in real time. The payment was buried in a line item and never disclosed to council.</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=7793" target="_blank"><span class="yt-dot"></span> Open on YouTube at 2:09:53</a>
+  </div></div>
+</div>
 
-  <!-- ── 1B: GIFT CARDS & REIMBURSEMENTS ── -->
-  <div class="finding-card tier-1" id="finding-1b">
-    <div class="finding-header" onclick="toggleCard('finding-1b')">
-      <span class="finding-number">1B</span>
-      <div class="finding-info">
-        <div class="finding-title">$500 Gift Cards, Personal Reimbursements on City Accounts</div>
-        <div class="finding-timestamp">Video: 2:40:24 – 2:42:18</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 1B -->
+<div class="card t1" id="f1b">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">1B</span>
+    <div class="card-info">
+      <div class="card-title">$500 Gift Cards, Personal Reimbursements on City Accounts</div>
+      <div class="card-time">2:40:24 – 2:42:18</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '9624')" id="vp-9624">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">2:40:24</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">The mayor stated she had raised <strong>"documented concerns"</strong> about reimbursements with little to no explanation of public purpose, <strong>$500 gift cards purchased</strong>, and receipts submitted for <strong>personal reimbursement that were charged to city accounts</strong>.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">This is a direct allegation of fraudulent or improper reimbursement activity — put on the public record deliberately and with specificity. The mayor stated: "I hope, for the sake of our taxpayers, if there are any irregularities... the money will be paid back."</p>
-        <div class="finding-label">Key Quote</div>
-        <p class="finding-quote">"I raised documented concerns today about reimbursements with little to no explanation of public purpose — $500 gift cards purchased, receipts that were submitted for personal reimbursement when they went on city accounts."</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=9624" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 2:40:24
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=9624&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>The mayor put on record that she raised <strong>"documented concerns"</strong> about reimbursements with no public purpose, <strong>$500 gift cards purchased</strong>, and personal receipts charged to city accounts.</p>
+    <div class="pull">
+      <div class="pull-text">"I raised documented concerns about reimbursements with little to no explanation of public purpose — $500 gift cards purchased, receipts submitted for personal reimbursement when they went on city accounts."</div>
+      <div class="pull-attr">Mayor — on the record</div>
+    </div>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=9624" target="_blank"><span class="yt-dot"></span> Open on YouTube at 2:40:24</a>
+  </div></div>
+</div>
 
-  <!-- ── 1C: $10K SPENDING VIOLATION ── -->
-  <div class="finding-card tier-1" id="finding-1c">
-    <div class="finding-header" onclick="toggleCard('finding-1c')">
-      <span class="finding-number">1C</span>
-      <div class="finding-info">
-        <div class="finding-title">City Manager Exceeded $10,000 Spending Authority Without Approval</div>
-        <div class="finding-timestamp">Video: 1:41:58 – 1:54:14</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 1C -->
+<div class="card t1" id="f1c">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">1C</span>
+    <div class="card-info">
+      <div class="card-title">City Manager Exceeded $10,000 Spending Authority</div>
+      <div class="card-time">1:41:58 – 1:54:14</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '6118')" id="vp-6118">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">1:41:58</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">A council member flagged that the city had already <strong>paid in excess of $10,000</strong> to engineering firm Grady this fiscal year — <strong>without council approval</strong>, violating the city's own ordinance requiring authorization for expenditures over $10,000. The city manager asked the council to approve it retroactively.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">The "approve first, ask later" pattern was raised by multiple council members and residents as a <strong>recurring governance violation</strong>. Council member Carr stated that the city manager cannot be allowed to unilaterally make spending decisions, and that this takes the council out of the delegated oversight process.</p>
-        <div class="finding-label">Key Quote</div>
-        <p class="finding-quote">"You're violating charter. That's wrong. You're violating the ordinance. It's not about not letting the public hear — it's the fact that you're violating charter."</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=6118" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 1:41:58
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=6118&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>The city paid in excess of <strong>$10,000 to engineering firm Grady</strong> without council approval — violating the city's own ordinance. The city manager asked for retroactive approval.</p>
+    <div class="pull">
+      <div class="pull-text">"You're violating charter. That's wrong. You're violating the ordinance."</div>
+      <div class="pull-attr">Council Member — on the record</div>
+    </div>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=6118" target="_blank"><span class="yt-dot"></span> Open on YouTube at 1:41:58</a>
+  </div></div>
+</div>
 
-  <!-- ── 1D: HOME DEPOT OVERPAYMENT ── -->
-  <div class="finding-card tier-1" id="finding-1d">
-    <div class="finding-header" onclick="toggleCard('finding-1d')">
-      <span class="finding-number">1D</span>
-      <div class="finding-info">
-        <div class="finding-title">$1,034.99 Overpayment — Only Discovered Through Open Records Request</div>
-        <div class="finding-timestamp">Video: 3:06:18 – 3:08:43</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 1D -->
+<div class="card t1" id="f1d">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">1D</span>
+    <div class="card-info">
+      <div class="card-title">$1,034.99 Overpayment — Found Through Open Records</div>
+      <div class="card-time">3:06:18 – 3:08:43</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '11178')" id="vp-11178">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">3:06:18</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">The finance director confirmed that <strong>$1,034.99 was paid out</strong> due to a "finance error" — an overpayment that was subsequently repaid. The error reportedly occurred under a previous city manager. This transaction was only surfaced through an <strong>open records request</strong>, not internal controls.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">The fact that a four-figure overpayment was only discovered through an external accountability effort — not internal auditing — is itself a finding. Council members appeared eager to explain it away, with one dismissively referencing the website that exposed it. The mayor later apologized for posting the Home Depot transaction specifically, saying full context wasn't available, but <strong>notably did NOT retract</strong> her other documented spending concerns.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=11178" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 3:06:18
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=11178&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p><strong>$1,034.99 paid out</strong> due to a "finance error" — only discovered through an open records request, not internal controls. The mayor apologized for posting this one item but <strong>did not retract</strong> any other documented spending concerns.</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=11178" target="_blank"><span class="yt-dot"></span> Open on YouTube at 3:06:18</a>
+  </div></div>
+</div>
 
-  <!-- ── 1E: "AIN'T ILLEGAL TO MAKE A FRIEND RICH" ── -->
-  <div class="finding-card tier-1" id="finding-1e">
-    <div class="finding-header" onclick="toggleCard('finding-1e')">
-      <span class="finding-number">1E</span>
-      <div class="finding-info">
-        <div class="finding-title">Council Member Gay: "It Ain't Illegal to Make a Friend Rich"</div>
-        <div class="finding-timestamp">Video: 3:26:37 – 3:27:55</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 1E -->
+<div class="card t1" id="f1e">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">1E</span>
+    <div class="card-info">
+      <div class="card-title">"It Ain't Illegal to Make a Friend Rich"</div>
+      <div class="card-time">3:26:37 – 3:27:55</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '12397')" id="vp-12397">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">3:26:37</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Was Said</div>
-        <p class="finding-prose">During closing remarks, Council Member Gay made a series of statements defending the use of public relationships in city business. Referencing past investigations, he stated openly that <strong>"it ain't illegal to make a friend rich"</strong> and followed up with: <strong>"If you do business with your friends, you do it with your friends. They don't throw favor."</strong> He then referenced entities that have received "over $500 million" and asked, "You think they walked around broke?"</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">This is an elected official, on the record, in a public meeting, making the case that <strong>enriching personal friends through city business is acceptable</strong>. In the context of a meeting where the council just spent hours debating unauthorized spending, procurement bypass, and lack of oversight — this statement reveals a mindset about public money that every taxpayer in College Park should hear for themselves. He also acknowledged that approvals weren't obtained: "We didn't get approval. The job is running."</p>
-        <div class="finding-label">Key Quotes</div>
-        <p class="finding-quote">"It ain't illegal to make a friend rich and lovely enough to make you friendly. If you do business with your friends, you do it with your friends."</p>
-        <p class="finding-quote">"We didn't get approval. The job is running."</p>
-        <p class="finding-quote">"Look at it — it's been $100 million... good people don't like that. But that's how they move, that's the world we live in."</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=12397" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 3:26:37
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=12397&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>During closing remarks, Council Member Gay defended enriching friends through city business — on camera, in a public meeting, after three hours of debating unauthorized spending.</p>
+    <div class="pull">
+      <div class="pull-text">"It ain't illegal to make a friend rich and lovely enough to make you friendly. If you do business with your friends, you do it with your friends."</div>
+      <div class="pull-attr">Council Member Gay — closing remarks</div>
+    </div>
+    <div class="pull">
+      <div class="pull-text">"We didn't get approval. The job is running."</div>
+      <div class="pull-attr">Council Member Gay — same remarks</div>
+    </div>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=12397" target="_blank"><span class="yt-dot"></span> Open on YouTube at 3:26:37</a>
+  </div></div>
+</div>
 
 </div>
 
-<!-- ═══════ TIER 2: POWER PLAYS ═══════ -->
+<!-- ═══════════════════════════════════════════ -->
+<!--  TIER 2                                    -->
+<!-- ═══════════════════════════════════════════ -->
 <div class="tier-divider" id="tier2">
   <span class="tier-badge t2">Tier 2</span>
-  <span class="tier-label">Structural Power Plays & Selective Accountability</span>
+  <span class="tier-name">Structural Power Plays</span>
   <span class="tier-line"></span>
 </div>
 
-<div class="findings">
+<div class="cards">
 
-  <!-- ── 2A: MAYOR RESTRICTIONS ── -->
-  <div class="finding-card tier-2" id="finding-2a">
-    <div class="finding-header" onclick="toggleCard('finding-2a')">
-      <span class="finding-number">2A</span>
-      <div class="finding-info">
-        <div class="finding-title">Council Imposes Unprecedented Spending Restrictions on Mayor's Office</div>
-        <div class="finding-timestamp">Video: 2:39:51 – 2:41:49</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 2A -->
+<div class="card t2" id="f2a">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">2A</span>
+    <div class="card-info">
+      <div class="card-title">Unprecedented Spending Restrictions on Mayor's Office</div>
+      <div class="card-time">2:39:51 – 2:41:49</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '9591')" id="vp-9591">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">2:39:51</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">The council voted to impose new restrictions on the mayor's community enhancement fund spending. The mayor objected on the record, stating that <strong>"no other person who's ever sat in this chair has ever faced any restrictions that no other member of this body is subject to"</strong> and that the restrictions <strong>"run conflict with our charter."</strong></p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">The mayor has been publicly raising spending concerns about council members. The council responds by restricting the mayor's spending authority — while <strong>not subjecting themselves to similar scrutiny</strong>. This is selective accountability in plain view.</p>
-        <div class="finding-label">Key Quote</div>
-        <p class="finding-quote">"I will object to selective accountability — rules for one office while the spending of others goes unexamined. We all have a responsibility to steward taxpayer dollars like they are our own."</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=9591" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 2:39:51
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=9591&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>The council voted to restrict the mayor's spending — after the mayor publicly raised concerns about council members' spending.</p>
+    <div class="pull">
+      <div class="pull-text">"No other person who's ever sat in this chair has ever faced any restrictions that no other member of this body is subject to."</div>
+      <div class="pull-attr">Mayor — on the record</div>
+    </div>
+    <div class="pull">
+      <div class="pull-text">"I will object to selective accountability — rules for one office while the spending of others goes unexamined."</div>
+      <div class="pull-attr">Mayor — same exchange</div>
+    </div>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=9591" target="_blank"><span class="yt-dot"></span> Open on YouTube at 2:39:51</a>
+  </div></div>
+</div>
 
-  <!-- ── 2B: CONSENT AGENDA ── -->
-  <div class="finding-card tier-2" id="finding-2b">
-    <div class="finding-header" onclick="toggleCard('finding-2b')">
-      <span class="finding-number">2B</span>
-      <div class="finding-info">
-        <div class="finding-title">Consent Agenda Power Struggle — Robert's Rules Weaponized</div>
-        <div class="finding-timestamp">Video: 0:11:01 – 0:18:04</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 2B -->
+<div class="card t2" id="f2b">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">2B</span>
+    <div class="card-info">
+      <div class="card-title">Consent Agenda Power Struggle</div>
+      <div class="card-time">0:11:01 – 0:18:04</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '661')" id="vp-661">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">0:11:01</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">The meeting opened with an immediate procedural fight. A council member attempted to move items off the consent agenda — citing Robert's Rules of Order, which allows any single member to object. Another council member countered with a motion to block the procedural move. That motion <strong>died for lack of a second</strong>.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">Consent agendas are a known tool for <strong>burying controversial items</strong> so they pass without individual debate. The fight at the start of the meeting signals that some council members are trying to prevent scrutiny of specific agenda items. The fact that one member had to cite Robert's Rules to exercise a basic right shows how consolidated procedural control has become.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=661" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 0:11:01
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=661&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>The meeting opened with a fight. A member tried to move items off the consent agenda for scrutiny — citing Robert's Rules. Another tried to block it. That motion <strong>died for lack of a second</strong>. Consent agendas are a known tool for passing items without debate.</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=661" target="_blank"><span class="yt-dot"></span> Open on YouTube at 0:11:01</a>
+  </div></div>
+</div>
 
-  <!-- ── 2C: RETROACTIVE APPROVALS ── -->
-  <div class="finding-card tier-2" id="finding-2c">
-    <div class="finding-header" onclick="toggleCard('finding-2c')">
-      <span class="finding-number">2C</span>
-      <div class="finding-info">
-        <div class="finding-title">Professional Services Agreements Executed Without Prior Approval</div>
-        <div class="finding-timestamp">Video: 0:47:23 – 0:51:50 &amp; 1:44:18 – 1:46:25</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 2C -->
+<div class="card t2" id="f2c">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">2C</span>
+    <div class="card-info">
+      <div class="card-title">Contracts Executed Without Prior Approval</div>
+      <div class="card-time">0:47:23 – 0:51:50</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '2843')" id="vp-2843">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">0:47:23</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">Multiple speakers identified a pattern where the city manager enters into professional service agreements and then presents them to council for <strong>retroactive approval</strong>. Public commenters described this as "executed first, approve later, maybe." Council member Carr stated he doesn't believe there's been a single meeting where something hasn't already been started, paid, or completed before coming for approval.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">This is not a one-off — it's an <strong>admitted recurring practice</strong>. It effectively removes council oversight from procurement, which is exactly what the $10,000 ordinance threshold was designed to prevent.</p>
-        <div class="finding-label">Key Quote</div>
-        <p class="finding-quote">"We can't allow the city manager to unilaterally make decisions. It takes us out of the process — the delegated process."</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=2843" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 0:47:23
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=2843&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>An admitted recurring practice: the city manager enters contracts, then asks for <strong>retroactive approval</strong>. This removes council oversight from procurement — exactly what the $10K threshold was designed to prevent.</p>
+    <div class="pull">
+      <div class="pull-text">"We can't allow the city manager to unilaterally make decisions. It takes us out of the process — the delegated process."</div>
+      <div class="pull-attr">Council Member — on the record</div>
+    </div>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=2843" target="_blank"><span class="yt-dot"></span> Open on YouTube at 0:47:23</a>
+  </div></div>
+</div>
 
-  <!-- ── 2D: CITY MANAGER SEARCH ── -->
-  <div class="finding-card tier-2" id="finding-2d">
-    <div class="finding-header" onclick="toggleCard('finding-2d')">
-      <span class="finding-number">2D</span>
-      <div class="finding-info">
-        <div class="finding-title">City Manager Search Run by Firm That Doesn't Recruit City Managers</div>
-        <div class="finding-timestamp">Video: 0:51:11 – 0:51:50</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 2D -->
+<div class="card t2" id="f2d">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">2D</span>
+    <div class="card-info">
+      <div class="card-title">City Manager Search — Wrong Firm for the Job</div>
+      <div class="card-time">0:51:11</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '3071')" id="vp-3071">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">0:51:11</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">A public commenter noted that <strong>three city managers have come and gone in the past year</strong>, and that the firm now being used for the city manager search "does not recruit city managers." The commenter called this "not concerning — it's reckless."</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">Hiring a search firm that doesn't specialize in the role it's filling raises serious questions about whether <strong>the process is designed to produce a specific outcome</strong> or a favored candidate.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=3071" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 0:51:11
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=3071&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p><strong>Three city managers in the past year.</strong> The firm hired for the new search "does not recruit city managers." A commenter called this "not concerning — it's reckless." Is the process designed to produce a favored candidate?</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=3071" target="_blank"><span class="yt-dot"></span> Open on YouTube at 0:51:11</a>
+  </div></div>
+</div>
 
 </div>
 
-<!-- ═══════ TIER 3: PUBLIC TESTIMONY ═══════ -->
+<!-- ═══════════════════════════════════════════ -->
+<!--  TIER 3                                    -->
+<!-- ═══════════════════════════════════════════ -->
 <div class="tier-divider" id="tier3">
   <span class="tier-badge t3">Tier 3</span>
-  <span class="tier-label">Damning Public Testimony</span>
+  <span class="tier-name">Public Testimony</span>
   <span class="tier-line"></span>
 </div>
 
-<div class="findings">
+<div class="cards">
 
-  <!-- ── 3A: PROCUREMENT BREAKDOWN ── -->
-  <div class="finding-card tier-3" id="finding-3a">
-    <div class="finding-header" onclick="toggleCard('finding-3a')">
-      <span class="finding-number">3A</span>
-      <div class="finding-info">
-        <div class="finding-title">Resident Delivers Detailed Procurement Corruption Breakdown</div>
-        <div class="finding-timestamp">Video: 0:46:35 – 0:52:13</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 3A -->
+<div class="card t3" id="f3a">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">3A</span>
+    <div class="card-info">
+      <div class="card-title">Resident Lays Out Procurement Corruption Pattern</div>
+      <div class="card-time">0:46:35 – 0:52:13</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '2795')" id="vp-2795">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">0:46:35</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">A resident delivered the most pointed testimony of the evening, laying out a detailed pattern: citizens must go through permits for $10,000 projects, but the city works around its own procurement rules; <strong>three city managers in the last year; 50+ employees departed</strong>; professional service agreements that skip council approval; a search firm that doesn't recruit city managers; and credit card purchases during election season, <strong>gift cards with no public purpose</strong>, and personal reimbursement issues.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">This resident is essentially doing investigative journalism from the podium. The specificity of the claims — and the fact that <strong>no council member rebutted them</strong> — is significant. The resident closed by referencing "receipts" and inviting the public to stay tuned.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=2795" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 0:46:35
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=2795&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>Point by point: <strong>three city managers in a year. 50+ employees gone.</strong> Contracts that skip approval. Gift cards with no public purpose. Credit card purchases during election season. Closed with "receipts" — and <strong>no council member rebutted a single point</strong>.</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=2795" target="_blank"><span class="yt-dot"></span> Open on YouTube at 0:46:35</a>
+  </div></div>
+</div>
 
-  <!-- ── 3B: BUSINESS OWNER ── -->
-  <div class="finding-card tier-3" id="finding-3b">
-    <div class="finding-header" onclick="toggleCard('finding-3b')">
-      <span class="finding-number">3B</span>
-      <div class="finding-info">
-        <div class="finding-title">Business Owner Formally Requests Transparent Governance Review</div>
-        <div class="finding-timestamp">Video: 1:01:34 – 1:03:59</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 3B -->
+<div class="card t3" id="f3b">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">3B</span>
+    <div class="card-info">
+      <div class="card-title">Business Owner Demands Transparent Review</div>
+      <div class="card-time">1:01:34 – 1:03:59</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '3694')" id="vp-3694">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">1:01:34</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">A business owner and broker formally requested a transparent review of "what is currently taking place" in the city, citing growing concerns about integrity in leadership. Called for the council to prioritize community over internal conflicts.</p>
-        <div class="finding-label">Key Quote</div>
-        <p class="finding-quote">"When leaders are not aligned, the community will distrust its ability to lead. And when there's confusion, people question the integrity of the process. And that is where we are."</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=3694" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 1:01:34
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=3694&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="pull">
+      <div class="pull-text">"When leaders are not aligned, the community will distrust its ability to lead. And when there's confusion, people question the integrity of the process."</div>
+      <div class="pull-attr">Business owner — public comment</div>
+    </div>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=3694" target="_blank"><span class="yt-dot"></span> Open on YouTube at 1:01:34</a>
+  </div></div>
+</div>
 
-  <!-- ── 3C: SHORT-TERM RENTALS ── -->
-  <div class="finding-card tier-3" id="finding-3c">
-    <div class="finding-header" onclick="toggleCard('finding-3c')">
-      <span class="finding-number">3C</span>
-      <div class="finding-info">
-        <div class="finding-title">Seniors Demand Action: No Ordinance Exists, But City Collects Fees Anyway</div>
-        <div class="finding-timestamp">Video: 1:07:01 – 1:19:41</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- 3C -->
+<div class="card t3" id="f3c">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">3C</span>
+    <div class="card-info">
+      <div class="card-title">Seniors: No Ordinance Exists, But City Collects Fees</div>
+      <div class="card-time">1:07:01 – 1:19:41</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '4021')" id="vp-4021">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">1:07:01</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <div class="finding-label">What Happened</div>
-        <p class="finding-prose">A series of senior residents — some who have lived in College Park for <strong>48 years</strong> — testified about Airbnb and short-term rental nuisances destroying their neighborhoods. They revealed that College Park has <strong>no specific ordinance governing short-term rentals</strong>, despite collecting fees from these properties. One resident asked: "How can we collect funds if we don't have guidelines in place?" The zoning hearing on this topic had been <strong>pulled from the agenda</strong>.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">The city is collecting revenue from unregulated activity with no enforcement mechanism. The ordinance was pulled from the agenda, delaying action further while residents suffer.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=4021" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 1:07:01
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=4021&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>Residents who have lived here <strong>48 years</strong> testified about Airbnb nuisances. College Park has <strong>no short-term rental ordinance</strong> despite collecting fees. "How can we collect funds if we don't have guidelines?" The zoning hearing was pulled from the agenda.</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=4021" target="_blank"><span class="yt-dot"></span> Open on YouTube at 1:07:01</a>
+  </div></div>
+</div>
 
 </div>
 
-<!-- ═══════ CONTEXT ═══════ -->
-<div class="tier-divider" id="context">
-  <span class="tier-badge" style="background:var(--dark-gray);color:#fff;">Context</span>
-  <span class="tier-label">Background & Undercurrents</span>
+<!-- ═══════════════════════════════════════════ -->
+<!--  CONTEXT                                   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="tier-divider" id="ctx">
+  <span class="tier-badge tc">Context</span>
+  <span class="tier-name">Background</span>
   <span class="tier-line"></span>
 </div>
 
-<div class="findings">
+<div class="cards">
 
-  <!-- ── $30M DEBT ── -->
-  <div class="finding-card" id="finding-c1">
-    <div class="finding-header" onclick="toggleCard('finding-c1')">
-      <span class="finding-number" style="color:var(--mid-gray);">C1</span>
-      <div class="finding-info">
-        <div class="finding-title">$30 Million Airport Debt + Active Attorney General Investigation</div>
-        <div class="finding-timestamp">Video: 3:22:10</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- C1 -->
+<div class="card tc" id="fc1">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">C1</span>
+    <div class="card-info">
+      <div class="card-title">$30 Million Airport Debt + AG Investigation</div>
+      <div class="card-time">3:22:10</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '12130')" id="vp-12130">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">3:22:10</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <p class="finding-prose">During closing comments, a council member casually referenced a <strong>$30 million debt tied to "Lana aviation"</strong> and an <strong>active attorney general investigation</strong>. Mentioned in passing, almost as an afterthought — but this potentially represents the largest financial liability the city faces.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=12130" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 3:22:10
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=12130&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>A council member casually referenced <strong>$30 million in debt tied to "Lana aviation"</strong> and an <strong>active attorney general investigation</strong>. Mentioned almost as an afterthought — but potentially the city's largest financial liability.</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=12130" target="_blank"><span class="yt-dot"></span> Open on YouTube at 3:22:10</a>
+  </div></div>
+</div>
 
-  <!-- ── STAFF SALARIES ── -->
-  <div class="finding-card" id="finding-c2">
-    <div class="finding-header" onclick="toggleCard('finding-c2')">
-      <span class="finding-number" style="color:var(--mid-gray);">C2</span>
-      <div class="finding-info">
-        <div class="finding-title">Staff Working 2–3 Jobs, Can't Afford to Live in the City</div>
-        <div class="finding-timestamp">Video: 3:18:49</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+<!-- C2 -->
+<div class="card tc" id="fc2">
+  <div class="card-head" onclick="toggle(this)">
+    <span class="card-num">C2</span>
+    <div class="card-info">
+      <div class="card-title">Staff Working 2–3 Jobs, Can't Afford to Live Here</div>
+      <div class="card-time">3:18:49</div>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '11929')" id="vp-11929">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">3:18:49</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <p class="finding-prose">A council member stated that city staff members are <strong>"working two and three jobs"</strong> and that College Park employees can't afford to live in the city they serve. The employee at the center of the funeral payment was described as making <strong>less than $20/hour after 10+ years</strong> of service. The city is spending on questionable items while its workforce is in crisis.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=11929" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 3:18:49
-        </a>
-      </div>
-    </div>
+    <span class="card-arrow">▼</span>
   </div>
-
-  <!-- ── BEREAVEMENT SLUSH ── -->
-  <div class="finding-card" id="finding-c3">
-    <div class="finding-header" onclick="toggleCard('finding-c3')">
-      <span class="finding-number" style="color:var(--mid-gray);">C3</span>
-      <div class="finding-info">
-        <div class="finding-title">Bereavement Fund as Potential Slush Fund Indicator</div>
-        <div class="finding-timestamp">Video: 2:19:29 – 2:33:01</div>
-      </div>
-      <span class="finding-toggle">▼</span>
+  <div class="card-body"><div class="card-inner">
+    <div class="vid">
+      <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=11929&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
     </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '8369')" id="vp-8369">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">2:19:29</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <p class="finding-prose">The discussion revealed the city's bereavement/flower fund was budgeted at $80 per employee death, recently increased to cover up to $4,000. But the $2,995 funeral payment came from a <strong>different account entirely</strong> (contractual services). Council member McKenzie pressed: if there's a bereavement fund, why was the funeral paid from a different line item? This raises the question of <strong>how many other line items are being used for purposes they weren't budgeted for</strong>.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=8369" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 2:19:29
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── MISINFORMATION NARRATIVE ── -->
-  <div class="finding-card" id="finding-c4">
-    <div class="finding-header" onclick="toggleCard('finding-c4')">
-      <span class="finding-number" style="color:var(--mid-gray);">C4</span>
-      <div class="finding-info">
-        <div class="finding-title">"Misinformation" Counter-Narrative — Accountability Reframed as Attack</div>
-        <div class="finding-timestamp">Video: 2:47:28 &amp; 3:10:09</div>
-      </div>
-      <span class="finding-toggle">▼</span>
-    </div>
-    <div class="finding-body">
-      <div class="finding-content">
-        <div class="video-player" onclick="loadVideo(this, '10048')" id="vp-10048">
-          <div class="vid-placeholder">
-            <div class="vid-bg"><img src="https://img.youtube.com/vi/wupGM588Gnk/maxresdefault.jpg" alt="" loading="lazy"></div>
-            <div class="vid-time-big">2:47:28</div>
-            <div class="vid-cue">cued to this moment</div>
-            <div class="vid-play-btn"></div>
-            <div class="vid-hint">Click to load video</div>
-          </div>
-        </div>
-        <p class="finding-prose">Multiple council members used closing comments to characterize public criticism as "misinformation," "false stories," and "allegations presented as facts." The mayor referenced "an overload of false statements" and "the ordering of city property documents" — appearing to reference <strong>open records requests being used for accountability</strong>. This framing positions legitimate accountability mechanisms as attacks on the city.</p>
-        <div class="finding-label">Why It Matters</div>
-        <p class="finding-prose">When elected officials describe open records requests, public comment, and independent reporting as "misinformation" — without addressing the substance of the documented concerns — it tells you more about the officials than it does about the reporting.</p>
-        <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=10048" target="_blank">
-          <span class="play-icon"></span> Watch on YouTube at 2:47:28
-        </a>
-      </div>
-    </div>
-  </div>
+    <p>City staff are <strong>"working two and three jobs."</strong> The employee at the center of the funeral payment: <strong>less than $20/hour after 10+ years</strong>. Questionable spending on one side, a workforce in crisis on the other.</p>
+    <a class="yt-btn" href="https://www.youtube.com/live/wupGM588Gnk?t=11929" target="_blank"><span class="yt-dot"></span> Open on YouTube at 3:18:49</a>
+  </div></div>
+</div>
 
 </div>
 
-<!-- ═══════ FOOTER ═══════ -->
+<!-- ═══════════════════════════════ FOOTER ═══ -->
 <footer>
-  <p>Every moment cited above is from the <a href="https://www.youtube.com/live/wupGM588Gnk" target="_blank">official City of College Park council meeting video</a>, published on the city's own YouTube channel. Click any timestamp to verify for yourself.</p>
-  <p>Full agenda packets available at <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">collegeparkga.gov</a>.</p>
-  <div class="footer-label">CP Money Trail · Published March 3, 2026</div>
+  <p>Every moment above is from the <a href="https://www.youtube.com/live/wupGM588Gnk" target="_blank">official City of College Park council meeting video</a>. Click any timestamp to verify.</p>
+  <p>Full agenda packets at <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">collegeparkga.gov</a>.</p>
+  <div class="footer-sig">CP Money Trail · Published March 3, 2026</div>
 </footer>
 
 <script>
-function loadVideo(el, startSec) {
-  if (el.classList.contains('loaded')) return;
-  const iframe = document.createElement('iframe');
-  iframe.src = 'https://www.youtube.com/embed/wupGM588Gnk?start=' + startSec + '&autoplay=1&rel=0';
-  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-  iframe.allowFullscreen = true;
-  el.appendChild(iframe);
-  el.classList.add('loaded');
-}
-
-function toggleCard(id) {
-  const card = document.getElementById(id);
+function toggle(head) {
+  const card = head.closest('.card');
+  const wasOpen = card.classList.contains('open');
   card.classList.toggle('open');
+  // Lazy-load iframe when first opened
+  if (!wasOpen) {
+    const iframe = card.querySelector('iframe[data-src]');
+    if (iframe) {
+      iframe.src = iframe.dataset.src;
+      iframe.removeAttribute('data-src');
+    }
+  }
 }
 
 // Smooth scroll for nav
-document.querySelectorAll('.nav-pill').forEach(a => {
+document.querySelectorAll('.nav-pill, .featured-cta').forEach(a => {
   a.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const href = a.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      const el = document.querySelector(href);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // If it's a card, open it
+        if (el.classList.contains('card') && !el.classList.contains('open')) {
+          el.classList.add('open');
+        }
+      }
     }
   });
 });
 
-// Intersection observer for active nav state
+// Active nav state on scroll
 const sections = document.querySelectorAll('.tier-divider');
-const navPills = document.querySelectorAll('.nav-pill');
+const pills = document.querySelectorAll('.nav-pill');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const id = entry.target.id;
-      navPills.forEach(p => p.classList.remove('active'));
-      const active = document.querySelector(`.nav-pill[href="#${id}"]`);
-      if (active) active.classList.add('active');
+      pills.forEach(p => p.classList.remove('active'));
+      const match = document.querySelector(`.nav-pill[href="#${id}"]`);
+      if (match) match.classList.add('active');
     }
   });
-}, { rootMargin: '-80px 0px -80% 0px' });
+}, { rootMargin: '-80px 0px -70% 0px' });
 sections.forEach(s => observer.observe(s));
 </script>
 
