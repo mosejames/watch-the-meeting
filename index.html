@@ -266,75 +266,20 @@
     padding-left: calc(1.5rem + 2.5rem);
   }
 
-  /* Video thumbnail card */
-  .video-thumb {
-    display: block;
+  /* Video embed */
+  .video-embed {
     position: relative;
     width: 100%;
-    aspect-ratio: 16/9;
+    padding-bottom: 56.25%;
     margin-bottom: 1rem;
     background: var(--navy-deep);
-    border: 1px solid rgba(255,255,255,0.08);
-    overflow: hidden;
-    text-decoration: none;
-    cursor: pointer;
-    transition: border-color 0.25s;
+    border: 1px solid var(--light-gray);
   }
-  .video-thumb:hover {
-    border-color: var(--gold);
-  }
-  .video-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.7;
-    transition: opacity 0.3s;
-  }
-  .video-thumb:hover img {
-    opacity: 0.85;
-  }
-  .video-thumb .thumb-overlay {
+  .video-embed iframe {
     position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(9,23,41,0.45);
-    transition: background 0.3s;
-  }
-  .video-thumb:hover .thumb-overlay {
-    background: rgba(9,23,41,0.3);
-  }
-  .thumb-play {
-    width: 56px;
-    height: 56px;
-    background: var(--red-flag);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.6rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    transition: transform 0.2s;
-  }
-  .video-thumb:hover .thumb-play {
-    transform: scale(1.08);
-  }
-  .thumb-play::after {
-    content: '';
-    width: 0; height: 0;
-    border-left: 14px solid #fff;
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    margin-left: 3px;
-  }
-  .thumb-label {
-    font-family: var(--mono);
-    font-size: 0.55rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
   }
 
   .finding-prose {
@@ -490,13 +435,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=7793" target="_blank" title="Watch on YouTube at 2:09:53">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 2:09:53 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=7793&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">A council member discovered a <strong>$2,995 payment to "Atlanta Funeral Assistance, LLC"</strong> listed under contractual services in the general ledger. The interim city manager (Hicks) acknowledged authorizing the payment for a long-time city employee whose son died and whose family could not cover funeral costs. The city attorney warned on the record that <strong>public funds cannot legally be used for private charitable purposes</strong>, regardless of how sympathetic the circumstances.</p>
         <div class="finding-label">Why It Matters</div>
@@ -523,13 +464,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=9624" target="_blank" title="Watch on YouTube at 2:40:24">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 2:40:24 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=9624&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">The mayor stated she had raised <strong>"documented concerns"</strong> about reimbursements with little to no explanation of public purpose, <strong>$500 gift cards purchased</strong>, and receipts submitted for <strong>personal reimbursement that were charged to city accounts</strong>.</p>
         <div class="finding-label">Why It Matters</div>
@@ -555,13 +492,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=6118" target="_blank" title="Watch on YouTube at 1:41:58">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 1:41:58 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=6118&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">A council member flagged that the city had already <strong>paid in excess of $10,000</strong> to engineering firm Grady this fiscal year — <strong>without council approval</strong>, violating the city's own ordinance requiring authorization for expenditures over $10,000. The city manager asked the council to approve it retroactively.</p>
         <div class="finding-label">Why It Matters</div>
@@ -587,13 +520,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=11178" target="_blank" title="Watch on YouTube at 3:06:18">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 3:06:18 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=11178&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">The finance director confirmed that <strong>$1,034.99 was paid out</strong> due to a "finance error" — an overpayment that was subsequently repaid. The error reportedly occurred under a previous city manager. This transaction was only surfaced through an <strong>open records request</strong>, not internal controls.</p>
         <div class="finding-label">Why It Matters</div>
@@ -628,13 +557,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=9591" target="_blank" title="Watch on YouTube at 2:39:51">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 2:39:51 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=9591&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">The council voted to impose new restrictions on the mayor's community enhancement fund spending. The mayor objected on the record, stating that <strong>"no other person who's ever sat in this chair has ever faced any restrictions that no other member of this body is subject to"</strong> and that the restrictions <strong>"run conflict with our charter."</strong></p>
         <div class="finding-label">Why It Matters</div>
@@ -660,13 +585,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=661" target="_blank" title="Watch on YouTube at 0:11:01">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 0:11:01 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=661&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">The meeting opened with an immediate procedural fight. A council member attempted to move items off the consent agenda — citing Robert's Rules of Order, which allows any single member to object. Another council member countered with a motion to block the procedural move. That motion <strong>died for lack of a second</strong>.</p>
         <div class="finding-label">Why It Matters</div>
@@ -690,13 +611,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=2843" target="_blank" title="Watch on YouTube at 0:47:23">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 0:47:23 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=2843&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">Multiple speakers identified a pattern where the city manager enters into professional service agreements and then presents them to council for <strong>retroactive approval</strong>. Public commenters described this as "executed first, approve later, maybe." Council member Carr stated he doesn't believe there's been a single meeting where something hasn't already been started, paid, or completed before coming for approval.</p>
         <div class="finding-label">Why It Matters</div>
@@ -722,13 +639,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=3071" target="_blank" title="Watch on YouTube at 0:51:11">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 0:51:11 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=3071&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">A public commenter noted that <strong>three city managers have come and gone in the past year</strong>, and that the firm now being used for the city manager search "does not recruit city managers." The commenter called this "not concerning — it's reckless."</p>
         <div class="finding-label">Why It Matters</div>
@@ -763,13 +676,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=2795" target="_blank" title="Watch on YouTube at 0:46:35">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 0:46:35 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=2795&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">A resident delivered the most pointed testimony of the evening, laying out a detailed pattern: citizens must go through permits for $10,000 projects, but the city works around its own procurement rules; <strong>three city managers in the last year; 50+ employees departed</strong>; professional service agreements that skip council approval; a search firm that doesn't recruit city managers; and credit card purchases during election season, <strong>gift cards with no public purpose</strong>, and personal reimbursement issues.</p>
         <div class="finding-label">Why It Matters</div>
@@ -793,13 +702,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=3694" target="_blank" title="Watch on YouTube at 1:01:34">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 1:01:34 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=3694&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">A business owner and broker formally requested a transparent review of "what is currently taking place" in the city, citing growing concerns about integrity in leadership. Called for the council to prioritize community over internal conflicts.</p>
         <div class="finding-label">Key Quote</div>
@@ -823,13 +728,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=4021" target="_blank" title="Watch on YouTube at 1:07:01">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 1:07:01 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=4021&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <div class="finding-label">What Happened</div>
         <p class="finding-prose">A series of senior residents — some who have lived in College Park for <strong>48 years</strong> — testified about Airbnb and short-term rental nuisances destroying their neighborhoods. They revealed that College Park has <strong>no specific ordinance governing short-term rentals</strong>, despite collecting fees from these properties. One resident asked: "How can we collect funds if we don't have guidelines in place?" The zoning hearing on this topic had been <strong>pulled from the agenda</strong>.</p>
         <div class="finding-label">Why It Matters</div>
@@ -864,13 +765,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=12130" target="_blank" title="Watch on YouTube at 3:22:10">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 3:22:10 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=12130&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <p class="finding-prose">During closing comments, a council member casually referenced a <strong>$30 million debt tied to "Lana aviation"</strong> and an <strong>active attorney general investigation</strong>. Mentioned in passing, almost as an afterthought — but this potentially represents the largest financial liability the city faces.</p>
         <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=12130" target="_blank">
           <span class="play-icon"></span> Watch on YouTube at 3:22:10
@@ -891,13 +788,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=11929" target="_blank" title="Watch on YouTube at 3:18:49">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 3:18:49 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=11929&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <p class="finding-prose">A council member stated that city staff members are <strong>"working two and three jobs"</strong> and that College Park employees can't afford to live in the city they serve. The employee at the center of the funeral payment was described as making <strong>less than $20/hour after 10+ years</strong> of service. The city is spending on questionable items while its workforce is in crisis.</p>
         <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=11929" target="_blank">
           <span class="play-icon"></span> Watch on YouTube at 3:18:49
@@ -918,13 +811,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=8369" target="_blank" title="Watch on YouTube at 2:19:29">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 2:19:29 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=8369&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <p class="finding-prose">The discussion revealed the city's bereavement/flower fund was budgeted at $80 per employee death, recently increased to cover up to $4,000. But the $2,995 funeral payment came from a <strong>different account entirely</strong> (contractual services). Council member McKenzie pressed: if there's a bereavement fund, why was the funeral paid from a different line item? This raises the question of <strong>how many other line items are being used for purposes they weren't budgeted for</strong>.</p>
         <a class="yt-link" href="https://www.youtube.com/live/wupGM588Gnk?t=8369" target="_blank">
           <span class="play-icon"></span> Watch on YouTube at 2:19:29
@@ -945,13 +834,9 @@
     </div>
     <div class="finding-body">
       <div class="finding-content">
-        <a class="video-thumb" href="https://www.youtube.com/live/wupGM588Gnk?t=10048" target="_blank" title="Watch on YouTube at 2:47:28">
-          <img src="https://img.youtube.com/vi/wupGM588Gnk/hqdefault.jpg" alt="Council meeting video">
-          <div class="thumb-overlay">
-            <div class="thumb-play"></div>
-            <span class="thumb-label">Watch at 2:47:28 on YouTube</span>
-          </div>
-        </a>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=10048&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
         <p class="finding-prose">Multiple council members used closing comments to characterize public criticism as "misinformation," "false stories," and "allegations presented as facts." The mayor referenced "an overload of false statements" and "the ordering of city property documents" — appearing to reference <strong>open records requests being used for accountability</strong>. This framing positions legitimate accountability mechanisms as attacks on the city.</p>
         <div class="finding-label">Why It Matters</div>
         <p class="finding-prose">When elected officials describe open records requests, public comment, and independent reporting as "misinformation" — without addressing the substance of the documented concerns — it tells you more about the officials than it does about the reporting.</p>
