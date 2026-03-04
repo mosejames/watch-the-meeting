@@ -3,104 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Council Watch — College Park, GA | March 2, 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Council Watch — College Park, GA</title>
 <style>
-:root{--cream:#f5f0ea;--cream-dark:#ebe5db;--cream-deep:#ddd6ca;--pink:#e84668;--navy:#1a2a40;--dark:#2c2c2c;--mid:#777;--white:#fff;--serif:'Libre Baskerville',Georgia,serif;--sans:'Source Sans 3',sans-serif;--mono:'JetBrains Mono',monospace}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:var(--sans);background:var(--cream);color:var(--dark);-webkit-font-smoothing:antialiased}
-.site-head{max-width:1100px;margin:0 auto;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:-0.02em}.logo span{color:var(--pink)}
-.head-links{display:flex;gap:1.2rem}.head-links a{font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none}.head-links a:hover{color:var(--pink)}
-.masthead{max-width:1100px;margin:0 auto;padding:.5rem 2rem 2rem;border-bottom:2px dotted var(--cream-deep);text-align:center}
-.masthead-label{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--pink);margin-bottom:.3rem}
-.masthead-date{font-family:var(--serif);font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:.8rem;letter-spacing:-.02em}
-.masthead h1{font-family:var(--serif);font-size:clamp(1rem,2.5vw,1.3rem);font-weight:400;color:var(--mid);line-height:1.5;max-width:550px;margin:0 auto .6rem}
-.masthead-meta{font-family:var(--mono);font-size:.55rem;color:var(--mid);letter-spacing:.06em}.masthead-meta a{color:var(--pink);text-decoration:none}
-.thumb{width:100%;aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1rem;text-align:center;position:relative;overflow:hidden;background-size:cover;background-position:center;border-radius:2px}
-.thumb::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55);z-index:1}
-.thumb-num{font-family:var(--mono);font-size:.5rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;position:absolute;top:.6rem;left:.7rem;opacity:.7;color:#fff;z-index:2}
-.thumb-time{font-family:var(--mono);font-size:.5rem;position:absolute;bottom:.5rem;right:.7rem;opacity:.7;color:#fff;z-index:2}
-.thumb-big{font-family:var(--serif);font-weight:700;line-height:1.15;text-transform:uppercase;letter-spacing:.02em;text-shadow:0 2px 8px rgba(0,0,0,.6);color:#fff;z-index:2;position:relative}
-.thumb-sub{font-family:var(--sans);font-size:.65rem;font-weight:600;margin-top:.4rem;opacity:.8;letter-spacing:.03em;color:#fff;z-index:2;position:relative;text-shadow:0 1px 4px rgba(0,0,0,.5)}
-.sec-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1rem;margin-top:2rem}.sec-row:first-child{margin-top:0}
-.sec-dot{width:20px;height:20px;border:2px dotted var(--cream-deep);position:relative;flex-shrink:0}
-.sec-dot::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);border-left:5px solid var(--navy);border-top:3px solid transparent;border-bottom:3px solid transparent}
-.sec-line{flex:1;border-top:2px dotted var(--cream-deep)}.sec-label{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--pink);white-space:nowrap}
-.paper{max-width:1100px;margin:0 auto;padding:2rem}
-.lead{display:grid;grid-template-columns:1fr 340px;gap:1.5rem;margin-bottom:1.5rem;cursor:pointer}.lead:hover .lead-title{color:var(--pink)}
-.lead-thumb .thumb{aspect-ratio:4/3}.lead-thumb .thumb-big{font-size:clamp(1.3rem,3vw,1.9rem)}
-.lead-title{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:.4rem;transition:color .2s}
-.lead-excerpt{font-size:.95rem;color:#555;line-height:1.7;margin-bottom:.5rem}.lead-time{font-family:var(--mono);font-size:.55rem;color:var(--mid)}
-.med-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:1.5rem}
-.med-card{cursor:pointer}.med-card:hover h4{color:var(--pink)}.med-card .thumb{aspect-ratio:16/10}.med-card .thumb-big{font-size:clamp(.85rem,2vw,1.1rem)}
-.med-card h4{font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--navy);line-height:1.35;margin-top:.6rem;transition:color .2s}
-.med-card .med-excerpt{font-size:.82rem;color:var(--mid);line-height:1.6;margin-top:.2rem}.med-card .med-time{font-family:var(--mono);font-size:.5rem;color:var(--cream-deep);margin-top:.3rem}
-.compact{display:grid;grid-template-columns:80px 1fr;gap:.8rem;padding:.8rem 0;border-bottom:1px solid var(--cream-dark);cursor:pointer;align-items:start}
-.compact:last-child{border-bottom:none}.compact:hover h5{color:var(--pink)}.compact .thumb{aspect-ratio:1/1}.compact .thumb-big{font-size:.8rem}
-.compact h5{font-family:var(--serif);font-size:.88rem;font-weight:700;color:var(--navy);line-height:1.35;transition:color .2s}
-.compact .c-excerpt{font-size:.8rem;color:var(--mid);line-height:1.5;margin-top:.1rem}.compact .c-time{font-family:var(--mono);font-size:.5rem;color:var(--cream-deep);margin-top:.2rem}
-.overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(26,42,64,.55);backdrop-filter:blur(4px);overflow-y:auto;padding:3rem 1rem}
-.overlay.show{display:flex;justify-content:center;align-items:flex-start}
-.overlay-card{background:var(--cream);max-width:720px;width:100%;padding:2rem;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.2)}
-.overlay-close{position:absolute;top:1rem;right:1rem;font-size:1.2rem;cursor:pointer;color:var(--mid);background:none;border:none;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%}.overlay-close:hover{background:var(--cream-dark);color:var(--dark)}
-.overlay-num{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:.4rem}
-.overlay-card h2{font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:.3rem}
-.overlay-time{font-family:var(--mono);font-size:.55rem;color:var(--mid);margin-bottom:1.2rem}
-.overlay-vid{position:relative;width:100%;padding-bottom:56.25%;background:var(--navy);margin-bottom:1.2rem}
-.overlay-vid iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.o-label{font-family:var(--mono);font-size:.5rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-top:1rem;margin-bottom:.3rem}
-.overlay-card p{font-size:.92rem;color:var(--dark);line-height:1.75;margin-bottom:.5rem}.overlay-card strong{color:var(--navy)}
-.o-pull{margin:1rem 0;padding:1rem 1.2rem;background:rgba(232,70,104,.06);border-left:3px solid var(--pink)}
-.o-pull-text{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--navy);line-height:1.5}
-.o-pull-attr{font-size:.75rem;color:var(--mid);margin-top:.4rem;font-weight:500}
-.o-yt{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;color:var(--pink);text-decoration:none;margin-top:.8rem}.o-yt:hover{text-decoration:underline}
-.o-yt-dot{width:14px;height:14px;background:var(--pink);border-radius:50%;display:inline-flex;align-items:center;justify-content:center}
-.o-yt-dot::after{content:'';border-left:5px solid #fff;border-top:3px solid transparent;border-bottom:3px solid transparent;margin-left:1px}
-.site-foot{max-width:1100px;margin:2rem auto 0;padding:2rem;border-top:2px dotted var(--cream-deep);text-align:center}
-.site-foot p{font-size:.82rem;color:var(--mid);margin-bottom:.4rem;line-height:1.6}.site-foot a{color:var(--pink);text-decoration:none}
-.foot-logo{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--navy);margin-top:1.2rem}.foot-logo span{color:var(--pink)}
-.foot-fine{font-family:var(--mono);font-size:.45rem;color:var(--cream-deep);letter-spacing:.1em;text-transform:uppercase;margin-top:.5rem}
-@media(max-width:800px){.lead{grid-template-columns:1fr}.med-grid{grid-template-columns:1fr 1fr}.paper{padding:1.2rem}}
-@media(max-width:550px){.med-grid{grid-template-columns:1fr}.site-head{padding:.8rem 1rem}.masthead{padding:.5rem 1rem 1.5rem}.overlay-card{padding:1.2rem}}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#0a0a0f; color:#e0e0e0; font-family:Georgia,'Times New Roman',serif; min-height:100vh; }
+.header { text-align:center; padding:3rem 1rem 2rem; border-bottom:1px solid rgba(255,255,255,0.08); }
+.logo { font-size:2.2rem; font-weight:700; letter-spacing:-0.5px; }
+.logo span { color:#c41e3a; }
+.tagline { color:#888; font-size:0.95rem; margin-top:0.5rem; font-style:italic; }
+.grid { max-width:1000px; margin:2rem auto; padding:0 1rem; display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:1.5rem; }
+.card { background:#12121a; border-radius:10px; overflow:hidden; text-decoration:none; color:inherit; transition:transform 0.2s, box-shadow 0.2s; border:1px solid rgba(255,255,255,0.06); }
+.card:hover { transform:translateY(-3px); box-shadow:0 8px 30px rgba(0,0,0,0.4); }
+.thumb { width:100%; height:180px; background-size:cover; background-position:center; }
+.card-body { padding:1rem 1.2rem 1.2rem; }
+.card-date { color:#c41e3a; font-size:0.8rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:0.4rem; }
+.card-title { font-size:1.05rem; line-height:1.4; }
+.empty { text-align:center; padding:4rem 1rem; color:#666; }
+.footer { text-align:center; padding:2rem; color:#444; font-size:0.8rem; margin-top:2rem; }
 </style>
 </head>
 <body>
-<header class="site-head"><a href="/" class="logo">Council<span>Watch</span></a><div class="head-links"><a href="https://www.youtube.com/live/wupGM588Gnk" target="_blank">Full Video</a><a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">Agenda</a></div></header>
-<div class="masthead"><div class="masthead-label">College Park City Council</div><div class="masthead-date">March 2, 2026</div><h1>14 findings from a single council meeting. Every one timestamped, sourced from the city's own video.</h1><div class="masthead-meta">Source: <a href="https://www.youtube.com/live/wupGM588Gnk" target="_blank">City of College Park Official YouTube</a> · 3.5-hour meeting</div></div>
-<div class="paper">
-<div class="sec-row"><div class="sec-dot"></div><span class="sec-label">Financial Violations</span><div class="sec-line"></div></div>
-<div class="lead" onclick="openCard('1e')"><div class="lead-thumb"><div class="thumb" style="background-image:url(img/1e-friend-rich.png)"><span class="thumb-num">1E</span><div class="thumb-big" style="font-size:clamp(1.3rem,3vw,1.9rem);text-transform:none">"IT AIN'T ILLEGAL<br>TO MAKE A<br>FRIEND RICH."</div><div class="thumb-sub">COUNCIL MEMBER GAY · CLOSING REMARKS</div><span class="thumb-time">3:26:37</span></div></div><div><div class="lead-title">"It Ain't Illegal to Make a Friend Rich"</div><div class="lead-excerpt">During closing remarks, Council Member Gay defended enriching personal friends through city business — on camera, after three hours of debating unauthorized spending. He also acknowledged: "We didn't get approval. The job is running."</div><div class="lead-time">3:26:37 – 3:27:55</div></div></div>
-<div class="med-grid">
-<div class="med-card" onclick="openCard('1a')"><div class="thumb" style="background-image:url(img/1a-funeral.png)"><span class="thumb-num">1A</span><div class="thumb-big" style="font-size:2.2rem">$2,995</div><div class="thumb-sub">PUBLIC FUNDS → PRIVATE FUNERAL</div><span class="thumb-time">2:09:53</span></div><h4>City Paid ~$3,000 for a Private Funeral Using Public Funds</h4><div class="med-excerpt">Confirmed illegal by the city attorney on the spot. Buried in a contractual services line item.</div><div class="med-time">2:09:53</div></div>
-<div class="med-card" onclick="openCard('1b')"><div class="thumb" style="background-image:url(img/1b-gift-cards.png)"><span class="thumb-num">1B</span><div class="thumb-big" style="font-size:1.8rem">$500<br>GIFT CARDS</div><div class="thumb-sub">NO PUBLIC PURPOSE DOCUMENTED</div><span class="thumb-time">2:40:24</span></div><h4>$500 Gift Cards, Personal Reimbursements on City Accounts</h4><div class="med-excerpt">The mayor raised documented concerns about spending with no explanation of public purpose.</div><div class="med-time">2:40:24</div></div>
-<div class="med-card" onclick="openCard('1c')"><div class="thumb" style="background-image:url(img/1c-10k-violation.png)"><span class="thumb-num">1C</span><div class="thumb-big" style="font-size:1.5rem">$10,000+<br>NO APPROVAL</div><div class="thumb-sub">EXCEEDED SPENDING AUTHORITY</div><span class="thumb-time">1:41:58</span></div><h4>City Manager Exceeded $10K Spending Authority</h4><div class="med-excerpt">Paid an engineering firm without approval, then asked council to ratify after the fact.</div><div class="med-time">1:41:58</div></div>
+<div class="header">
+  <div class="logo">Council<span>Watch</span></div>
+  <div class="tagline">Watching the meetings so you don't have to — College Park, GA</div>
 </div>
-<div class="compact" onclick="openCard('1d')"><div class="thumb" style="background-image:url(img/1d-overpayment.png)"><div class="thumb-big">$1,034</div></div><div><h5>$1,034.99 Overpayment — Found Through Open Records</h5><div class="c-excerpt">A four-figure error caught by citizens, not city auditors.</div><div class="c-time">3:06:18</div></div></div>
-<div class="sec-row"><div class="sec-dot"></div><span class="sec-label">Power Plays</span><div class="sec-line"></div></div>
-<div class="med-grid">
-<div class="med-card" onclick="openCard('2a')"><div class="thumb" style="background-image:url(img/2a-mayor-restrictions.png)"><span class="thumb-num">2A</span><div class="thumb-big" style="font-size:.95rem;text-transform:none">"NO OTHER PERSON<br>WHO'S EVER SAT<br>IN THIS CHAIR..."</div><span class="thumb-time">2:39:51</span></div><h4>Unprecedented Spending Restrictions on Mayor</h4><div class="med-excerpt">Rules imposed on one office. No other council member faces the same restrictions.</div><div class="med-time">2:39:51</div></div>
-<div class="med-card" onclick="openCard('2c')"><div class="thumb" style="background-image:url(img/2c-contracts.png)"><span class="thumb-num">2C</span><div class="thumb-big" style="font-size:.95rem">APPROVE FIRST,<br>ASK LATER</div><div class="thumb-sub">ADMITTED RECURRING PRACTICE</div><span class="thumb-time">0:47:23</span></div><h4>Contracts Executed Without Prior Approval</h4><div class="med-excerpt">The city manager enters contracts, then asks council for retroactive ratification.</div><div class="med-time">0:47:23</div></div>
-<div class="med-card" onclick="openCard('2d')"><div class="thumb" style="background-image:url(img/2d-city-manager-search.png)"><span class="thumb-num">2D</span><div class="thumb-big" style="font-size:2rem">3</div><div class="thumb-sub">CITY MANAGERS IN ONE YEAR</div><span class="thumb-time">0:51:11</span></div><h4>City Manager Search — Wrong Firm for the Job</h4><div class="med-excerpt">The search firm "does not recruit city managers." Is the process designed to produce a favored candidate?</div><div class="med-time">0:51:11</div></div>
+<div class="grid">
+
+        <a href="/meetings/2024-11-18/szlehD0eLgg/" class="card">
+          <div class="thumb" style="background-image:url('https://img.youtube.com/vi/szlehD0eLgg/hqdefault.jpg')"></div>
+          <div class="card-body">
+            <div class="card-date">2024-11-18</div>
+            <div class="card-title">City of College Park - City Council Meeting - November 17, 2025</div>
+          </div>
+        </a>
+        <a href="/meetings/2024-10-16/gUQfI0dFRno/" class="card">
+          <div class="thumb" style="background-image:url('https://img.youtube.com/vi/gUQfI0dFRno/hqdefault.jpg')"></div>
+          <div class="card-body">
+            <div class="card-date">2024-10-16</div>
+            <div class="card-title">City of College Park - City Council Work Shop  Meeting - October 6, 2025</div>
+          </div>
+        </a>
 </div>
-<div class="compact" onclick="openCard('2b')"><div class="thumb" style="background-image:url(img/2b-consent-agenda.png)"><div class="thumb-big" style="font-size:.6rem">CONSENT<br>AGENDA</div></div><div><h5>Consent Agenda Power Struggle</h5><div class="c-excerpt">A member tries to pull items for scrutiny. Another blocks it. Motion dies for lack of a second.</div><div class="c-time">0:11:01</div></div></div>
-<div class="sec-row"><div class="sec-dot"></div><span class="sec-label">Public Testimony</span><div class="sec-line"></div></div>
-<div class="med-grid" style="grid-template-columns:1fr 1fr">
-<div class="med-card" onclick="openCard('3a')"><div class="thumb" style="background-image:url(img/3a-resident-testimony.png)"><span class="thumb-num">3A</span><div class="thumb-big" style="font-size:.95rem">50+ EMPLOYEES.<br>3 CITY MANAGERS.<br>"WE HAVE RECEIPTS."</div><span class="thumb-time">0:46:35</span></div><h4>Resident Lays Out Procurement Corruption Pattern</h4><div class="med-excerpt">Point by point. No council member rebutted a single claim.</div><div class="med-time">0:46:35</div></div>
-<div class="med-card" onclick="openCard('3c')"><div class="thumb" style="background-image:url(img/3c-seniors-str.png)"><span class="thumb-num">3C</span><div class="thumb-big" style="font-size:.9rem">NO ORDINANCE.<br>BUT THEY<br>COLLECT FEES.</div><span class="thumb-time">1:07:01</span></div><h4>Seniors: No Short-Term Rental Ordinance, But City Collects Fees</h4><div class="med-excerpt">48-year residents testify about Airbnb nuisances. The zoning hearing was pulled from the agenda.</div><div class="med-time">1:07:01</div></div>
-</div>
-<div class="compact" onclick="openCard('3b')"><div class="thumb" style="background-image:url(img/3b-business-owner.png)"><div class="thumb-big" style="font-size:.55rem">INTEGRITY</div></div><div><h5>Business Owner Demands Transparent Governance Review</h5><div class="c-excerpt">"When there's confusion, people question the integrity of the process."</div><div class="c-time">1:01:34</div></div></div>
-<div class="sec-row"><div class="sec-dot"></div><span class="sec-label">Context</span><div class="sec-line"></div></div>
-<div class="compact" onclick="openCard('c1')"><div class="thumb" style="background-image:url(img/c1-airport-debt.png)"><div class="thumb-big" style="font-size:1rem">$30M</div></div><div><h5>$30 Million Airport Debt + Active AG Investigation</h5><div class="c-excerpt">Mentioned almost as an afterthought. Potentially the city's largest financial liability.</div><div class="c-time">3:22:10</div></div></div>
-<div class="compact" onclick="openCard('c2')"><div class="thumb" style="background-image:url(img/c2-staff-wages.png)"><div class="thumb-big" style="font-size:.8rem">&lt;$20/HR</div></div><div><h5>Staff Working 2–3 Jobs, Can't Afford to Live Here</h5><div class="c-excerpt">The employee at the center of the funeral payment: less than $20/hour after 10+ years.</div><div class="c-time">3:18:49</div></div></div>
-</div>
-<div class="overlay" id="overlay" onclick="if(event.target===this)closeCard()"><div class="overlay-card"><button class="overlay-close" onclick="closeCard()">✕</button><div id="overlay-content"></div></div></div>
-<footer class="site-foot"><p>Every moment above is from the <a href="https://www.youtube.com/live/wupGM588Gnk" target="_blank">official City of College Park council meeting video</a>. Click any story to verify.</p><p>Full agenda packets at <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">collegeparkga.gov</a>.</p><div class="foot-logo">Council<span>Watch</span></div><div class="foot-fine">College Park, Georgia · Published March 3, 2026</div></footer>
-<script>
-const F={"1e":{n:"1E",t:'"It Ain\'t Illegal to Make a Friend Rich"',tm:"3:26:37 – 3:27:55",yt:12397,b:'<div class="o-label">What Was Said</div><p>During closing remarks, Council Member Gay stated openly that <strong>"it ain\'t illegal to make a friend rich"</strong> and followed with: "If you do business with your friends, you do it with your friends." He also acknowledged: "We didn\'t get approval. The job is running."</p><div class="o-pull"><div class="o-pull-text">"It ain\'t illegal to make a friend rich and lovely enough to make you friendly. If you do business with your friends, you do it with your friends."</div><div class="o-pull-attr">Council Member Gay — closing remarks</div></div><div class="o-pull"><div class="o-pull-text">"We didn\'t get approval. The job is running."</div><div class="o-pull-attr">Council Member Gay — same remarks</div></div>'},"1a":{n:"1A",t:"City Paid ~$3,000 for a Private Funeral Using Public Funds",tm:"2:09:53 – 2:38:15",yt:7793,b:'<div class="o-label">What Happened</div><p>A council member discovered a <strong>$2,995 payment to "Atlanta Funeral Assistance, LLC"</strong> under contractual services. The interim city manager acknowledged authorizing it unilaterally. The city attorney confirmed on the record that <strong>public funds cannot be used for private charitable purposes</strong>.</p><div class="o-pull"><div class="o-pull-text">"We are paying for a funeral service, full stop, is an issue... We don\'t have the authority to do that with public money."</div><div class="o-pull-attr">City Attorney — on the record</div></div><div class="o-label">Why It Matters</div><p>Textbook misuse of public funds — confirmed by the city\'s own attorney in real time. Buried in a line item and never disclosed to council.</p>'},"1b":{n:"1B",t:"$500 Gift Cards, Personal Reimbursements on City Accounts",tm:"2:40:24 – 2:42:18",yt:9624,b:'<div class="o-pull"><div class="o-pull-text">"I raised documented concerns about reimbursements with little to no explanation of public purpose — $500 gift cards purchased, receipts submitted for personal reimbursement when they went on city accounts."</div><div class="o-pull-attr">Mayor — on the record</div></div>'},"1c":{n:"1C",t:"City Manager Exceeded $10,000 Spending Authority",tm:"1:41:58 – 1:54:14",yt:6118,b:'<p>The city paid in excess of <strong>$10,000 to engineering firm Grady</strong> without council approval — violating the city\'s own ordinance.</p><div class="o-pull"><div class="o-pull-text">"You\'re violating charter. That\'s wrong. You\'re violating the ordinance."</div><div class="o-pull-attr">Council Member — on the record</div></div>'},"1d":{n:"1D",t:"$1,034.99 Overpayment — Found Through Open Records",tm:"3:06:18 – 3:08:43",yt:11178,b:'<p><strong>$1,034.99 paid out</strong> due to a "finance error." Only surfaced through an open records request, not internal controls.</p>'},"2a":{n:"2A",t:"Unprecedented Spending Restrictions on Mayor's Office",tm:"2:39:51 – 2:41:49",yt:9591,b:'<p>The council voted to restrict the mayor\'s spending — after she raised concerns about theirs.</p><div class="o-pull"><div class="o-pull-text">"No other person who\'s ever sat in this chair has ever faced any restrictions that no other member of this body is subject to."</div><div class="o-pull-attr">Mayor — on the record</div></div><div class="o-pull"><div class="o-pull-text">"I will object to selective accountability — rules for one office while the spending of others goes unexamined."</div><div class="o-pull-attr">Mayor — same exchange</div></div>'},"2b":{n:"2B",t:"Consent Agenda Power Struggle",tm:"0:11:01 – 0:18:04",yt:661,b:'<p>The meeting opened with a procedural fight. A member cited Robert\'s Rules to move items off the consent agenda. Another tried to block it. That motion <strong>died for lack of a second</strong>.</p>'},"2c":{n:"2C",t:"Contracts Executed Without Prior Approval",tm:"0:47:23 – 0:51:50",yt:2843,b:'<div class="o-pull"><div class="o-pull-text">"We can\'t allow the city manager to unilaterally make decisions. It takes us out of the process — the delegated process."</div><div class="o-pull-attr">Council Member — on the record</div></div>'},"2d":{n:"2D",t:"City Manager Search — Wrong Firm for the Job",tm:"0:51:11",yt:3071,b:'<p><strong>Three city managers in the past year.</strong> The firm hired for the new search "does not recruit city managers."</p>'},"3a":{n:"3A",t:"Resident Lays Out Procurement Corruption Pattern",tm:"0:46:35 – 0:52:13",yt:2795,b:'<p>Point by point: <strong>three city managers in a year. 50+ employees gone.</strong> Gift cards with no public purpose. <strong>No council member rebutted a single point.</strong></p>'},"3b":{n:"3B",t:"Business Owner Demands Transparent Governance Review",tm:"1:01:34 – 1:03:59",yt:3694,b:'<div class="o-pull"><div class="o-pull-text">"When leaders are not aligned, the community will distrust its ability to lead. And when there\'s confusion, people question the integrity of the process."</div><div class="o-pull-attr">Business owner — public comment</div></div>'},"3c":{n:"3C",t:"Seniors: No Ordinance Exists, But City Collects Fees",tm:"1:07:01 – 1:19:41",yt:4021,b:'<p>Residents who have lived here <strong>48 years</strong> testified about Airbnb nuisances. College Park has <strong>no short-term rental ordinance</strong> despite collecting fees. The zoning hearing was <strong>pulled from the agenda</strong>.</p>'},"c1":{n:"C1",t:"$30 Million Airport Debt + Active AG Investigation",tm:"3:22:10",yt:12130,b:'<p>A council member casually referenced <strong>$30 million in debt tied to "Lana aviation"</strong> and an <strong>active attorney general investigation</strong>.</p>'},"c2":{n:"C2",t:"Staff Working 2–3 Jobs, Can't Afford to Live Here",tm:"3:18:49",yt:11929,b:'<p>City staff are <strong>"working two and three jobs."</strong> The employee at the center of the funeral payment: <strong>less than $20/hour after 10+ years</strong>.</p>'}};
-function openCard(id){const f=F[id];if(!f)return;document.getElementById('overlay-content').innerHTML=`<div class="overlay-num">${f.n}</div><h2>${f.t}</h2><div class="overlay-time">${f.tm}</div><div class="overlay-vid"><iframe src="https://www.youtube.com/embed/wupGM588Gnk?start=${f.yt}&rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div>${f.b}<a class="o-yt" href="https://www.youtube.com/live/wupGM588Gnk?t=${f.yt}" target="_blank"><span class="o-yt-dot"></span> Watch on YouTube</a>`;document.getElementById('overlay').classList.add('show');document.body.style.overflow='hidden'}
-function closeCard(){document.getElementById('overlay').classList.remove('show');document.body.style.overflow='';document.getElementById('overlay-content').innerHTML=''}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCard()});
-</script>
+<div class="footer">CouncilWatch.app — Civic accountability through transparency</div>
 </body>
 </html>
