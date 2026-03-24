@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Council Watch &mdash; College Park, GA | March 18, 2026</title>
+<meta name="description" content="22 key moments from the March 18, 2026 College Park City Council meeting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f8f7f4;
+  --card-bg:#fff;
+  --text:#373330;
+  --text-light:#6b6459;
+  --headline:#1a1a1a;
+  --border:#e0ddd7;
+  --border-light:#ebe8e3;
+  --maroon:#82263C;
+  --gold:#897240;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+
+/* ── Header ── */
+.header{
+  max-width:1100px;margin:0 auto;padding:2rem 2rem 1.5rem;
+  display:flex;align-items:baseline;justify-content:space-between;
+  border-bottom:2px solid var(--maroon)
+}
+.logo{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--headline);text-decoration:none;letter-spacing:-.02em}
+.logo span{color:var(--maroon)}
+.header-links{display:flex;gap:1.5rem}
+.header-links a{
+  font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--maroon);text-decoration:none
+}
+.header-links a:hover{text-decoration:underline}
+
+/* ── Meeting info bar ── */
+.meeting-bar{
+  max-width:1100px;margin:0 auto;padding:1rem 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--border)
+}
+.meeting-info{font-family:var(--mono);font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.meeting-count{font-family:var(--mono);font-size:.65rem;color:var(--text-light)}
+
+/* ── Lead Story ── */
+.lead-story{
+  max-width:1100px;margin:0 auto;padding:3rem 2rem;
+  border-bottom:1px solid var(--border);cursor:pointer;
+  transition:background .2s ease
+}
+.lead-story:hover{background:rgba(130,38,60,.02)}
+.lead-meta{display:flex;align-items:center;gap:.5rem;margin-bottom:1.25rem}
+.cat-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.cat-label{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light)}
+.meta-sep{color:var(--border);font-size:.8rem}
+.meta-time{font-family:var(--mono);font-size:.6rem;color:var(--text-light)}
+.lead-headline{
+  font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;
+  line-height:1.2;letter-spacing:-.02em;color:var(--headline);
+  max-width:900px;margin-bottom:1.5rem
+}
+.lead-quote{
+  max-width:750px;margin:0 0 1.5rem;padding:1.25rem 0 1.25rem 1.5rem;
+  border-left:4px solid var(--maroon)
+}
+.lead-quote p{
+  font-family:var(--serif);font-style:italic;font-size:clamp(1rem,2vw,1.3rem);
+  font-weight:500;line-height:1.6;color:var(--text)
+}
+.lead-quote cite{
+  display:block;font-family:var(--sans);font-style:normal;font-size:.8rem;
+  font-weight:600;color:var(--maroon);margin-top:.75rem;letter-spacing:.02em
+}
+.lead-teaser{font-size:1.05rem;line-height:1.8;color:var(--text-light);max-width:750px}
+
+/* ── Briefing ── */
+.briefing{
+  max-width:1100px;margin:0 auto;padding:2rem 2rem;
+  border-bottom:1px solid var(--border)
+}
+.briefing-label{
+  font-family:var(--mono);font-size:.6rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem
+}
+.briefing-text{font-family:var(--serif);font-size:1rem;line-height:1.8;color:var(--text);max-width:750px}
+
+/* ── Card Grid ── */
+.grid-section{max-width:1100px;margin:0 auto;padding:2rem 2rem 3rem}
+.grid-label{
+  font-family:var(--mono);font-size:.6rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)
+}
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1.25rem
+}
+
+/* ── Cards ── */
+.card{
+  background:var(--card-bg);cursor:pointer;overflow:hidden;position:relative;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+  transition:transform .2s ease,box-shadow .2s ease
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.card-border{height:3px;width:100%}
+.card-inner{padding:1.25rem 1.25rem 1rem}
+.card-meta{display:flex;align-items:center;gap:.4rem;margin-bottom:.75rem}
+
+/* Featured cards: span 2 columns */
+.card-featured{grid-column:span 2}
+.card-featured .card-title{font-size:1.3rem;margin-bottom:.6rem}
+.card-featured .card-teaser{font-size:.88rem}
+
+/* Standard cards */
+.card-standard .card-title{font-size:1.05rem;margin-bottom:.5rem}
+.card-standard .card-teaser{font-size:.82rem}
+
+/* Compact cards */
+.card-compact .card-title{font-size:.95rem;margin-bottom:.35rem}
+.card-compact .card-teaser{font-size:.78rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-compact .card-inner{padding:1rem}
+
+.card-title{font-family:var(--serif);font-weight:700;line-height:1.3;color:var(--headline)}
+.card-quote{
+  font-family:var(--serif);font-style:italic;font-size:.88rem;line-height:1.5;
+  color:var(--text);padding:.75rem 0 .75rem 1rem;
+  border-left:3px solid var(--maroon);margin-bottom:.6rem
+}
+.card-teaser{line-height:1.6;color:var(--text-light)}
+.card-time{
+  display:block;font-family:var(--mono);font-size:.6rem;color:var(--text-light);
+  margin-top:.75rem;opacity:.6
+}
+
+/* ── Overlay ── */
+.overlay{
+  display:none;position:fixed;inset:0;z-index:1000;
+  background:rgba(55,51,48,.4);backdrop-filter:blur(6px);
+  overflow-y:auto;padding:3rem 1rem
+}
+.overlay.show{display:flex;justify-content:center;align-items:flex-start;animation:fadeIn .2s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.overlay-card{
+  background:#fff;max-width:720px;width:100%;overflow:hidden;position:relative;
+  box-shadow:0 20px 50px rgba(0,0,0,.15);animation:slideUp .25s ease
+}
+@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+.overlay-rule{height:3px;width:100%;background:var(--maroon)}
+.overlay-body{padding:2rem;position:relative}
+.overlay-close{
+  position:absolute;top:1.25rem;right:1.25rem;font-size:.85rem;cursor:pointer;
+  color:var(--text-light);background:none;border:1px solid var(--border);
+  width:32px;height:32px;display:flex;align-items:center;justify-content:center;
+  z-index:2;transition:border-color .2s ease,color .2s ease
+}
+.overlay-close:hover{border-color:var(--maroon);color:var(--maroon)}
+.overlay-cat{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
+.overlay-card h2{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--headline);line-height:1.3;margin-bottom:.4rem}
+.overlay-time{font-family:var(--mono);font-size:.65rem;color:var(--text-light);margin-bottom:1.5rem}
+.overlay-vid{position:relative;width:100%;padding-bottom:56.25%;background:#111;overflow:hidden;margin-bottom:1.5rem}
+.overlay-vid iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.o-label{
+  font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--gold);margin-top:1.25rem;margin-bottom:.4rem
+}
+.overlay-body p{font-size:.95rem;line-height:1.75;color:var(--text);margin-bottom:.5rem}
+.o-quote{
+  margin:1.25rem 0;padding:1rem 0 1rem 1.25rem;
+  border-left:4px solid var(--maroon);
+}
+.o-quote-text{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--text);line-height:1.6}
+.o-quote-attr{font-size:.8rem;color:var(--maroon);font-weight:600;margin-top:.5rem}
+.o-vote{margin-top:1rem;padding:.6rem 1rem;background:var(--bg);font-size:.85rem;font-weight:500}
+.o-vote-label{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light);margin-right:.5rem}
+.o-yt-link{
+  display:inline-flex;align-items:center;gap:.4rem;margin-top:1.5rem;
+  font-size:.85rem;font-weight:600;color:var(--maroon);text-decoration:none
+}
+.o-yt-link:hover{text-decoration:underline}
+
+/* ── Footer ── */
+.footer{
+  max-width:1100px;margin:0 auto;padding:2rem;
+  border-top:2px solid var(--maroon);text-align:center
+}
+.footer p{font-size:.82rem;color:var(--text-light);line-height:1.7;margin-bottom:.3rem}
+.footer a{color:var(--maroon);text-decoration:none}
+.footer a:hover{text-decoration:underline}
+.foot-logo{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--headline);margin-top:1.25rem}
+.foot-logo span{color:var(--maroon)}
+.foot-fine{font-family:var(--mono);font-size:.55rem;color:var(--text-light);letter-spacing:.08em;margin-top:.4rem}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .card-grid{grid-template-columns:repeat(2,1fr)}
+  .card-featured{grid-column:span 2}
+}
+@media(max-width:600px){
+  .card-grid{grid-template-columns:1fr}
+  .card-featured{grid-column:span 1}
+  .header{padding:1.25rem 1rem;flex-direction:column;gap:.75rem;align-items:flex-start}
+  .meeting-bar{padding:.75rem 1rem;flex-direction:column;gap:.25rem;align-items:flex-start}
+  .lead-story{padding:2rem 1rem}
+  .lead-headline{font-size:1.5rem}
+  .briefing{padding:1.5rem 1rem}
+  .grid-section{padding:1.5rem 1rem 2rem}
+  .overlay{padding:1rem .5rem}
+  .overlay-body{padding:1.25rem}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="/" class="logo">Council<span>Watch</span></a>
+  <nav class="header-links">
+    <a href="https://www.youtube.com/live/AWJmXB6IoR8" target="_blank">&#9654; Full Video</a>
+    <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">Agenda</a>
+  </nav>
+</header>
+
+<div class="meeting-bar">
+  <div class="meeting-info">College Park City Council &middot; March 18, 2026</div>
+  <div class="meeting-count">22 findings</div>
+</div>
+
+<section class="lead-story" onclick="openCard('21a')">
+  <div class="lead-meta">
+    <span class="cat-dot" style="background:#82263C"></span>
+    <span class="cat-label">Financial Scandal</span>
+    <span class="meta-sep">&middot;</span>
+    <span class="meta-time">2:12:11</span>
+  </div>
+  <h2 class="lead-headline">'Special Place in Hell' Quote Ends Women's History Month</h2>
+  <blockquote class="lead-quote">
+  <p>&ldquo;There is a special place in hell for women who don't help other women.&rdquo;</p>
+  <cite>&mdash; Councilwoman Tracy Arnold, quoting Madeleine Albright</cite>
+</blockquote>
+  <p class="lead-teaser">Arnold invokes Madeleine Albright quote about women supporting women amid council tensions</p>
+</section>
+
+<section class="briefing">
+  <div class="briefing-label">Meeting Briefing</div>
+  <p class="briefing-text">What started as a routine council meeting devolved into pure chaos when legal challenges to a $4.7 million roof repair contract exposed deep dysfunction. City Attorney Denmark warned the emergency procurement violated state bidding laws, triggering a heated 30-minute debate over whether the city was breaking the law. Meanwhile, Councilman Gay — who wasn't even present — issued a bombshell statement alleging harassment, retaliation, and a 'block voting structure' controlling city business, while threatening legal action over everything from employee terminations to a disputed $631,000 real estate payment. The meeting featured residents begging officials to stop the negative press, a mother furious about her child being used in political attacks, and rubber-stamped spending that totaled over $8 million with minimal discussion.</p>
+</section>
+
+<section class="grid-section">
+  <div class="grid-label">All Findings</div>
+  <div class="card-grid">
+<article class="card card-featured" onclick="openCard('1a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Financial Scandal</span>
+    </div>
+    <h3 class="card-title">City Attorney: $4.7M Roof Bid Violates State Law</h3>
+    <div class="card-quote">&ldquo;we cannot call something that we've known about for years an emergency. Uh it may it may be and our policy even says that um you know the fact that we haven't planned or...&rdquo;</div>
+    <p class="card-teaser">Legal counsel warns council they're about to break Georgia procurement law on massive construction contract</p>
+    <span class="card-time">0:37:28</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('2a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Financial Scandal</span>
+    </div>
+    <h3 class="card-title">Gay Issues Bombshell Harassment Allegations in Absentia</h3>
+    <div class="card-quote">&ldquo;After nearly 10 years of service, I have never witnessed this level of coordinated action that undermines transparency and accountability&rdquo;</div>
+    <p class="card-teaser">Missing councilman's statement alleges 'coordinated action that undermines transparency and accountability'</p>
+    <span class="card-time">2:16:28</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('3a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Financial Scandal</span>
+    </div>
+    <h3 class="card-title">Mother Blasts City Over Child Used as Political 'Clickbait'</h3>
+    <div class="card-quote">&ldquo;it's fair to ask whether this is truly independent commentary or part of a broader city or college park connected effort to shape, direct, or amplify the response to private...&rdquo;</div>
+    <p class="card-teaser">Dr. James accuses city-connected Facebook admins of dragging her child into political attacks</p>
+    <span class="card-time">0:19:25</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('4a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Financial Scandal</span>
+    </div>
+    <h3 class="card-title">City Spent $67,000 Refunding Arena Clients Due to Roof Leaks</h3>
+    <div class="card-quote">&ldquo;just spent over $67,000 in giving back refunds to our clients&rdquo;</div>
+    <p class="card-teaser">GICC executive reveals massive revenue loss from deteriorating facility conditions</p>
+    <span class="card-time">1:04:38</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('5a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Financial Scandal</span>
+    </div>
+    <h3 class="card-title">$8+ Million Approved With Minimal Council Discussion</h3>
+    <div class="card-quote">&ldquo;Motion. Thank you, Council Member Car. Is there a second? Second. Thank you, Council Member Arnold. Any discussion hearing? None. We'll move to a vote. All those in favor? I I...&rdquo;</div>
+    <p class="card-teaser">Major spending items rubber-stamped through regular session in under 10 minutes</p>
+    <span class="card-time">0:43:20</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('6a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Resident: 'We Are Absolutely Exhausted From Negative Press'</h3>
+    <div class="card-quote">&ldquo;We are absolutely exhausted from the negative press and the behavior of adults that we elected to serve. We're exhausted.&rdquo;</div>
+    <p class="card-teaser">Tanya Austin pleads with officials to stop embarrassing College Park with their behavior</p>
+    <span class="card-time">0:24:09</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('7a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Alcohol Ordinance Dies for Lack of Second</h3>
+    <div class="card-quote">&ldquo;That's not businessfriendly. That's not that's not fair to the people who have invested in this community.&rdquo;</div>
+    <p class="card-teaser">Business-killing ordinance would allow three daily violations to shut down liquor stores</p>
+    <span class="card-time">0:46:55</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('8a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">McKenzie Spending Controversy Reaches Evening News</h3>
+    <div class="card-quote">&ldquo;If I can't spend $15,000 to celebrate the people of the city of College Park in the amazing work that we have done, shame on me.&rdquo;</div>
+    <p class="card-teaser">Councilwoman confirms her Ward 1 spending was featured on 6 o'clock news broadcast</p>
+    <span class="card-time">1:41:36</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('9a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Council Strips Planning Commission Authority Over Public Land</h3>
+    <div class="card-quote">&ldquo;This next one will remove opportunities from the planning commission to do to work on public land.&rdquo;</div>
+    <p class="card-teaser">Mayor warns ordinance change removes oversight opportunities from planning board</p>
+    <span class="card-time">0:45:55</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('10a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Resident Calls Out 'Ego Clashing' and Unprofessional Behavior</h3>
+    <div class="card-quote">&ldquo;I've never seen such behavior outward. Now, they may have did it in the back room, but when they came before the public, they conducted themselves with dignity, respect for...&rdquo;</div>
+    <p class="card-teaser">Larry Brady Evans says he's 'never seen such behavior' from College Park officials</p>
+    <span class="card-time">0:34:19</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('11a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Financial Scandal</span>
+    </div>
+    <h3 class="card-title">City Manager Demands 'Same Energy' From Attorney</h3>
+    <div class="card-quote">&ldquo;I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before that we didn't get any kind of effort, memos,...&rdquo;</div>
+    <p class="card-teaser">Hicks publicly calls out lawyer for selective enforcement of procurement rules</p>
+    <span class="card-time">1:31:09</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('12a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Mayor and Council Member Clash Over Meeting Protocol</h3>
+    <div class="card-quote">&ldquo;Council member, I would ask that we we maintain civility here.&rdquo;</div>
+    <p class="card-teaser">Heated exchange over who can direct questions to staff during official proceedings</p>
+    <span class="card-time">0:54:41</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('13a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Council Sets 50-60% Reserve Fund Target</h3>
+    <div class="card-quote">&ldquo;the minimum fund balance would be at 50%. However, we will set a goal for 60% fund balance reserve&rdquo;</div>
+    <p class="card-teaser">New policy requires massive cash reserves far exceeding typical municipal standards</p>
+    <span class="card-time">0:51:37</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('14a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Gay Alleges $631K Chelsea Gardens Payment Still Unresolved</h3>
+    <div class="card-quote">&ldquo;concerns regarding prior administrative actions involving the Chelsea Gardens property, including code enforcement activity, tenant displacement under condemnation, and a...&rdquo;</div>
+    <p class="card-teaser">Absent councilman raises explosive questions about disputed real estate agent payment</p>
+    <span class="card-time">2:18:34</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('15a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Youth Praise Council for $106,000 in Approved Funding</h3>
+    <div class="card-quote">&ldquo;I just like to thank you all for investing in the youth and allowing the youth to make an impact in the city.&rdquo;</div>
+    <p class="card-teaser">Youth council president thanks officials for DC trip and civic initiative funding</p>
+    <span class="card-time">0:27:25</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('16a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Multiple Residents Support Main Street Lane Reduction</h3>
+    <div class="card-quote">&ldquo;He has a vision, a vision of the city becoming a model city in the south. and he too is demonstrating his love and work and how it can benefit all citizens&rdquo;</div>
+    <p class="card-teaser">Business owners and residents back John Duke's proposal to reconfigure US 29 corridor</p>
+    <span class="card-time">0:28:26</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('17a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Council Approves Unanimous Voting Requirement for Major Financial Actions</h3>
+    <div class="card-quote">&ldquo;Motion. Thank you, Council Member Korn. Is there a second? Second. Thank you, Council Member Mackenzie. Any discussion? Hearing none, we'll move to a vote. All those in favor?...&rdquo;</div>
+    <p class="card-teaser">New ordinance requires all council members to agree on significant spending decisions</p>
+    <span class="card-time">0:52:39</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('18a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Gay Alleges Employee Firings Over Refusing 'Improper Actions'</h3>
+    <div class="card-quote">&ldquo;concerns regarding the termination of former employees, including Lindell Miller and former purchasing manager Jerel Jones, who he states refused to participate in actions they...&rdquo;</div>
+    <p class="card-teaser">Missing councilman claims former employees were terminated for ethical stands</p>
+    <span class="card-time">2:18:34</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('19a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Police Make $24,000 Fentanyl Bust With Nine Arrests</h3>
+    <div class="card-quote">&ldquo;I have to give a big shout out to Charus McCra and the entire police department in the city of College Park for making that phenomenal $24,000 fentinel bust and having nine...&rdquo;</div>
+    <p class="card-teaser">McKenzie praises major drug seizure as 'the kind of news we need to have in this city'</p>
+    <span class="card-time">1:47:23</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('20a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">City Manager Reveals Power Department Serves Major Data Center</h3>
+    <div class="card-quote">&ldquo;Our largest customer located on Garby Road is the Clean Spark Data Center. We have been serving them since 2018 and they consume as much power as the rest of the city.&rdquo;</div>
+    <p class="card-teaser">Clean Spark facility consumes as much electricity as rest of entire city combined</p>
+    <span class="card-time">2:15:21</span>
+  </div>
+</article>
+<article class="card card-featured" onclick="openCard('22a')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">City Attorney Promises More Legislation to Address 'Organizational Weakness'</h3>
+    <div class="card-quote">&ldquo;sometimes when I identify areas of organizational weakness or ways that we can improve, I reluctantly draft proposed legislation for your review and consideration&rdquo;</div>
+    <p class="card-teaser">Denmark warns he's drafting measures to fix personnel and agenda-setting problems</p>
+    <span class="card-time">1:30:04</span>
+  </div>
+</article>
+  </div>
+</section>
+
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeCard()">
+  <div class="overlay-card" id="overlay-content"></div>
+</div>
+
+<footer class="footer">
+  <p>Every finding is sourced from the <a href="https://www.youtube.com/live/AWJmXB6IoR8" target="_blank">official council meeting video</a>. Click any story to verify.</p>
+  <p>Full agenda packets at <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">collegeparkga.gov</a>.</p>
+  <div class="foot-logo">Council<span>Watch</span></div>
+  <div class="foot-fine">College Park, Georgia &middot; Published March 24, 2026</div>
+</footer>
+
+<script>
+const F={"1a":{"n": "1A", "t": "City Attorney: $4.7M Roof Bid Violates State Law", "tm": "0:37:28 &ndash; 1:02:00", "yt": 2248, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>City Attorney Denmark issued a formal legal opinion stating the $4.7 million GICC roof repair violated state bidding requirements. The project was originally bid publicly in November but then pivoted to a cooperative agreement through Omnia Partners to avoid competitive bidding. Denmark warned this constituted a 'huge construction project' that state law requires be bid publicly for anything over $250,000.</p><div class=\"o-label\">Why It Matters</div><p>This is exactly how municipalities get sued and investigated. The attorney explicitly warned council members they could face legal challenges, noting 'governments are sued often because of procurement issues' and people might be 'motivated given this dollar amount' to file bid protests.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;we cannot call something that we've known about for years an emergency. Uh it may it may be and our policy even says that um you know the fact that we haven't planned or budgeted or we've delayed um um um repairs or our administrative lag in our own process. Those things are real, but those things don't constitute an emergency.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Attorney Winston Denmark</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed 4-0 with conditions after 30-minute debate</div>"},"2a":{"n": "2A", "t": "Gay Issues Bombshell Harassment Allegations in Absentia", "tm": "2:16:28 &ndash; 2:20:07", "yt": 8188, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Rodrik Gay issued a formal statement read into the record alleging harassment, intimidation, and threats by fellow council members. He claimed three members formed a 'block voting structure' to control city business and avoid accountability. Gay admits using the phrase 'take him out' in executive session, which prompted a police complaint, though he claims it was meant 'professionally.' He's now consulting legal counsel.</p><div class=\"o-label\">Why It Matters</div><p>A sitting council member is essentially accusing his colleagues of conspiracy and retaliation while threatening lawsuits. Gay also raised explosive allegations about the disputed $631,000 Chelsea Gardens payment and firings of employees who 'refused to participate in actions they believed to be improper.' This signals potential federal investigation territory.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;After nearly 10 years of service, I have never witnessed this level of coordinated action that undermines transparency and accountability&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Rodrik Gay (statement read in absentia)</div></div>"},"3a":{"n": "3A", "t": "Mother Blasts City Over Child Used as Political 'Clickbait'", "tm": "0:19:25 &ndash; 0:23:02", "yt": 1165, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Dr. Shakita James confronted council about her child's name and AI-generated image being used in political Facebook posts by people connected to the city. She revealed that Facebook page administrators who allow children to be 'dragged' also 'do business with the city of College Park' and one 'actively receives payment from the city' for services. She questioned whether official city responses to private citizen posts represent 'independent commentary or part of a broader city connected effort.'</p><div class=\"o-label\">Why It Matters</div><p>This suggests city officials or contractors may be using public resources and influence to retaliate against critics by targeting their families. When taxpayer-funded vendors are attacking residents' children on social media, that crosses every ethical line and potentially violates free speech protections.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;it's fair to ask whether this is truly independent commentary or part of a broader city or college park connected effort to shape, direct, or amplify the response to private citizen commentary&rdquo;</div><div class=\"o-quote-attr\">&mdash; Dr. Shakita James</div></div>"},"4a":{"n": "4A", "t": "City Spent $67,000 Refunding Arena Clients Due to Roof Leaks", "tm": "1:04:38 &ndash; 1:05:08", "yt": 3878, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>GICC Executive Director Giannis Barner revealed the city 'just spent over $67,000 in giving back refunds to our clients' due to roof leaks at the convention center. The facility has 'multiple major leaks throughout different areas of the building' and the 'roofing condition is getting worse' as they head into the busy spring season.</p><div class=\"o-label\">Why It Matters</div><p>The city is hemorrhaging revenue from a flagship facility while council debates procurement procedures. This $67,000 loss \u2014 on top of the $4.7 million repair cost \u2014 shows the real price of deferred maintenance. When your convention center can't keep water out, you're not just fixing a roof, you're saving a business.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;just spent over $67,000 in giving back refunds to our clients&rdquo;</div><div class=\"o-quote-attr\">&mdash; Giannis Barner, Executive Director GICC</div></div>"},"5a":{"n": "5A", "t": "$8+ Million Approved With Minimal Council Discussion", "tm": "0:43:20 &ndash; 0:53:09", "yt": 2600, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Council approved $2.5 million for hospitality fund projects, $1.165 million for Godby Road Park phase one, $4.767 million for roof services, plus smaller items totaling over $8 million in spending. Most items passed unanimously with zero discussion beyond 'Motion, second, all in favor.' The largest expenditures got less debate than the pledge of allegiance.</p><div class=\"o-label\">Why It Matters</div><p>This is how cities spend themselves into trouble. When $2.5 million passes without a single question about what projects it funds, that's not governance \u2014 it's a rubber stamp factory. Residents have no idea what their money is being spent on because council doesn't bother to discuss it publicly.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Motion. Thank you, Council Member Car. Is there a second? Second. Thank you, Council Member Arnold. Any discussion hearing? None. We'll move to a vote. All those in favor? I I that is unanimous.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Broom (typical exchange for $2.5M expenditure)</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> All items passed unanimously</div>"},"6a":{"n": "6A", "t": "Resident: 'We Are Absolutely Exhausted From Negative Press'", "tm": "0:24:09 &ndash; 0:26:53", "yt": 1449, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Resident Tanya Austin, wearing an 'Integrity Matters' shirt, delivered an emotional plea about the city's reputation. She told council 'We are absolutely exhausted from the negative press and the behavior of adults that we elected to serve' and asked what their legacy would be. Austin warned that 'the nation, the state, the county, and the city of College Park is in need of leaders that represent integrity.'</p><div class=\"o-label\">Why It Matters</div><p>When residents are begging elected officials to stop embarrassing them, that's a governance crisis. Austin's comment about being exhausted from negative press shows how the dysfunction is affecting ordinary citizens who just want competent leadership.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;We are absolutely exhausted from the negative press and the behavior of adults that we elected to serve. We're exhausted.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Tanya Austin, resident</div></div>"},"7a":{"n": "7A", "t": "Alcohol Ordinance Dies for Lack of Second", "tm": "0:46:55 &ndash; 0:50:34", "yt": 2815, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>An ordinance to revise alcoholic beverage violations died when no council member would second Councilman Karn's motion. Mayor Pro Tem Karn warned the ordinance was 'not business-friendly' because it would allow stores to be shut down after three violations in three days, with each day's citations starting fresh. He noted 'someone could come in on Monday, Tuesday, and Wednesday and issue the same citation. And that third violation means that that person loses their license.'</p><div class=\"o-label\">Why It Matters</div><p>When even the sponsor of an item can't get a second, that's a dead giveaway the ordinance is fundamentally flawed. Karn's warning about businesses getting 'cited on Monday, Tuesday, and Wednesday' and losing their license shows how poorly drafted this was.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;That's not businessfriendly. That's not that's not fair to the people who have invested in this community.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Pro Tem Joe Karn</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Motion died for lack of a second</div>"},"8a":{"n": "8A", "t": "McKenzie Spending Controversy Reaches Evening News", "tm": "1:41:36 &ndash; 1:42:42", "yt": 6096, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman McKenzie confirmed College Park 'was on the news again at 6:00' regarding her state of the ward spending. She revealed the mayor 'did an open records request' for her February expenses and 'shared it with community members' who were left to 'figure out what was spent on the state of the ward.' McKenzie defended spending 'less than $15,000' on an event with over 200 attendees including high-profile officials.</p><div class=\"o-label\">Why It Matters</div><p>When ward spending makes the evening news, that's a political crisis. The fact that McKenzie had to defend her expenditures on television suggests either the spending was inappropriate or the mayor's handling of it was retaliatory \u2014 neither is good governance.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;If I can't spend $15,000 to celebrate the people of the city of College Park in the amazing work that we have done, shame on me.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Dr. Jamal McKenzie</div></div>"},"9a":{"n": "9A", "t": "Council Strips Planning Commission Authority Over Public Land", "tm": "0:45:55 &ndash; 0:46:25", "yt": 2755, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Mayor Broom warned before the vote on subdivision ordinance revisions that 'this next one will remove opportunities from the planning commission to do to work on public land.' She noted 'we may see the genesis of this with the Bill Evans Park project.' The ordinance passed unanimously despite the warning about removing oversight.</p><div class=\"o-label\">Why It Matters</div><p>Removing the planning commission from public land decisions eliminates a layer of public oversight and community input. When you strip independent boards of their authority, you concentrate more power in the hands of council \u2014 exactly the kind of power consolidation residents should worry about.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;This next one will remove opportunities from the planning commission to do to work on public land.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Bianca Motley Broom</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"10a":{"n": "10A", "t": "Resident Calls Out 'Ego Clashing' and Unprofessional Behavior", "tm": "0:34:19 &ndash; 0:36:58", "yt": 2059, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Longtime resident Larry Brady Evans told council 'I see a lot of egos that's clashing and it don't help because from what I hear from the city, they're not happy with the way things are going.' The 1959-born resident said he's 'never seen such behavior outward' and noted that previous officials 'may have did it in the back room, but when they came before the public, they conducted themselves with dignity, respect for each other.'</p><div class=\"o-label\">Why It Matters</div><p>When a lifelong resident who's seen decades of city government says the current behavior is unprecedented, that's damning testimony. His observation that past councils at least maintained dignity 'before the public' shows how far professional standards have fallen.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I've never seen such behavior outward. Now, they may have did it in the back room, but when they came before the public, they conducted themselves with dignity, respect for each other&rdquo;</div><div class=\"o-quote-attr\">&mdash; Larry Brady Evans, resident since 1959</div></div>"},"11a":{"n": "11A", "t": "City Manager Demands 'Same Energy' From Attorney", "tm": "1:31:09 &ndash; 1:31:40", "yt": 5469, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>City Manager Michael Hicks directly challenged City Attorney Denmark, stating 'I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before that we didn't get any kind of effort, memos, conversation.' Hicks suggested the attorney was being selective about when to raise procurement concerns.</p><div class=\"o-label\">Why It Matters</div><p>When the city manager publicly attacks the city attorney's professional judgment, that's a sign of serious dysfunction. Hicks is essentially accusing Denmark of playing favorites or being inconsistent in his legal advice \u2014 a serious allegation that undermines the attorney-client relationship.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before that we didn't get any kind of effort, memos, conversation.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Manager Michael Hicks</div></div>"},"12a":{"n": "12A", "t": "Mayor and Council Member Clash Over Meeting Protocol", "tm": "0:54:41 &ndash; 0:56:12", "yt": 3281, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Mayor Broom repeatedly asked Councilman Karn to 'address comments toward me as the chair' rather than directly to staff. Karn pushed back, saying 'No one else addresses comments towards you. If they have a comment for the city manager, the city attorney, or the city clerk, they address them towards those people.' The exchange grew heated with Broom asking for civility and Karn responding 'I would ask that you not interrupt me.'</p><div class=\"o-label\">Why It Matters</div><p>This petty protocol fight shows how personal relationships have deteriorated. When elected officials are arguing about who can talk to whom during public meetings, they've lost focus on governing. The tension was palpable and embarrassing to watch.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Council member, I would ask that we we maintain civility here.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Bianca Motley Broom</div></div><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I appreciate not being interrupted. City manager, I'd like to hear from the uh purchasing director.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Pro Tem Joe Karn</div></div>"},"13a":{"n": "13A", "t": "Council Sets 50-60% Reserve Fund Target", "tm": "0:51:37 &ndash; 0:52:39", "yt": 3097, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council unanimously approved a financial policy requiring the city to maintain 50% of the general fund budget in reserves, with a goal of reaching 60%. Councilman Karn confirmed this policy would be 'implemented in the 2728 budget cycle' rather than the upcoming 2627 cycle, giving the city time to build up these massive reserves.</p><div class=\"o-label\">Why It Matters</div><p>Most municipal finance experts recommend 15-25% reserves. Setting a 50% minimum with a 60% target means College Park wants to sit on enormous cash piles rather than spend on services. This could be fiscally conservative or it could be hoarding taxpayer money that should be invested in infrastructure and programs.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;the minimum fund balance would be at 50%. However, we will set a goal for 60% fund balance reserve&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Pro Tem Joe Karn</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"14a":{"n": "14A", "t": "Gay Alleges $631K Chelsea Gardens Payment Still Unresolved", "tm": "2:18:34 &ndash; 2:19:05", "yt": 8314, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>In his statement read by the clerk, Councilman Gay alleged 'concerns regarding prior administrative actions involving the Chelsea Gardens property, including code enforcement activity, tenant displacement under condemnation, and a disputed payment of approximately 631,000 to a real estate agent that he states has not been fully pursued.'</p><div class=\"o-label\">Why It Matters</div><p>A $631,000 payment to a real estate agent that's been 'disputed' and 'not fully pursued' suggests potential fraud or misappropriation. Combined with allegations of tenant displacement and questionable condemnation proceedings, this points to a scandal that could involve federal housing violations and financial crimes.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;concerns regarding prior administrative actions involving the Chelsea Gardens property, including code enforcement activity, tenant displacement under condemnation, and a disputed payment of approximately 631,000 to a real estate agent that he states has not been fully pursued&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Rodrik Gay (statement read in absentia)</div></div>"},"15a":{"n": "15A", "t": "Youth Praise Council for $106,000 in Approved Funding", "tm": "0:27:25 &ndash; 0:27:56", "yt": 1645, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Eugene Turner, president of the youth civic advisory board and mayor of the youth council, thanked council for approving their DC trip from March 12-15 and '$100,000 as well as approving the 6,000 for the youth civic advisory board college park care initiative' happening Sunday at Keith James Auditorium. He praised council for 'investing in the youth and allowing the youth to make an impact in the city.'</p><div class=\"o-label\">Why It Matters</div><p>In a meeting full of dysfunction and conflict, the youth programs represent something positive the city is doing right. The $106,000 investment in youth civic engagement and the successful DC trip show council can occasionally fund worthwhile initiatives.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I just like to thank you all for investing in the youth and allowing the youth to make an impact in the city.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Eugene Turner, Youth Civic Advisory Board President</div></div>"},"16a":{"n": "16A", "t": "Multiple Residents Support Main Street Lane Reduction", "tm": "0:28:26 &ndash; 0:33:16", "yt": 1706, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Three speakers supported reconfiguring Main Street from two lanes each direction to one northbound and two southbound. Dr. Chulo called for 'uniforming of the Main Street corridor' to make College Park 'a model city in the south.' Business owners Lorenzo White representing multiple properties said the changes would 'help our businesses because we want to attract more of the locals.'</p><div class=\"o-label\">Why It Matters</div><p>When multiple business owners publicly support a traffic change, that suggests the proposal has real merit. The fact that property owners believe it will help attract local customers shows this isn't just urban planning theory \u2014 it's economic development.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;He has a vision, a vision of the city becoming a model city in the south. and he too is demonstrating his love and work and how it can benefit all citizens&rdquo;</div><div class=\"o-quote-attr\">&mdash; Dr. Chulo, supporting Main Street improvements</div></div>"},"17a":{"n": "17A", "t": "Council Approves Unanimous Voting Requirement for Major Financial Actions", "tm": "0:52:39 &ndash; 0:53:09", "yt": 3159, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council unanimously approved an ordinance requiring unanimous votes for 'certain financial actions.' While the specific dollar thresholds weren't detailed in the discussion, this measure sponsored by Mayor Pro Tem Karn appears designed to prevent narrow majorities from pushing through major expenditures without full council support.</p><div class=\"o-label\">Why It Matters</div><p>This is either good governance requiring consensus on major spending, or it's a way to give any single council member veto power over city business. Given the allegations of 'block voting' from Councilman Gay, this could be an attempt to prevent the alleged three-member coalition from controlling finances.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Motion. Thank you, Council Member Korn. Is there a second? Second. Thank you, Council Member Mackenzie. Any discussion? Hearing none, we'll move to a vote. All those in favor? I. That is unanimous.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Broom (on unanimous voting ordinance)</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"18a":{"n": "18A", "t": "Gay Alleges Employee Firings Over Refusing 'Improper Actions'", "tm": "2:18:34 &ndash; 2:19:37", "yt": 8314, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Gay's statement alleged 'concerns regarding the termination of former employees, including Lindell Miller and former purchasing manager Jerel Jones, who he states refused to participate in actions they believed to be improper.' Gay noted that 'Mr. Jones is currently pursuing a retaliation claim' against the city.</p><div class=\"o-label\">Why It Matters</div><p>When employees are fired for refusing to do things they believe are illegal, and then file retaliation claims, that's a red flag for federal investigators. Whistleblower retaliation cases often uncover broader patterns of misconduct and can result in massive settlements and criminal charges.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;concerns regarding the termination of former employees, including Lindell Miller and former purchasing manager Jerel Jones, who he states refused to participate in actions they believed to be improper. He notes that Mr. Jones is currently pursuing a retaliation claim.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Rodrik Gay (statement read in absentia)</div></div>"},"19a":{"n": "19A", "t": "Police Make $24,000 Fentanyl Bust With Nine Arrests", "tm": "1:47:23 &ndash; 1:47:53", "yt": 6443, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman McKenzie gave 'a big shout out to Charus McCra and the entire police department in the city of College Park for making that phenomenal $24,000 fentinel bust and having nine persons arrested over the weekend.' She praised this as 'the kind of news that we need to have in this city' because 'having that drug off the street makes all of us safer.'</p><div class=\"o-label\">Why It Matters</div><p>A $24,000 fentanyl seizure represents a significant amount of deadly drugs removed from circulation. This kind of major bust shows the police department is doing serious work while council members are fighting about procedure and protocol.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I have to give a big shout out to Charus McCra and the entire police department in the city of College Park for making that phenomenal $24,000 fentinel bust and having nine persons arrested over the weekend.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Dr. Jamal McKenzie</div></div>"},"20a":{"n": "20A", "t": "City Manager Reveals Power Department Serves Major Data Center", "tm": "2:15:21 &ndash; 2:15:53", "yt": 8121, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>In his power department highlight video, Director Hugh Richardson revealed 'Our largest customer located on Garby Road is the Clean Spark Data Center. We have been serving them since 2018 and they consume as much power as the rest of the city. They will be expanding soon at another location on Edison Drive and will be our next major project.'</p><div class=\"o-label\">Why It Matters</div><p>Having a single customer that uses as much power as 8,800 residential and commercial accounts combined represents both an opportunity and a risk. Data centers provide massive revenue but also strain infrastructure. The expansion suggests College Park is becoming a regional data hub.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Our largest customer located on Garby Road is the Clean Spark Data Center. We have been serving them since 2018 and they consume as much power as the rest of the city.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Hugh Richardson, Director of College Park Power</div></div>"},"21a":{"n": "21A", "t": "'Special Place in Hell' Quote Ends Women's History Month", "tm": "2:12:11 &ndash; 2:12:43", "yt": 7931, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman Arnold closed her remarks with a pointed quote from former Secretary of State Madeleine Albright: 'There is a special place in hell for women who don't help other women.' She delivered this quote during Women's History Month after noting the importance of women supporting each other 'especially in an environment in which we sit right now.'</p><div class=\"o-label\">Why It Matters</div><p>This wasn't a random inspirational quote \u2014 it was a direct shot at the female officials on council. Given the context of McKenzie's spending controversy making the evening news and allegations of harassment, Arnold was essentially calling out her female colleagues for not supporting each other during attacks.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;There is a special place in hell for women who don't help other women.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Tracy Arnold, quoting Madeleine Albright</div></div>"},"22a":{"n": "22A", "t": "City Attorney Promises More Legislation to Address 'Organizational Weakness'", "tm": "1:30:04 &ndash; 1:31:09", "yt": 5404, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>City Attorney Denmark announced he sent proposed legislation 'in terms of uh personnel matters, agenda setting matters' and promised to reach out to each council member individually. He stated 'sometimes when I identify areas of organizational weakness or ways that we can improve, I reluctantly draft proposed legislation for your review and consideration.'</p><div class=\"o-label\">Why It Matters</div><p>When the city attorney is drafting legislation to fix 'organizational weakness' in personnel and agenda matters, that suggests the current system isn't working. Denmark's use of 'reluctantly' indicates he sees serious problems that require legal fixes rather than just better behavior.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;sometimes when I identify areas of organizational weakness or ways that we can improve, I reluctantly draft proposed legislation for your review and consideration&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Attorney Winston Denmark</div></div>"}};
+function openCard(id){
+  const f=F[id];if(!f)return;
+  const el=document.getElementById('overlay-content');
+  el.innerHTML=`<div class="overlay-rule"></div><div class="overlay-body"><button class="overlay-close" onclick="closeCard()">&#10005;</button><div class="overlay-cat" style="color:${f.c}">${f.cn} &middot; ${f.n}</div><h2>${f.t}</h2><div class="overlay-time">${f.tm}</div><div class="overlay-vid"><iframe src="https://www.youtube.com/embed/AWJmXB6IoR8?start=${f.yt}&rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div>${f.b}<a class="o-yt-link" href="https://www.youtube.com/live/AWJmXB6IoR8?t=${f.yt}" target="_blank">&#9654; Watch on YouTube</a></div>`;
+  document.getElementById('overlay').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeCard(){
+  document.getElementById('overlay').classList.remove('show');
+  document.body.style.overflow='';
+  document.getElementById('overlay-content').innerHTML='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCard()});
+</script>
+</body>
+</html>
