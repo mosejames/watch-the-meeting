@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Council Watch &mdash; College Park, GA | March 24, 2026</title>
+<meta name="description" content="18 key moments from the March 24, 2026 College Park City Council meeting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafafa;--text:#111827;--text-light:#6b7280;--card-bg:#fff;--border:#e5e7eb;
+  --display:'Space Grotesk',sans-serif;--body:'Inter',sans-serif;
+  --serif:'Playfair Display',Georgia,serif;--mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+
+/* ── Header ── */
+.header{max-width:1200px;margin:0 auto;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--display);font-size:1.5rem;font-weight:700;color:var(--text);text-decoration:none}
+.logo span{color:#ef4444}
+.header-links{display:flex;gap:.5rem}
+.header-links a{
+  display:inline-flex;align-items:center;gap:.3rem;padding:.5rem 1rem;border-radius:999px;
+  font-size:.8rem;font-weight:600;color:var(--text);text-decoration:none;
+  background:var(--card-bg);border:1.5px solid var(--border);
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease,border-color .3s ease,color .3s ease
+}
+.header-links a:hover{transform:scale(1.05) translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.1);border-color:#ef4444;color:#ef4444}
+
+/* ── Hero ── */
+.hero{position:relative;overflow:hidden;padding:5rem 2rem 4.5rem;text-align:center}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-color:#0f172a;animation:heroZoom 25s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.78) 0%,rgba(15,23,42,.93) 100%)}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,var(--bg));z-index:2}
+.hero-content{position:relative;z-index:1;max-width:1000px;margin:0 auto}
+.hero-label{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1.5rem}
+.hero-headline{font-family:var(--display);font-size:clamp(1.6rem,4vw,2.8rem);font-weight:700;line-height:1.2;letter-spacing:-.02em;max-width:850px;margin:0 auto 2.5rem}
+.hero-quote-block{max-width:720px;margin:0 auto 2rem;position:relative;padding:1.5rem 2rem;text-align:left}
+.hero-deco{font-family:var(--serif);font-size:8rem;font-weight:900;line-height:0;opacity:.15;position:absolute;top:2.5rem;left:-.5rem;user-select:none;color:#fff}
+.hero-quote{font-family:var(--serif);font-size:clamp(1rem,2vw,1.35rem);font-style:italic;font-weight:700;line-height:1.6;color:rgba(255,255,255,.85);position:relative}
+.hero-attr{font-family:var(--body);font-size:.85rem;font-weight:700;margin-top:.75rem;position:relative}
+.hero-actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-top:2rem}
+.hero .btn-secondary{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.25)}
+.hero .btn-secondary:hover{background:rgba(255,255,255,.2)}
+
+/* ── Buttons ── */
+.btn{
+  display:inline-flex;align-items:center;gap:.4rem;padding:.65rem 1.3rem;border-radius:999px;
+  font-family:var(--body);font-size:.85rem;font-weight:600;text-decoration:none;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease
+}
+.btn:hover{transform:scale(1.05) translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.btn-primary{background:#ef4444;color:#fff}
+.btn-secondary{background:var(--card-bg);color:var(--text);border:1.5px solid var(--border)}
+
+/* ── Briefing ── */
+.briefing{max-width:800px;margin:0 auto;padding:2rem;text-align:center}
+.briefing-label{font-family:var(--mono);font-size:.65rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#3b82f6;margin-bottom:.75rem}
+.briefing-text{font-family:var(--serif);font-size:1.05rem;line-height:1.8;color:#374151}
+
+/* ── Category Sections ── */
+.category-section{max-width:1200px;margin:0 auto;padding:0 2rem}
+.category-banner{
+  display:flex;align-items:center;gap:.75rem;padding:1rem 1.5rem;margin:2.5rem 0 1.25rem;
+  background:var(--cat);border-radius:12px;color:#fff
+}
+.category-emoji{font-size:1.2rem}
+.category-banner h2{font-family:var(--display);font-size:1.25rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;flex:1}
+.category-count{font-family:var(--mono);font-size:.7rem;font-weight:500;opacity:.8}
+
+/* ── Card Grid ── */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.25rem}
+
+/* ── THE BLOCK — Finding Cards ── */
+.finding-card{
+  position:relative;background:var(--card-bg);border-radius:12px;
+  padding:1.5rem 1.5rem 1.5rem 2rem;cursor:pointer;overflow:hidden;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease;
+  box-shadow:0 1px 3px rgba(0,0,0,.06)
+}
+.finding-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:6px;
+  background:var(--cat);border-radius:12px 0 0 12px;z-index:0;
+  transition:width .4s cubic-bezier(.34,1.56,.64,1),border-radius .4s ease
+}
+.finding-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.12)}
+.finding-card:hover::before{width:100%;border-radius:12px}
+.finding-card>*{position:relative;z-index:1;transition:color .35s ease}
+.finding-card:hover .card-title,
+.finding-card:hover .card-teaser,
+.finding-card:hover .card-time{color:#fff}
+.finding-card:hover .card-quote{color:rgba(255,255,255,.92);background:rgba(255,255,255,.15)}
+
+.card-time{font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--text-light);margin-bottom:.5rem}
+.card-title{font-family:var(--display);font-size:1.1rem;font-weight:700;line-height:1.3;color:var(--text);margin-bottom:.6rem}
+.card-quote{
+  font-family:var(--serif);font-style:italic;font-size:.85rem;line-height:1.5;color:#374151;
+  padding:.6rem .8rem;background:rgba(0,0,0,.03);border-radius:8px;margin-bottom:.6rem;
+  transition:color .35s ease,background .35s ease
+}
+.card-teaser{font-size:.82rem;color:var(--text-light);line-height:1.5}
+
+/* ── Overlay ── */
+.overlay{
+  display:none;position:fixed;inset:0;z-index:1000;
+  background:rgba(0,0,0,.45);backdrop-filter:blur(8px);
+  overflow-y:auto;padding:2rem 1rem
+}
+.overlay.show{display:flex;justify-content:center;align-items:flex-start;animation:fadeIn .2s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.overlay-card{
+  background:#fff;max-width:720px;width:100%;border-radius:16px;overflow:hidden;
+  box-shadow:0 25px 60px rgba(0,0,0,.2);animation:slideUp .35s cubic-bezier(.34,1.56,.64,1);
+  position:relative
+}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.overlay-bar{height:6px;width:100%}
+.overlay-body{padding:2rem;position:relative}
+.overlay-close{
+  position:absolute;top:1rem;right:1rem;font-size:1rem;cursor:pointer;
+  color:var(--text-light);background:var(--bg);border:none;
+  width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;z-index:2;
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1),background .2s ease
+}
+.overlay-close:hover{background:var(--border);transform:scale(1.15) rotate(90deg)}
+.overlay-cat{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem}
+.overlay-card h2{font-family:var(--display);font-size:1.5rem;font-weight:700;color:var(--text);line-height:1.3;margin-bottom:.4rem}
+.overlay-time{font-family:var(--mono);font-size:.7rem;color:var(--text-light);margin-bottom:1.5rem}
+.overlay-vid{position:relative;width:100%;padding-bottom:56.25%;background:#111;border-radius:10px;overflow:hidden;margin-bottom:1.5rem}
+.overlay-vid iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.o-label{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--cat);margin-top:1.25rem;margin-bottom:.4rem}
+.overlay-body p{font-size:.95rem;line-height:1.75;color:#374151;margin-bottom:.5rem}
+.o-quote{margin:1.25rem 0;padding:1rem 1.25rem;border-radius:10px;border-left:4px solid var(--cat,#3b82f6);background:#f9fafb}
+.o-quote-text{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--text);line-height:1.6}
+.o-quote-attr{font-size:.8rem;color:var(--text-light);font-weight:600;margin-top:.5rem}
+.o-vote{margin-top:1rem;padding:.6rem 1rem;background:#f3f4f6;border-radius:8px;font-size:.85rem;font-weight:500}
+.o-vote-label{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-light);margin-right:.5rem}
+.o-yt-btn{
+  display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;
+  padding:.65rem 1.3rem;background:#ef4444;color:#fff;border-radius:999px;
+  font-size:.85rem;font-weight:600;text-decoration:none;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease
+}
+.o-yt-btn:hover{transform:scale(1.05) translateY(-2px);box-shadow:0 6px 16px rgba(239,68,68,.3)}
+
+/* ── Footer ── */
+.footer{max-width:1200px;margin:3rem auto 0;padding:2rem;border-top:2px solid var(--border);text-align:center}
+.footer p{font-size:.85rem;color:var(--text-light);line-height:1.6;margin-bottom:.5rem}
+.footer a{color:#ef4444;text-decoration:none}
+.footer a:hover{text-decoration:underline}
+.foot-logo{font-family:var(--display);font-size:1.2rem;font-weight:700;color:var(--text);margin-top:1.5rem}
+.foot-logo span{color:#ef4444}
+.foot-fine{font-family:var(--mono);font-size:.55rem;color:var(--text-light);letter-spacing:.08em;margin-top:.5rem}
+
+/* ── Responsive ── */
+@media(max-width:600px){
+  .card-grid{grid-template-columns:1fr}
+  .hero{padding:3rem 1rem 3rem}
+  .hero-headline{font-size:1.4rem}
+  .category-section{padding:0 1rem}
+  .category-banner{padding:.75rem 1rem}
+  .category-banner h2{font-size:1rem}
+  .header{padding:1rem}
+  .overlay-body{padding:1.25rem}
+  .hero-quote-block{padding:1rem}
+  .hero-deco{font-size:5rem}
+  .hero-actions{gap:.5rem}
+  .btn{padding:.5rem 1rem;font-size:.8rem}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="/" class="logo">Council<span>Watch</span></a>
+  <div class="header-links">
+    <a href="https://www.youtube.com/live/OLHwDrLJ7J0" target="_blank">&#9654; Full Video</a>
+    <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">Agenda</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url(https://img.youtube.com/vi/OLHwDrLJ7J0/maxresdefault.jpg),url(https://img.youtube.com/vi/OLHwDrLJ7J0/hqdefault.jpg)"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-label">College Park City Council &middot; March 24, 2026</div>
+    <div class="hero-headline"><span style="color:#10b981">City pays</span> <span style="color:#ef4444">DMO $2.4M</span> <span style="color:#3b82f6">yearly but</span> <span style="color:#8b5cf6">can't get</span> <span style="color:#14b8a6">flags or</span> <span style="color:#10b981">airport ads</span> <span style="color:#ef4444">— while</span> <span style="color:#3b82f6">council tries</span> <span style="color:#8b5cf6">to make</span> <span style="color:#14b8a6">all spending</span> <span style="color:#10b981">decisions unanimous</span></div>
+    <div class="hero-quote-block">
+      <div class="hero-deco">&ldquo;</div>
+      <blockquote class="hero-quote">We sit up here and we try we talk to the different vendors and the contractors that come through here. And right now we want organizations to give a report on how much they spent. We want to know...</blockquote>
+      <div class="hero-attr" style="color:#10b981">&mdash; Councilwoman Bianca McKenzie</div>
+    </div>
+    <div class="hero-actions">
+      <a href="https://www.youtube.com/live/OLHwDrLJ7J0" target="_blank" class="btn btn-primary">&#9654; Watch Full Meeting</a>
+      <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank" class="btn btn-secondary">View Agenda</a>
+    </div>
+  </div>
+</section>
+
+<section class="briefing">
+  <div class="briefing-label">Meeting Briefing</div>
+  <p class="briefing-text">College Park's March 24 workshop exposed the city's dysfunction on full display. The Atlanta Airport District DMO, which receives $2.4 million annually from College Park, showed up with a bare-bones World Cup plan that Councilwoman McKenzie called 'disappointing' — no flags, no airport advertising, and excuse after excuse. Meanwhile, Councilman Gay pushed through controversial legislation requiring unanimous votes for any bond debt or reserve fund spending, effectively giving every council member veto power over major financial decisions. The city manager warned they won't even meet their 50% reserve fund minimum next year. Amid the chaos, city staff announced they're close to hiring an economic development director after months of delays, while residents got no meaningful say in the comprehensive plan steering committee selection process.</p>
+</section>
+
+<section class="category-section">
+  <div class="category-banner" style="--cat:#10b981">
+    <span class="category-emoji">💰</span>
+    <h2>Financial Scandal</h2>
+    <span class="category-count">5 findings</span>
+  </div>
+  <div class="card-grid">
+<div class="finding-card" style="--cat:#10b981" onclick="openCard('1a')">
+  <div class="card-time">12:22</div>
+  <h3 class="card-title">$2.4M DMO Can't Deliver World Cup Marketing</h3>
+  <div class="card-quote">&ldquo;We are still putting over $2 million into your organization every year and I personally do not see where we are getting um a value out of that.&rdquo;</div>
+  <p class="card-teaser">Atlanta Airport District gets millions but offers excuses instead of advertising</p>
+</div>
+<div class="finding-card" style="--cat:#10b981" onclick="openCard('2a')">
+  <div class="card-time">19:40</div>
+  <h3 class="card-title">Councilwoman Blasts DMO for 'Disappointing' Response</h3>
+  <div class="card-quote">&ldquo;As you know, it's the elephant in the room is in Ward One, we had to start our own destination marketing uh organization to make sure that our...&rdquo;</div>
+  <p class="card-teaser">McKenzie calls out months of broken promises and missed opportunities</p>
+</div>
+<div class="finding-card" style="--cat:#10b981" onclick="openCard('3a')">
+  <div class="card-time">32:14</div>
+  <h3 class="card-title">Council Demands Accountability for 'Millions' Without Oversight</h3>
+  <div class="card-quote">&ldquo;We sit up here and we try we talk to the different vendors and the contractors that come through here. And right now we want organizations to give...&rdquo;</div>
+  <p class="card-teaser">McKenzie calls out lack of reporting on massive vendor spending</p>
+</div>
+<div class="finding-card" style="--cat:#10b981" onclick="openCard('4a')">
+  <div class="card-time">1:00:35</div>
+  <h3 class="card-title">Council Proposes Unanimous Vote Requirement for All Major Spending</h3>
+  <div class="card-quote">&ldquo;The household equivalent of issuing a city bond is like taking out a second or third mortgage on your home. Uh right now we have about 16 or so...&rdquo;</div>
+  <p class="card-teaser">Gay wants to give every council member veto power over bonds and reserves</p>
+</div>
+<div class="finding-card" style="--cat:#10b981" onclick="openCard('5a')">
+  <div class="card-time">1:12:07</div>
+  <h3 class="card-title">City Manager Warns: We Won't Meet Reserve Fund Minimum</h3>
+  <div class="card-quote">&ldquo;So, uh, mayor council, you know, I think the 60% of the reserve fund balances is is admirable. Uh, and if 50% is a minimum, uh, we won't make that...&rdquo;</div>
+  <p class="card-teaser">Hicks says expenses exceed revenues by millions, can't hit 50% goal</p>
+</div>
+  </div>
+</section>
+<section class="category-section">
+  <div class="category-banner" style="--cat:#ef4444">
+    <span class="category-emoji">⚡</span>
+    <h2>Power Plays & Dysfunction</h2>
+    <span class="category-count">5 findings</span>
+  </div>
+  <div class="card-grid">
+<div class="finding-card" style="--cat:#ef4444" onclick="openCard('6a')">
+  <div class="card-time">40:08</div>
+  <h3 class="card-title">DMO Has No Business Contact List for College Park</h3>
+  <div class="card-quote">&ldquo;One thing that would help me that I have asked for before is I don't have a list of businesses for College Park. I have one for all my other...&rdquo;</div>
+  <p class="card-teaser">Miller admits she doesn't know which businesses exist in the city</p>
+</div>
+<div class="finding-card" style="--cat:#ef4444" onclick="openCard('7a')">
+  <div class="card-time">1:14:11</div>
+  <h3 class="card-title">Council Attorney: No Charter Requirement for Majority Votes</h3>
+  <div class="card-quote">&ldquo;And what's not in there is a requirement that you vote based on a majority vote. There's no requirement in the College Park charter that a simple...&rdquo;</div>
+  <p class="card-teaser">Denmark confirms council can change voting requirements to unanimous</p>
+</div>
+<div class="finding-card" style="--cat:#ef4444" onclick="openCard('8a')">
+  <div class="card-time">52:46</div>
+  <h3 class="card-title">Ignite Resource Center Lost Funding, Survived on Ward 1 Budget</h3>
+  <div class="card-quote">&ldquo;And unfortunately, um, it's a good thing that I'm sitting in this seat, but once I started sitting in this seat, Ignite really started getting a...&rdquo;</div>
+  <p class="card-teaser">McKenzie used community enhancement funds to keep social services alive</p>
+</div>
+<div class="finding-card" style="--cat:#ef4444" onclick="openCard('9a')">
+  <div class="card-time">1:01:37</div>
+  <h3 class="card-title">75% of City Revenue Depends on Vulnerable Hospitality Sector</h3>
+  <div class="card-quote">&ldquo;Our neighbor South Fulton, 80% of their tax revenues, over 80% of their tax revenues come from residential homes. So, if a pandemic hits, they're...&rdquo;</div>
+  <p class="card-teaser">Gay warns College Park uniquely exposed to economic downturns</p>
+</div>
+<div class="finding-card" style="--cat:#ef4444" onclick="openCard('10a')">
+  <div class="card-time">1:03:11</div>
+  <h3 class="card-title">City Has 16 Outstanding Bond Instruments Already</h3>
+  <div class="card-quote">&ldquo;The household equivalent of issuing a city bond is like taking out a second or third mortgage on your home. Uh right now we have about 16 or so...&rdquo;</div>
+  <p class="card-teaser">Gay compares city debt load to having multiple mortgages on home</p>
+</div>
+  </div>
+</section>
+<section class="category-section">
+  <div class="category-banner" style="--cat:#3b82f6">
+    <span class="category-emoji">🗣</span>
+    <h2>Public Comment</h2>
+    <span class="category-count">8 findings</span>
+  </div>
+  <div class="card-grid">
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('11a')">
+  <div class="card-time">13:55</div>
+  <h3 class="card-title">Hotel Rooms Down 40% for World Cup Period</h3>
+  <div class="card-quote">&ldquo;According to a Forbes article that was written last week, uh the room nights are down about 40% because of what all is going on around the country.&rdquo;</div>
+  <p class="card-teaser">DMO cites cancellations as reason to avoid airport advertising</p>
+</div>
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('12a')">
+  <div class="card-time">24:56</div>
+  <h3 class="card-title">DMO Can't Write Checks Directly to City</h3>
+  <div class="card-quote">&ldquo;I cannot write the city a check for shirts. I told you before, I said if you need to order the checks, you can give me the invoice and we could...&rdquo;</div>
+  <p class="card-teaser">Miller says legal restrictions prevent direct payments for city events</p>
+</div>
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('13a')">
+  <div class="card-time">1:21:30</div>
+  <h3 class="card-title">Comprehensive Plan Steering Committee Selection Rushed</h3>
+  <div class="card-quote">&ldquo;We have received a few appointees that we would like to appoint today as we are on a deadline, but please be rest assured that we will be...&rdquo;</div>
+  <p class="card-teaser">Staff admits they're on deadline but will add more members later</p>
+</div>
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('14a')">
+  <div class="card-time">1:23:35</div>
+  <h3 class="card-title">City Close to Hiring Economic Development Director</h3>
+  <div class="card-quote">&ldquo;We interviewed four people today for the economic development director's position. So, we're getting very close to getting a director. So, we...&rdquo;</div>
+  <p class="card-teaser">Hicks says they've narrowed seven candidates down to two</p>
+</div>
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('15a')">
+  <div class="card-time">1:24:08</div>
+  <h3 class="card-title">Fostered Foundation Event Returns After Weather Cancellation</h3>
+  <div class="card-quote">&ldquo;Unfortunately, uh the weather kind of scared us off. it was like some severe weather that was coming in and out of the week and we just didn't...&rdquo;</div>
+  <p class="card-teaser">Wilson explains why 2025 community day was called off</p>
+</div>
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('16a')">
+  <div class="card-time">1:16:16</div>
+  <h3 class="card-title">Council Member K References Bible Reading Advice</h3>
+  <div class="card-quote">&ldquo;He said, uh, he said, all you got just read Pro Proverbs cover to cover. He said, 'That'll cover everything. If you read read that and follow...&rdquo;</div>
+  <p class="card-teaser">Gay shares personal story about reading Proverbs instead of full Bible</p>
+</div>
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('17a')">
+  <div class="card-time">57:28</div>
+  <h3 class="card-title">Ignite Director Unable to Provide Call Volume Metrics</h3>
+  <div class="card-quote">&ldquo;But as far as me keeping numbers on how many phone calls I get every week, I have not been doing that. And as you know, we ignite was not funded...&rdquo;</div>
+  <p class="card-teaser">Stewart says she focuses on community presence over tracking numbers</p>
+</div>
+<div class="finding-card" style="--cat:#3b82f6" onclick="openCard('18a')">
+  <div class="card-time">8:11</div>
+  <h3 class="card-title">Council Starts Workshop 3 Minutes Late Due to Quorum Issues</h3>
+  <div class="card-quote">&ldquo;We had a quorum and now we don't. We had a quorum and now we don't. So we will um waiting on uh one of our members to so we can begin this...&rdquo;</div>
+  <p class="card-teaser">Meeting delayed as council members struggle to maintain attendance</p>
+</div>
+  </div>
+</section>
+
+
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeCard()">
+  <div class="overlay-card" id="overlay-content"></div>
+</div>
+
+<footer class="footer">
+  <p>Every finding above is from the <a href="https://www.youtube.com/live/OLHwDrLJ7J0" target="_blank">official City of College Park council meeting video</a>. Click any card to verify.</p>
+  <p>Full agenda packets at <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">collegeparkga.gov</a>.</p>
+  <div class="foot-logo">Council<span>Watch</span></div>
+  <div class="foot-fine">College Park, Georgia &middot; Published March 24, 2026</div>
+</footer>
+
+<script>
+const F={"1a":{"n": "1A", "t": "$2.4M DMO Can't Deliver World Cup Marketing", "tm": "12:22 &ndash; 47:34", "yt": 742, "c": "#10b981", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>The Atlanta Airport District DMO, which receives $2.4 million annually from College Park, presented a minimal World Cup visitor plan with basic banners and watch party venues. When pressed by Councilwoman McKenzie about specific advertising requests made since September, DMO director Mercedes Miller offered excuses about cancelled hotel rooms and cost concerns.</p><div class=\"o-label\">Why It Matters</div><p>College Park pays the DMO over $2 million yearly but can't get airport advertising, street flags, or event support. The city has no visibility at the world's busiest airport despite being the closest municipality.</p><div class=\"o-quote\" style=\"--cat:#10b981\"><div class=\"o-quote-text\">&ldquo;We are still putting over $2 million into your organization every year and I personally do not see where we are getting um a value out of that.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Bianca McKenzie</div></div>"},"2a":{"n": "2A", "t": "Councilwoman Blasts DMO for 'Disappointing' Response", "tm": "19:40 &ndash; 37:32", "yt": 1180, "c": "#10b981", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman McKenzie delivered a blistering critique of the DMO's performance, detailing specific requests made since September that were ignored or rejected. She noted the city had to start its own Ward 1 destination marketing organization because the official DMO wasn't serving local businesses.</p><div class=\"o-label\">Why It Matters</div><p>A sitting council member publicly admitted they had to bypass their own $2.4 million DMO contract to actually market their ward. This suggests systemic failure in the city's tourism marketing strategy.</p><div class=\"o-quote\" style=\"--cat:#10b981\"><div class=\"o-quote-text\">&ldquo;As you know, it's the elephant in the room is in Ward One, we had to start our own destination marketing uh organization to make sure that our businesses are being um getting adequate publicity and marketing in the city of College Park. And that should not be when we have a destination marketing organization.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Bianca McKenzie</div></div>"},"3a":{"n": "3A", "t": "Council Demands Accountability for 'Millions' Without Oversight", "tm": "32:14 &ndash; 32:45", "yt": 1934, "c": "#10b981", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman McKenzie pointed out the hypocrisy of demanding detailed reports from small contractors while giving organizations receiving millions of dollars minimal oversight. She specifically called out the DMO's lack of transparency about how College Park's funds are used.</p><div class=\"o-label\">Why It Matters</div><p>The city applies different standards to different vendors, with major recipients like the DMO getting less scrutiny than smaller contracts. This suggests inconsistent financial oversight practices.</p><div class=\"o-quote\" style=\"--cat:#10b981\"><div class=\"o-quote-text\">&ldquo;We sit up here and we try we talk to the different vendors and the contractors that come through here. And right now we want organizations to give a report on how much they spent. We want to know what they have done. But then it in certain situations we're talking about millions of dollars here and we have no idea how it's being utilized.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Bianca McKenzie</div></div>"},"4a":{"n": "4A", "t": "Council Proposes Unanimous Vote Requirement for All Major Spending", "tm": "1:00:35 &ndash; 1:10:00", "yt": 3635, "c": "#10b981", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Gay proposed legislation requiring unanimous votes from all sitting council members for any bond issuance or use of reserve funds. He compared it to requiring both parents to agree before touching a family's life savings, saying it would prevent another financial crisis like last year.</p><div class=\"o-label\">Why It Matters</div><p>This would fundamentally change how College Park makes financial decisions, giving any single council member veto power over major expenditures. It could paralyze city operations during emergencies or when council members disagree.</p><div class=\"o-quote\" style=\"--cat:#10b981\"><div class=\"o-quote-text\">&ldquo;The household equivalent of issuing a city bond is like taking out a second or third mortgage on your home. Uh right now we have about 16 or so bond instruments already outstanding. So that's a lot of mortgages we have out.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Gay</div></div>"},"5a":{"n": "5A", "t": "City Manager Warns: We Won't Meet Reserve Fund Minimum", "tm": "1:12:07 &ndash; 1:12:38", "yt": 4327, "c": "#10b981", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>City Manager Hicks warned council that they won't meet the current 50% reserve fund minimum in the 2026-27 budget because expenses exceed revenues by millions of dollars. This came as Gay was proposing to raise the goal to 60%.</p><div class=\"o-label\">Why It Matters</div><p>The city is facing a structural budget deficit while simultaneously trying to impose stricter financial controls. The timing reveals the severity of College Park's fiscal challenges.</p><div class=\"o-quote\" style=\"--cat:#10b981\"><div class=\"o-quote-text\">&ldquo;So, uh, mayor council, you know, I think the 60% of the reserve fund balances is is admirable. Uh, and if 50% is a minimum, uh, we won't make that goal in 2627. And we'll find that out during the budget. We're going to be slightly below that because our expenses exceeds our revenues by millions of dollars.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Manager Shawn Hicks</div></div>"},"6a":{"n": "6A", "t": "DMO Has No Business Contact List for College Park", "tm": "40:08 &ndash; 40:39", "yt": 2408, "c": "#ef4444", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>DMO Director Mercedes Miller admitted she doesn't have a list of businesses in College Park and has repeatedly asked for one. She said she only finds out about new businesses by watching the city's Facebook page.</p><div class=\"o-label\">Why It Matters</div><p>The organization paid to market College Park's businesses doesn't even know what businesses exist. This is a fundamental failure of their mission.</p><div class=\"o-quote\" style=\"--cat:#ef4444\"><div class=\"o-quote-text\">&ldquo;One thing that would help me that I have asked for before is I don't have a list of businesses for College Park. I have one for all my other cities and I've asked several times.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mercedes Miller, DMO Director</div></div>"},"7a":{"n": "7A", "t": "Council Attorney: No Charter Requirement for Majority Votes", "tm": "1:14:11 &ndash; 1:15:46", "yt": 4451, "c": "#ef4444", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>City Attorney Denmark confirmed that College Park's charter doesn't require simple majority votes, meaning council could legally require unanimous votes for certain matters. He compared it to reading the Bible and finding out what's not actually in there.</p><div class=\"o-label\">Why It Matters</div><p>This legal opinion opens the door for the proposed unanimous voting requirement, fundamentally changing how the city operates.</p><div class=\"o-quote\" style=\"--cat:#ef4444\"><div class=\"o-quote-text\">&ldquo;And what's not in there is a requirement that you vote based on a majority vote. There's no requirement in the College Park charter that a simple majority is required to pass a measure.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Attorney Winston Denmark</div></div>"},"8a":{"n": "8A", "t": "Ignite Resource Center Lost Funding, Survived on Ward 1 Budget", "tm": "52:46 &ndash; 54:50", "yt": 3166, "c": "#ef4444", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman McKenzie revealed that Ignite Resource Center, a social services organization, lost city funding last year but was kept alive using Ward 1's community enhancement budget. She said Ignite 'started getting a bad rap' after she became a council member.</p><div class=\"o-label\">Why It Matters</div><p>A ward had to use its discretionary funds to maintain citywide social services that council had defunded, suggesting political retaliation or budget dysfunction.</p><div class=\"o-quote\" style=\"--cat:#ef4444\"><div class=\"o-quote-text\">&ldquo;And unfortunately, um, it's a good thing that I'm sitting in this seat, but once I started sitting in this seat, Ignite really started getting a bad rap like there was something wrong.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Bianca McKenzie</div></div>"},"9a":{"n": "9A", "t": "75% of City Revenue Depends on Vulnerable Hospitality Sector", "tm": "1:01:37 &ndash; 1:02:39", "yt": 3697, "c": "#ef4444", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Gay explained that over 75% of College Park's tax revenues come from hospitality and commercial properties, compared to neighboring South Fulton where 80% comes from stable residential taxes. He cited this vulnerability as justification for stricter financial controls.</p><div class=\"o-label\">Why It Matters</div><p>College Park's revenue is uniquely vulnerable to airline industry downturns, pandemics, and economic instability, making financial planning more critical than in typical suburban cities.</p><div class=\"o-quote\" style=\"--cat:#ef4444\"><div class=\"o-quote-text\">&ldquo;Our neighbor South Fulton, 80% of their tax revenues, over 80% of their tax revenues come from residential homes. So, if a pandemic hits, they're going to get their tax money. If there's a downturn in the airline industry, they're going to get their tax money. Our mix is less than 25% residential.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Gay</div></div>"},"10a":{"n": "10A", "t": "City Has 16 Outstanding Bond Instruments Already", "tm": "1:03:11 &ndash; 1:03:44", "yt": 3791, "c": "#ef4444", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Gay revealed that College Park currently has about 16 different bond instruments outstanding, comparing it to having multiple mortgages on a home. He used this to justify requiring unanimous votes for any new debt.</p><div class=\"o-label\">Why It Matters</div><p>The city is carrying significant debt across multiple instruments, making additional borrowing increasingly risky for taxpayers.</p><div class=\"o-quote\" style=\"--cat:#ef4444\"><div class=\"o-quote-text\">&ldquo;The household equivalent of issuing a city bond is like taking out a second or third mortgage on your home. Uh right now we have about 16 or so bond instruments already outstanding. So that's a lot of mortgages we have out.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Gay</div></div>"},"11a":{"n": "11A", "t": "Hotel Rooms Down 40% for World Cup Period", "tm": "13:55 &ndash; 14:26", "yt": 835, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Mercedes Miller cited Forbes reporting that hotel room bookings are down 40% in the Atlanta area for World Cup period, using this as justification for not investing in airport advertising that College Park had requested.</p><div class=\"o-label\">Why It Matters</div><p>The DMO is using projected lower visitor numbers to avoid marketing, when reduced competition might actually make advertising more effective and affordable.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;According to a Forbes article that was written last week, uh the room nights are down about 40% because of what all is going on around the country.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mercedes Miller, DMO Director</div></div>"},"12a":{"n": "12A", "t": "DMO Can't Write Checks Directly to City", "tm": "24:56 &ndash; 25:26", "yt": 1496, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Mercedes Miller explained that the DMO cannot legally write checks directly to the city or council members, only pay invoices submitted by vendors. This was her response to McKenzie's request for t-shirt funding for a December city event.</p><div class=\"o-label\">Why It Matters</div><p>Legal restrictions may be limiting the DMO's ability to support city events, though the delay in communication suggests poor coordination between the organizations.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;I cannot write the city a check for shirts. I told you before, I said if you need to order the checks, you can give me the invoice and we could pay an invoice, but we cannot legally write a check to the city.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mercedes Miller, DMO Director</div></div>"},"13a":{"n": "13A", "t": "Comprehensive Plan Steering Committee Selection Rushed", "tm": "1:21:30 &ndash; 1:22:01", "yt": 4890, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Economic Development staff asked council to confirm steering committee appointees immediately due to deadlines, but promised they would appoint more members at the April 6 meeting to ensure broader community representation.</p><div class=\"o-label\">Why It Matters</div><p>The city is rushing a critical planning process that should have broad community input, then trying to fix representation issues later.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;We have received a few appointees that we would like to appoint today as we are on a deadline, but please be rest assured that we will be appointing more people um more members at the April 6th meeting so as many facets of the College Park community can be represented&rdquo;</div><div class=\"o-quote-attr\">&mdash; Hannah Addiyogan, Economic Development</div></div>"},"14a":{"n": "14A", "t": "City Close to Hiring Economic Development Director", "tm": "1:23:35 &ndash; 1:24:08", "yt": 5015, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>City Manager Hicks announced they interviewed four candidates and narrowed the field to two finalists for the economic development director position, after interviewing at least seven people over several months.</p><div class=\"o-label\">Why It Matters</div><p>The lengthy hiring process suggests either high standards or difficulty attracting candidates to fill this key position.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;We interviewed four people today for the economic development director's position. So, we're getting very close to getting a director. So, we narrowed it down to two candidates. I think we've interviewed about at least seven over the past few months.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Manager Shawn Hicks</div></div>"},"15a":{"n": "15A", "t": "Fostered Foundation Event Returns After Weather Cancellation", "tm": "1:24:08 &ndash; 1:25:09", "yt": 5048, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Event organizer Wilson explained that the Fostered Foundation community day was cancelled in 2025 due to severe weather concerns and insurance complications, but they're planning to return for August 8, 2026.</p><div class=\"o-label\">Why It Matters</div><p>Shows how weather and insurance issues can impact community events, and demonstrates the organization's commitment to continuing despite setbacks.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;Unfortunately, uh the weather kind of scared us off. it was like some severe weather that was coming in and out of the week and we just didn't want to, you know, jeopardize somebody getting hurt and then we would had to get different insuranceances.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mr. Wilson, Fostered Foundation</div></div>"},"16a":{"n": "16A", "t": "Council Member K References Bible Reading Advice", "tm": "1:16:16 &ndash; 1:16:47", "yt": 4576, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Gay shared that his spiritual mentor, the late Reverend Albert E. Love, advised him to read Proverbs cover to cover rather than the entire Bible, saying it would 'cover everything.'</p><div class=\"o-label\">Why It Matters</div><p>Personal moment that humanized the council member during technical discussion about charter requirements.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;He said, uh, he said, all you got just read Pro Proverbs cover to cover. He said, 'That'll cover everything. If you read read that and follow that, you'll be in good shape.'&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Gay</div></div>"},"17a":{"n": "17A", "t": "Ignite Director Unable to Provide Call Volume Metrics", "tm": "57:28 &ndash; 58:29", "yt": 3448, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Ignite Resource Center director Rose Stewart admitted she doesn't track the number of people calling for help, saying her focus is on in-person community contact rather than keeping call volume statistics.</p><div class=\"o-label\">Why It Matters</div><p>The lack of metrics makes it difficult to assess the organization's impact and justify funding, especially when requesting taxpayer support.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;But as far as me keeping numbers on how many phone calls I get every week, I have not been doing that. And as you know, we ignite was not funded this past year. And so those things have not been my primal focus.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Rose Stewart, Ignite Resource Center</div></div>"},"18a":{"n": "18A", "t": "Council Starts Workshop 3 Minutes Late Due to Quorum Issues", "tm": "8:11 &ndash; 12:22", "yt": 491, "c": "#3b82f6", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>The workshop meeting started late because council briefly lost quorum, with Mayor Broom announcing they had to wait for a member to return before beginning the session.</p><div class=\"o-label\">Why It Matters</div><p>Even a brief quorum issue demonstrates attendance challenges that could impact the city's ability to conduct business efficiently.</p><div class=\"o-quote\" style=\"--cat:#3b82f6\"><div class=\"o-quote-text\">&ldquo;We had a quorum and now we don't. We had a quorum and now we don't. So we will um waiting on uh one of our members to so we can begin this workshop session&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Bianca Motley Broom</div></div>"}};
+function openCard(id){
+  const f=F[id];if(!f)return;
+  const el=document.getElementById('overlay-content');
+  el.innerHTML=`<div class="overlay-bar" style="background:${f.c}"></div><div class="overlay-body" style="--cat:${f.c}"><button class="overlay-close" onclick="closeCard()">&#10005;</button><div class="overlay-cat" style="color:${f.c}">${f.cn} &middot; ${f.n}</div><h2>${f.t}</h2><div class="overlay-time">${f.tm}</div><div class="overlay-vid"><iframe src="https://www.youtube.com/embed/OLHwDrLJ7J0?start=${f.yt}&rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div>${f.b}<a class="o-yt-btn" href="https://www.youtube.com/live/OLHwDrLJ7J0?t=${f.yt}" target="_blank">&#9654; Watch on YouTube</a></div>`;
+  document.getElementById('overlay').classList.add('show');
+  document.body.style.overflow='hidden';
+}
+function closeCard(){
+  document.getElementById('overlay').classList.remove('show');
+  document.body.style.overflow='';
+  document.getElementById('overlay-content').innerHTML='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCard()});
+</script>
+</body>
+</html>
