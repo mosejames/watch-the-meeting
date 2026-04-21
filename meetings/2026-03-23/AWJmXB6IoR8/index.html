@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Council Watch &mdash; March 23, 2026 | College Park, GA</title>
-<meta name="description" content="25 findings from a meeting where council approved a $4.8M roof contract their attorney said violated Georgia law — then had Gay's harassment bombshell read aloud">
+<title>College Park City Council — March 23, 2026 | Council Watch</title>
+<meta name="description" content="28 findings from a 3-hour meltdown where Gay fled mid-meeting, McKenzie accused the mayor of racial bias, and council approved $6 million without discussion.">
 <link rel="canonical" href="https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/">
-<meta property="og:title" content="25 findings from a meeting where council approved a $4.8M roof contrac">
-<meta property="og:description" content="The March 23rd council meeting turned into a legal and political battlefield when City Attorney Winston Denmark warned that a $4.8 million roof contract violated Georgia bidding laws — but council app">
+<meta property="og:title" content="College Park City Council — March 23, 2026">
+<meta property="og:description" content="28 findings from a 3-hour meltdown where Gay fled mid-meeting, McKenzie accused the mayor of racial bias, and council approved $6 million without discussion.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/">
 <meta property="og:site_name" content="Council Watch">
@@ -23,8 +23,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="25 findings from a meeting where council approved a $4.8M roof contrac">
-<meta name="twitter:description" content="The March 23rd council meeting turned into a legal and political battlefield when City Attorney Winston Denmark warned that a $4.8 million roof contract violated Georgia bidding laws — but council app">
+<meta name="twitter:title" content="College Park City Council — March 23, 2026">
+<meta name="twitter:description" content="28 findings from a 3-hour meltdown where Gay fled mid-meeting, McKenzie accused the mayor of racial bias, and council approved $6 million without discussion.">
 <meta name="twitter:image" content="https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/og.png">
 <meta name="robots" content="index, follow">
 <meta name="geo.region" content="US-GA">
@@ -33,10 +33,10 @@
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  "headline": "25 findings from a meeting where council approved a $4.8M roof contract their attorney said violated Georgia l",
-  "description": "The March 23rd council meeting turned into a legal and political battlefield when City Attorney Winston Denmark warned that a $4.8 million roof contract violated Georgia bidding laws — but council approved it anyway with creative parliamentary maneuvering. The drama peaked when absent Councilman Rod",
+  "headline": "28 findings from a 3-hour meltdown where Gay fled mid-meeting, McKenzie accused the mayor of racial bias, and ",
+  "description": "The March 23rd council meeting devolved into municipal warfare when Councilman Roderick Gay stormed out mid-meeting, then had his office issue an explosive statement alleging harassment, intimidation, and a 'voting bloc' undermining city governance. Councilwoman McKenzie detonated over Mayor Motley ",
   "datePublished": "2026-03-23",
-  "dateModified": "2026-03-25",
+  "dateModified": "2026-04-21",
   "url": "https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/",
   "publisher": {
     "@type": "Organization",
@@ -189,9 +189,39 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font
   border-left:3px solid var(--maroon);margin-bottom:.6rem
 }
 .card-teaser{line-height:1.6;color:var(--text-light)}
+.card-footer{
+  display:flex;align-items:center;justify-content:space-between;gap:.5rem;
+  margin-top:.75rem;padding-top:.5rem;border-top:1px dotted var(--border-light)
+}
 .card-time{
-  display:block;font-family:var(--mono);font-size:.6rem;color:var(--text-light);
-  margin-top:.75rem;opacity:.6
+  font-family:var(--mono);font-size:.6rem;color:var(--text-light);opacity:.7
+}
+.card-share{
+  display:flex;align-items:center;gap:.15rem;
+  opacity:0;transition:opacity .15s
+}
+.card:hover .card-share,.card-share.always{opacity:.9}
+.card-share.lead-share{
+  opacity:1;margin-top:1.5rem;padding-top:1rem;
+  border-top:1px dotted var(--border-light);justify-content:flex-start;gap:.4rem
+}
+.cs-label{
+  font-family:var(--mono);font-size:.55rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--text-light);margin-right:.5rem
+}
+.cs-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;
+  color:var(--text-light);background:none;border:1px solid var(--border);
+  cursor:pointer;text-decoration:none;padding:0;
+  transition:color .15s,border-color .15s,background .15s
+}
+.cs-btn:hover{color:#fff;background:var(--maroon);border-color:var(--maroon)}
+.cs-btn svg{width:12px;height:12px;fill:currentColor}
+.cs-btn.copied{background:var(--green,#10b981);color:#fff;border-color:var(--green,#10b981)}
+/* Touch: always show share buttons on mobile (no hover) */
+@media(hover:none){
+  .card-share{opacity:1}
 }
 
 /* ── Overlay ── */
@@ -311,7 +341,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font
 
 <div class="meeting-bar">
   <div class="meeting-info">College Park City Council &middot; March 23, 2026</div>
-  <div class="meeting-count">25 findings</div>
+  <div class="meeting-count">29 findings</div>
 </div>
 
 <div class="share-bar">
@@ -320,15 +350,15 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font
     <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
     Facebook
   </a>
-  <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/&text=25 findings from a meeting where council approved a $4.8M roof contract their attorney said violated" target="_blank" rel="noopener">
+  <a class="share-btn" href="https://twitter.com/intent/tweet?url=https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/&text=College Park City Council — March 23, 2026" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
     X
   </a>
-  <a class="share-btn" href="mailto:?subject=Council Watch: March 23, 2026&body=25 findings from a meeting where council approved a $4.8M roof contract their attorney said violated Georgia law — then had Gay's harassment bombshell%0A%0Ahttps://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/">
+  <a class="share-btn" href="mailto:?subject=College Park City Council — March 23, 2026 | Council Watch&body=28 findings from a 3-hour meltdown where Gay fled mid-meeting, McKenzie accused the mayor of racial bias, and council approved $6 million without disc%0A%0Ahttps://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/">
     <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
     Email
   </a>
-  <a class="share-btn" href="sms:?&body=25 findings from a meeting where council approved a $4.8M roof contract their attorney said violated https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/">
+  <a class="share-btn" href="sms:?&body=College Park City Council — March 23, 2026%0A28 findings from a 3-hour meltdown where Gay fled mid-meeting, McKenzie accused the mayor of racial %0Ahttps://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/">
     <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
     Text
   </a>
@@ -339,339 +369,854 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font
   <span class="share-copied" id="copyMsg">Copied</span>
 </div>
 
-<section class="lead-story" onclick="openCard('1a')">
+<section id="finding-1a" class="lead-story" onclick="openCard('1a')">
   <div class="lead-meta">
     <span class="cat-dot" style="background:#82263C"></span>
     <span class="cat-label">Financial Scandal</span>
     <span class="meta-sep">&middot;</span>
-    <span class="meta-time">59:20</span>
+    <span class="meta-time">2:16:28</span>
   </div>
-  <h2 class="lead-headline">$4.8M Roof Contract Approved Despite Legal Warning</h2>
+  <h2 class="lead-headline">Gay storms out, alleges 'coordinated action' conspiracy</h2>
   <blockquote class="lead-quote">
-  <p>&ldquo;We cannot call something that we've known about for years an emergency. Those things are real, but those things don't constitute an emergency.&rdquo;</p>
-  <cite>&mdash; City Attorney Winston Denmark</cite>
+  <p>&ldquo;After nearly 10 years of service, I have never witnessed this level of coordinated action that undermines transparency and accountability&rdquo;</p>
+  <cite>&mdash; Councilman Roderick Gay</cite>
 </blockquote>
-  <p class="lead-teaser">City attorney said the emergency roof contract violated Georgia law — council approved it anyway with parliamentary tricks</p>
+  <p class="lead-teaser">Senior councilman flees meeting, issues explosive statement claiming harassment by colleagues</p>
+  <div class="card-share lead-share" onclick="event.stopPropagation()">
+    <span class="cs-label">Share this story</span>
+    <a class="cs-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1a%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+      <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+    </a>
+    <a class="cs-btn" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1a%2F&text=Gay%20storms%20out%2C%20alleges%20%27coordinated%20action%27%20conspiracy" target="_blank" rel="noopener" aria-label="Share on X">
+      <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+    </a>
+    <a class="cs-btn" href="https://www.threads.net/intent/post?text=Gay%20storms%20out%2C%20alleges%20%27coordinated%20action%27%20conspiracy%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1a%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+    </a>
+    <button class="cs-btn" onclick="event.stopPropagation();copyFindingLink('1a',this)" aria-label="Copy link">
+      <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+  </div>
 </section>
 
 <section class="briefing">
   <div class="briefing-label">Meeting Briefing</div>
-  <p class="briefing-text">The March 23rd council meeting turned into a legal and political battlefield when City Attorney Winston Denmark warned that a $4.8 million roof contract violated Georgia bidding laws — but council approved it anyway with creative parliamentary maneuvering. The drama peaked when absent Councilman Roderick Gay had his office issue an explosive statement alleging harassment, intimidation, and a coordinated 'voting block' undermining city governance. Meanwhile, residents confronted council about children being used as 'clickbait' in political Facebook posts, and McKenzie accused Mayor Motley Broom of weaponizing public records to attack her $15,000 Ward celebration. Council also rubber-stamped $3.6 million in other spending with minimal discussion.</p>
+  <p class="briefing-text">The March 23rd council meeting devolved into municipal warfare when Councilman Roderick Gay stormed out mid-meeting, then had his office issue an explosive statement alleging harassment, intimidation, and a 'voting bloc' undermining city governance. Councilwoman McKenzie detonated over Mayor Motley Broom's handling of her $15,000 Ward 1 celebration spending, accusing the mayor of 'attacking' black women and sharing financial records to create negative press. Meanwhile, council rubber-stamped nearly $6 million in spending with minimal debate, including $4.8 million for emergency roof repairs that the city attorney said violated Georgia bidding laws. The meeting exposed deep personal animosity between female officials and raised serious questions about financial oversight.</p>
 </section>
 
 <section class="grid-section">
   <div class="grid-label">All Findings</div>
   <div class="card-grid">
-<article class="card card-featured" onclick="openCard('2a')">
+<article id="finding-1b" class="card card-featured" onclick="openCard('1b')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Financial Scandal</span>
     </div>
-    <h3 class="card-title">Gay's Explosive Harassment Statement Read On Record</h3>
-    <div class="card-quote">&ldquo;After nearly 10 years of service, I have never witnessed this level of coordinated action that undermines transparency and accountability&rdquo;</div>
-    <p class="card-teaser">Absent councilman had office read bombshell statement alleging harassment, intimidation, and coordinated voting bloc</p>
-    <span class="card-time">2:16:28</span>
+    <h3 class="card-title">$4.8M roof repair blocked for violating bidding laws</h3>
+    <div class="card-quote">&ldquo;We cannot call something that we've known about for years an emergency&rdquo;</div>
+    <p class="card-teaser">City attorney torpedoes emergency procurement, forces complex vote to salvage project</p>
+    <div class="card-footer">
+      <span class="card-time">53:09</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1b%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1b%2F&text=%244.8M%20roof%20repair%20blocked%20for%20violating%20bidding%20laws" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=%244.8M%20roof%20repair%20blocked%20for%20violating%20bidding%20laws%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1b%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('1b',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('3a')">
+<article id="finding-1c" class="card card-featured" onclick="openCard('1c')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Financial Scandal</span>
     </div>
-    <h3 class="card-title">Mother Confronts Council Over Child 'Clickbait' Posts</h3>
-    <div class="card-quote">&ldquo;Instead of keeping a disagreement where it belonged between adults, he was made into a mocking political post.&rdquo;</div>
-    <p class="card-teaser">Dr. Shakita James accused city-connected Facebook admins of using her son's name and AI image for political posts</p>
-    <span class="card-time">19:25</span>
+    <h3 class="card-title">McKenzie accuses mayor of 'attacking black women'</h3>
+    <div class="card-quote">&ldquo;I spent $45,000 on my 60th birthday. If I can't spend $15,000 to celebrate the people of the city of College Park in the amazing work that we have done, shame on me&rdquo;</div>
+    <p class="card-teaser">Ward 1 councilwoman explodes over $15K spending scrutiny, claims racial bias</p>
+    <div class="card-footer">
+      <span class="card-time">1:40:35</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1c%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1c%2F&text=McKenzie%20accuses%20mayor%20of%20%27attacking%20black%20women%27" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=McKenzie%20accuses%20mayor%20of%20%27attacking%20black%20women%27%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1c%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('1c',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('4a')">
+<article id="finding-1d" class="card card-featured" onclick="openCard('1d')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Financial Scandal</span>
     </div>
-    <h3 class="card-title">McKenzie Accuses Mayor of Weaponizing Records</h3>
-    <div class="card-quote">&ldquo;The mayor rather than communicating with me about my state of the ward expenses did an open records request... and they were given all of my financial spending for the month of...&rdquo;</div>
-    <p class="card-teaser">Councilwoman said mayor leaked her $15,000 spending records to create negative press instead of communicating directly</p>
-    <span class="card-time">1:41:07</span>
+    <h3 class="card-title">Gay alleges $631K Chelsea Gardens payment coverup</h3>
+    <div class="card-quote">&ldquo;a disputed payment of approximately 631,000 to a real estate agent that he states has not been fully pursued&rdquo;</div>
+    <p class="card-teaser">Councilman claims disputed real estate payment 'has not been fully pursued'</p>
+    <div class="card-footer">
+      <span class="card-time">2:18:34</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1d%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1d%2F&text=Gay%20alleges%20%24631K%20Chelsea%20Gardens%20payment%20coverup" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Gay%20alleges%20%24631K%20Chelsea%20Gardens%20payment%20coverup%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F1d%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('1d',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('5a')">
+<article id="finding-2a" class="card card-featured" onclick="openCard('2a')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Power Plays & Dysfunction</span>
     </div>
-    <h3 class="card-title">$2.5 Million Tourism Projects Passed in 31 Seconds</h3>
+    <h3 class="card-title">$67K in client refunds due to roof leaks</h3>
+    <div class="card-quote">&ldquo;just spent over $67,000 in giving back refunds to our clients&rdquo;</div>
+    <p class="card-teaser">GICC hemorrhaging money as events cancelled due to infrastructure failure</p>
+    <div class="card-footer">
+      <span class="card-time">1:04:38</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2a%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2a%2F&text=%2467K%20in%20client%20refunds%20due%20to%20roof%20leaks" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=%2467K%20in%20client%20refunds%20due%20to%20roof%20leaks%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2a%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2a',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-2b" class="card card-featured" onclick="openCard('2b')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">$2.5M tourism spending approved in 31 seconds</h3>
     
-    <p class="card-teaser">Council unanimously approved massive tourism spending with zero discussion or details provided</p>
-    <span class="card-time">43:50</span>
+    <p class="card-teaser">Massive hospitality fund expenditure rubber-stamped without discussion</p>
+    <div class="card-footer">
+      <span class="card-time">44:23</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2b%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2b%2F&text=%242.5M%20tourism%20spending%20approved%20in%2031%20seconds" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=%242.5M%20tourism%20spending%20approved%20in%2031%20seconds%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2b%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2b',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('6a')">
+<article id="finding-2c" class="card card-featured" onclick="openCard('2c')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Power Plays & Dysfunction</span>
     </div>
-    <h3 class="card-title">$1.165 Million Park Project Approved Without Debate</h3>
+    <h3 class="card-title">Mother confronts council over child used as 'clickbait'</h3>
+    <div class="card-quote">&ldquo;instead of keeping a disagreement where it belonged between adults, he was made into a mocking political post&rdquo;</div>
+    <p class="card-teaser">Dr. Shakita James alleges city-connected Facebook pages exploiting her son</p>
+    <div class="card-footer">
+      <span class="card-time">19:56</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2c%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2c%2F&text=Mother%20confronts%20council%20over%20child%20used%20as%20%27clickbait%27" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Mother%20confronts%20council%20over%20child%20used%20as%20%27clickbait%27%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2c%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2c',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-2d" class="card card-featured" onclick="openCard('2d')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">Gay alleges employee retaliation and wrongful terminations</h3>
+    <div class="card-quote">&ldquo;refused to participate in actions they believed to be improper. He notes that Mr. Jones is currently pursuing a retaliation claim&rdquo;</div>
+    <p class="card-teaser">Former purchasing manager pursuing retaliation claim after refusing 'improper' actions</p>
+    <div class="card-footer">
+      <span class="card-time">2:18:34</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2d%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2d%2F&text=Gay%20alleges%20employee%20retaliation%20and%20wrongful%20terminations" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Gay%20alleges%20employee%20retaliation%20and%20wrongful%20terminations%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2d%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2d',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-2e" class="card card-featured" onclick="openCard('2e')">
+  <div class="card-border" style="background:#82263C"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#82263C"></span>
+      <span class="cat-label">Power Plays & Dysfunction</span>
+    </div>
+    <h3 class="card-title">$1.165M park project approved without discussion</h3>
     
-    <p class="card-teaser">Over $1 million for Godby Road Park phase one passed unanimously with zero discussion</p>
-    <span class="card-time">45:25</span>
+    <p class="card-teaser">Godby Road Park phase one funding rubber-stamped in 30 seconds</p>
+    <div class="card-footer">
+      <span class="card-time">45:25</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2e%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2e%2F&text=%241.165M%20park%20project%20approved%20without%20discussion" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=%241.165M%20park%20project%20approved%20without%20discussion%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2e%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2e',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('7a')">
+<article id="finding-2f" class="card card-featured" onclick="openCard('2f')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Power Plays & Dysfunction</span>
     </div>
-    <h3 class="card-title">City Manager Hicks Named Sole City Manager Finalist</h3>
-    <div class="card-quote">&ldquo;I want to congratulate you, Mr. Hicks on being the sole finalist for the city manager position&rdquo;</div>
-    <p class="card-teaser">Interim city manager congratulated on permanent appointment while Gay's statement alleges influence over the selection</p>
-    <span class="card-time">1:33:14</span>
-  </div>
-</article>
-<article class="card card-featured" onclick="openCard('8a')">
-  <div class="card-border" style="background:#82263C"></div>
-  <div class="card-inner">
-    <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Financial Scandal</span>
-    </div>
-    <h3 class="card-title">Resident: 'We're Exhausted from Negative Press'</h3>
-    <div class="card-quote">&ldquo;We are absolutely exhausted from the negative press and the behavior of adults that we elected to serve. We're exhausted.&rdquo;</div>
-    <p class="card-teaser">Tanya Austin wore 'Integrity Matters' shirt and demanded council stop the chaos and corruption</p>
-    <span class="card-time">23:39</span>
-  </div>
-</article>
-<article class="card card-featured" onclick="openCard('9a')">
-  <div class="card-border" style="background:#82263C"></div>
-  <div class="card-inner">
-    <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
-    </div>
-    <h3 class="card-title">1959 Native: 'Never Seen Such Behavior'</h3>
+    <h3 class="card-title">Resident warns of 'unprecedented' council behavior</h3>
     <div class="card-quote">&ldquo;I've never seen such behavior outward. Now, they may have did it in the back room, but when they came before the public, they conducted themselves with dignity, respect for...&rdquo;</div>
-    <p class="card-teaser">Larry Brady Evans said current council conduct is unprecedented in 67 years of living in College Park</p>
-    <span class="card-time">34:19</span>
+    <p class="card-teaser">1959 College Park native says outward dysfunction unlike anything he's seen</p>
+    <div class="card-footer">
+      <span class="card-time">34:19</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2f%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2f%2F&text=Resident%20warns%20of%20%27unprecedented%27%20council%20behavior" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Resident%20warns%20of%20%27unprecedented%27%20council%20behavior%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2f%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2f',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('10a')">
+<article id="finding-2g" class="card card-featured" onclick="openCard('2g')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Power Plays & Dysfunction</span>
     </div>
-    <h3 class="card-title">Youth Council President Thanks Council for $106K DC Trip</h3>
-    <div class="card-quote">&ldquo;I just like to thank you all for investing in the youth and allowing the youth to make an impact in the city.&rdquo;</div>
-    <p class="card-teaser">Eugene Turner thanked council for funding youth trip to visit Congresswoman Nikima Williams' office</p>
-    <span class="card-time">26:53</span>
+    <h3 class="card-title">Resident exhausted by 'negative press and behavior'</h3>
+    <div class="card-quote">&ldquo;We are absolutely exhausted from the negative press and the behavior of adults that we elected to serve. We're exhausted&rdquo;</div>
+    <p class="card-teaser">Tanya Austin wearing 'Integrity Matters' shirt pleads for leadership change</p>
+    <div class="card-footer">
+      <span class="card-time">23:39</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2g%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2g%2F&text=Resident%20exhausted%20by%20%27negative%20press%20and%20behavior%27" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Resident%20exhausted%20by%20%27negative%20press%20and%20behavior%27%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2g%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2g',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('11a')">
+<article id="finding-2h" class="card card-featured" onclick="openCard('2h')">
   <div class="card-border" style="background:#82263C"></div>
   <div class="card-inner">
     <div class="card-meta">
       <span class="cat-dot" style="background:#82263C"></span>
       <span class="cat-label">Power Plays & Dysfunction</span>
     </div>
-    <h3 class="card-title">Multiple Residents Support Main Street Lane Reduction</h3>
-    <div class="card-quote">&ldquo;Our city of College Park can be the chief benefactor from its citizens seeking to improve the plight of all citizens in College Park.&rdquo;</div>
-    <p class="card-teaser">Three residents spoke in coordinated support of John Duke's proposal to reduce Main Street from four lanes to three</p>
-    <span class="card-time">28:26</span>
+    <h3 class="card-title">Youth council DC trip cost $106K</h3>
+    <div class="card-quote">&ldquo;thank you for allowing these funds to come to us so we can enjoy that experience&rdquo;</div>
+    <p class="card-teaser">Youth council president thanks council for funding Washington trip</p>
+    <div class="card-footer">
+      <span class="card-time">27:25</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2h%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2h%2F&text=Youth%20council%20DC%20trip%20cost%20%24106K" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Youth%20council%20DC%20trip%20cost%20%24106K%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F2h%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('2h',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('12a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3a" class="card card-standard" onclick="openCard('3a')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Financial Scandal</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">Gay's Statement Alleges $631K Payment Cover-Up</h3>
-    <div class="card-quote">&ldquo;Council member Gay also raised concerns regarding prior administrative actions involving the Chelsea Gardens property, including code enforcement activity, tenant displacement...&rdquo;</div>
-    <p class="card-teaser">Absent councilman's statement claims disputed Chelsea Gardens real estate payment hasn't been pursued</p>
-    <span class="card-time">2:18:34</span>
-  </div>
-</article>
-<article class="card card-featured" onclick="openCard('13a')">
-  <div class="card-border" style="background:#82263C"></div>
-  <div class="card-inner">
-    <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
-    </div>
-    <h3 class="card-title">Gay Statement Cites Employee Retaliation Pattern</h3>
-    <div class="card-quote">&ldquo;Gay sites concerns regarding the termination of former employees, including Lindell Miller and former purchasing manager Jerel Jones, who he states refused to participate in...&rdquo;</div>
-    <p class="card-teaser">Statement claims former city manager and purchasing manager were terminated for refusing improper actions</p>
-    <span class="card-time">2:18:34</span>
-  </div>
-</article>
-<article class="card card-featured" onclick="openCard('14a')">
-  <div class="card-border" style="background:#82263C"></div>
-  <div class="card-inner">
-    <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Financial Scandal</span>
-    </div>
-    <h3 class="card-title">City Manager Criticizes Attorney's Selective Energy</h3>
-    <div class="card-quote">&ldquo;I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before that we didn't get any kind of effort, memos,...&rdquo;</div>
-    <p class="card-teaser">Hicks publicly complained that Denmark only shows legal concern on some questionable procurements</p>
-    <span class="card-time">1:31:09</span>
-  </div>
-</article>
-<article class="card card-featured" onclick="openCard('15a')">
-  <div class="card-border" style="background:#82263C"></div>
-  <div class="card-inner">
-    <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
-    </div>
-    <h3 class="card-title">Council Unanimously Requires Unanimous Votes</h3>
+    <h3 class="card-title">Councilman Carn gift-giving gesture amid dysfunction</h3>
     
-    <p class="card-teaser">New ordinance gives any single council member veto power over major financial decisions</p>
-    <span class="card-time">52:09</span>
+    <p class="card-teaser">Male councilman presents flowers for Women's History Month during tense meeting</p>
+    <div class="card-footer">
+      <span class="card-time">14:08</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3a%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3a%2F&text=Councilman%20Carn%20gift-giving%20gesture%20amid%20dysfunction" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Councilman%20Carn%20gift-giving%20gesture%20amid%20dysfunction%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3a%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3a',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('16a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3b" class="card card-standard" onclick="openCard('3b')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">50% Reserve Requirement Sets Conservative Standard</h3>
+    <h3 class="card-title">McKenzie defends $15K ward celebration as necessary</h3>
     
-    <p class="card-teaser">Council approved extremely conservative 50% minimum fund balance with 60% goal</p>
-    <span class="card-time">51:05</span>
+    <p class="card-teaser">Councilwoman justifies lavish spending by comparing to personal birthday party</p>
+    <div class="card-footer">
+      <span class="card-time">1:42:12</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3b%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3b%2F&text=McKenzie%20defends%20%2415K%20ward%20celebration%20as%20necessary" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=McKenzie%20defends%20%2415K%20ward%20celebration%20as%20necessary%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3b%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3b',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('17a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3c" class="card card-standard" onclick="openCard('3c')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">Alcohol License Ordinance Dies for Lack of Second</h3>
-    <div class="card-quote">&ldquo;A store could be out of business in three days and just get cited on Monday, Tuesday, and Wednesday.&rdquo;</div>
-    <p class="card-teaser">Carn's motion to approve stricter alcohol penalties couldn't find a single supporter</p>
-    <span class="card-time">46:55</span>
-  </div>
-</article>
-<article class="card card-featured" onclick="openCard('18a')">
-  <div class="card-border" style="background:#82263C"></div>
-  <div class="card-inner">
-    <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
-    </div>
-    <h3 class="card-title">GICC Chiller Emergency Costs $69,782</h3>
+    <h3 class="card-title">Police Chief McCrary praised for $24K fentanyl bust</h3>
     
-    <p class="card-teaser">Convention center approved emergency chiller repairs under city manager's emergency authority</p>
-    <span class="card-time">41:42</span>
+    <p class="card-teaser">Nine arrests in major drug operation draws council applause</p>
+    <div class="card-footer">
+      <span class="card-time">1:46:53</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3c%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3c%2F&text=Police%20Chief%20McCrary%20praised%20for%20%2424K%20fentanyl%20bust" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Police%20Chief%20McCrary%20praised%20for%20%2424K%20fentanyl%20bust%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3c%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3c',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('19a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3d" class="card card-standard" onclick="openCard('3d')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">Arnold Quotes Madeleine Albright on Women</h3>
-    <div class="card-quote">&ldquo;There is a special place in hell for women who don't help other women.&rdquo;</div>
-    <p class="card-teaser">Council member ended meeting with pointed quote about women not helping other women</p>
-    <span class="card-time">2:11:40</span>
+    <h3 class="card-title">Multiple Main Street lane reduction supporters speak</h3>
+    
+    <p class="card-teaser">Residents and business owners unite behind traffic reconfiguration proposal</p>
+    <div class="card-footer">
+      <span class="card-time">28:26</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3d%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3d%2F&text=Multiple%20Main%20Street%20lane%20reduction%20supporters%20speak" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Multiple%20Main%20Street%20lane%20reduction%20supporters%20speak%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3d%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3d',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('20a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3e" class="card card-standard" onclick="openCard('3e')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">Police Chief Praised for $24K Fentanyl Bust</h3>
-    <div class="card-quote">&ldquo;That's the kind of news that we need to have in this city... having that drug off the street makes all of us safer.&rdquo;</div>
-    <p class="card-teaser">McKenzie congratulated Chief McCray for weekend drug bust that resulted in nine arrests</p>
-    <span class="card-time">1:46:53</span>
+    <h3 class="card-title">Liquor license ordinance dies for lack of second</h3>
+    
+    <p class="card-teaser">Harsh penalties proposal fails amid concerns about business fairness</p>
+    <div class="card-footer">
+      <span class="card-time">46:55</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3e%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3e%2F&text=Liquor%20license%20ordinance%20dies%20for%20lack%20of%20second" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Liquor%20license%20ordinance%20dies%20for%20lack%20of%20second%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3e%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3e',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('21a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3f" class="card card-standard" onclick="openCard('3f')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">$67,000 in GICC Refunds Due to Roof Leaks</h3>
-    <div class="card-quote">&ldquo;We just spent over $67,000 in giving back refunds to our clients.&rdquo;</div>
-    <p class="card-teaser">Convention center had to refund clients because roof leaks disrupted events during busy season</p>
-    <span class="card-time">1:04:38</span>
+    <h3 class="card-title">Unanimous vote requirement for financial decisions approved</h3>
+    
+    <p class="card-teaser">New ordinance gives any council member veto power over major spending</p>
+    <div class="card-footer">
+      <span class="card-time">52:39</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3f%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3f%2F&text=Unanimous%20vote%20requirement%20for%20financial%20decisions%20approved" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Unanimous%20vote%20requirement%20for%20financial%20decisions%20approved%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3f%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3f',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('22a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3g" class="card card-standard" onclick="openCard('3g')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Financial Scandal</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">Attorney: Delayed Maintenance Doesn't Equal Emergency</h3>
-    <div class="card-quote">&ldquo;The emergency exception applies only where a project is necessitated by an emergency which is generally understood to mean a sudden unforeseen condition. Sudden and unforeseen....&rdquo;</div>
-    <p class="card-teaser">Denmark cited Georgia law requiring emergencies to be 'sudden and unforeseen' — not years of known problems</p>
-    <span class="card-time">1:08:56</span>
+    <h3 class="card-title">50% fund reserve requirement with 60% goal approved</h3>
+    
+    <p class="card-teaser">Extremely conservative fiscal policy requires half of budget in reserves</p>
+    <div class="card-footer">
+      <span class="card-time">51:05</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3g%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3g%2F&text=50%25%20fund%20reserve%20requirement%20with%2060%25%20goal%20approved" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=50%25%20fund%20reserve%20requirement%20with%2060%25%20goal%20approved%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3g%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3g',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('23a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3h" class="card card-standard" onclick="openCard('3h')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">Carn Pushes $10M Glideways Transportation Project</h3>
-    <div class="card-quote">&ldquo;That's a $10 million plus project and investment in the city of College Park. No taxpayer dollars, y'all.&rdquo;</div>
-    <p class="card-teaser">Council member showed video of autonomous transit system connecting airport to convention center</p>
-    <span class="card-time">1:59:35</span>
+    <h3 class="card-title">Michael Hicks congratulated as 'sole finalist' for permanent city manager</h3>
+    
+    <p class="card-teaser">Interim manager appears to have secured permanent appointment</p>
+    <div class="card-footer">
+      <span class="card-time">1:33:14</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3h%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3h%2F&text=Michael%20Hicks%20congratulated%20as%20%27sole%20finalist%27%20for%20permanent%20city%20manager" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Michael%20Hicks%20congratulated%20as%20%27sole%20finalist%27%20for%20permanent%20city%20manager%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3h%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3h',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('24a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-3i" class="card card-standard" onclick="openCard('3i')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Public Comment</span>
     </div>
-    <h3 class="card-title">Power Department Highlighted Despite Infrastructure Issues</h3>
-    <div class="card-quote">&ldquo;When you come into your house and cut on the light switch, you expect the power to stay on. It's our job to make sure it stays on.&rdquo;</div>
-    <p class="card-teaser">City manager showcased municipal power company serving 8,800 customers with 152 miles of lines</p>
-    <span class="card-time">2:13:17</span>
+    <h3 class="card-title">$10M autonomous transit project showcased by Carn</h3>
+    
+    <p class="card-teaser">Glideways system connects airport to Gateway Center Arena</p>
+    <div class="card-footer">
+      <span class="card-time">1:59:35</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3i%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3i%2F&text=%2410M%20autonomous%20transit%20project%20showcased%20by%20Carn" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=%2410M%20autonomous%20transit%20project%20showcased%20by%20Carn%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F3i%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('3i',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
-<article class="card card-featured" onclick="openCard('25a')">
-  <div class="card-border" style="background:#82263C"></div>
+<article id="finding-4a" class="card card-standard" onclick="openCard('4a')">
+  <div class="card-border" style="background:#897240"></div>
   <div class="card-inner">
     <div class="card-meta">
-      <span class="cat-dot" style="background:#82263C"></span>
-      <span class="cat-label">Power Plays & Dysfunction</span>
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
     </div>
-    <h3 class="card-title">McKenzie Calls for Unified State of City Event</h3>
-    <div class="card-quote">&ldquo;Is there a reason why this city cannot come together and have one amazing, fantabulous state of the city event where we celebrate everything rather than operating in silos and...&rdquo;</div>
-    <p class="card-teaser">Councilwoman questioned why College Park can't have one celebration like other cities instead of ward silos</p>
-    <span class="card-time">1:45:20</span>
+    <h3 class="card-title">Gay's 'take him out' comment prompted police complaint</h3>
+    
+    <p class="card-teaser">Councilman acknowledges threatening language during executive session</p>
+    <div class="card-footer">
+      <span class="card-time">2:18:03</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4a%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4a%2F&text=Gay%27s%20%27take%20him%20out%27%20comment%20prompted%20police%20complaint" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Gay%27s%20%27take%20him%20out%27%20comment%20prompted%20police%20complaint%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4a%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4a',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-4b" class="card card-standard" onclick="openCard('4b')">
+  <div class="card-border" style="background:#897240"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
+    </div>
+    <h3 class="card-title">Arnold warns of special place in hell for unsupportive women</h3>
+    
+    <p class="card-teaser">Councilwoman quotes Madeleine Albright amid female leadership conflicts</p>
+    <div class="card-footer">
+      <span class="card-time">2:12:11</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4b%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4b%2F&text=Arnold%20warns%20of%20special%20place%20in%20hell%20for%20unsupportive%20women" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Arnold%20warns%20of%20special%20place%20in%20hell%20for%20unsupportive%20women%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4b%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4b',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-4c" class="card card-standard" onclick="openCard('4c')">
+  <div class="card-border" style="background:#897240"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
+    </div>
+    <h3 class="card-title">Roof bidding process plagued by administrative chaos</h3>
+    
+    <p class="card-teaser">Original November bid abandoned due to management turnover</p>
+    <div class="card-footer">
+      <span class="card-time">1:03:03</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4c%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4c%2F&text=Roof%20bidding%20process%20plagued%20by%20administrative%20chaos" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Roof%20bidding%20process%20plagued%20by%20administrative%20chaos%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4c%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4c',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-4d" class="card card-standard" onclick="openCard('4d')">
+  <div class="card-border" style="background:#897240"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
+    </div>
+    <h3 class="card-title">City Manager requests same energy from attorney</h3>
+    
+    <p class="card-teaser">Hicks criticizes Denmark for inconsistent legal scrutiny</p>
+    <div class="card-footer">
+      <span class="card-time">1:31:09</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4d%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4d%2F&text=City%20Manager%20requests%20same%20energy%20from%20attorney" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=City%20Manager%20requests%20same%20energy%20from%20attorney%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4d%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4d',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-4e" class="card card-standard" onclick="openCard('4e')">
+  <div class="card-border" style="background:#897240"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
+    </div>
+    <h3 class="card-title">Complex roof repair voting motion confuses clerk</h3>
+    
+    <p class="card-teaser">Multiple amendments and contingencies create legislative confusion</p>
+    <div class="card-footer">
+      <span class="card-time">1:24:13</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4e%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4e%2F&text=Complex%20roof%20repair%20voting%20motion%20confuses%20clerk" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Complex%20roof%20repair%20voting%20motion%20confuses%20clerk%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4e%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4e',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-4f" class="card card-standard" onclick="openCard('4f')">
+  <div class="card-border" style="background:#897240"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
+    </div>
+    <h3 class="card-title">McKenzie calls for unified state of the city celebration</h3>
+    
+    <p class="card-teaser">Councilwoman suggests replacing ward silos with citywide event</p>
+    <div class="card-footer">
+      <span class="card-time">1:45:50</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4f%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4f%2F&text=McKenzie%20calls%20for%20unified%20state%20of%20the%20city%20celebration" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=McKenzie%20calls%20for%20unified%20state%20of%20the%20city%20celebration%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4f%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4f',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-4g" class="card card-standard" onclick="openCard('4g')">
+  <div class="card-border" style="background:#897240"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
+    </div>
+    <h3 class="card-title">Zero accidents reported citywide in February</h3>
+    
+    <p class="card-teaser">City Manager praises HR and safety team for perfect month</p>
+    <div class="card-footer">
+      <span class="card-time">1:32:12</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4g%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4g%2F&text=Zero%20accidents%20reported%20citywide%20in%20February" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Zero%20accidents%20reported%20citywide%20in%20February%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4g%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4g',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+<article id="finding-4h" class="card card-standard" onclick="openCard('4h')">
+  <div class="card-border" style="background:#897240"></div>
+  <div class="card-inner">
+    <div class="card-meta">
+      <span class="cat-dot" style="background:#897240"></span>
+      <span class="cat-label">Voting & Accountability</span>
+    </div>
+    <h3 class="card-title">Council removes 15-person limit from comprehensive plan appointments</h3>
+    
+    <p class="card-teaser">Steering committee size restriction eliminated to accommodate all wards</p>
+    <div class="card-footer">
+      <span class="card-time">16:13</span>
+      <div class="card-share" onclick="event.stopPropagation()">
+        <a class="cs-btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4h%2F" target="_blank" rel="noopener" aria-label="Share on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on X" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4h%2F&text=Council%20removes%2015-person%20limit%20from%20comprehensive%20plan%20appointments" target="_blank" rel="noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24"><path d="M4 4l11.7 16h4.3L8.3 4H4zm1.2 1.5h2.1l11.5 13h-2.1L5.2 5.5z"/></svg>
+        </a>
+        <a class="cs-btn" title="Share on Threads" href="https://www.threads.net/intent/post?text=Council%20removes%2015-person%20limit%20from%20comprehensive%20plan%20appointments%20https%3A%2F%2Fcouncilwatch.app%2Fmeetings%2F2026-03-23%2FAWJmXB6IoR8%2Ff%2F4h%2F" target="_blank" rel="noopener" aria-label="Share on Threads">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.5 11.8c-.3 2-2.1 3.5-4.4 3.5-1.8 0-3.4-.9-4.2-2.3l1.7-1c.4.8 1.3 1.4 2.5 1.4 1.3 0 2.4-.7 2.6-1.9.1-.9-.4-1.5-1.4-1.8-1.3-.4-2.7-.8-2.6-2.5 0-1.6 1.5-2.6 3.2-2.6 1.3 0 2.5.5 3.1 1.5l-1.6 1c-.3-.5-.9-.8-1.5-.8-.8 0-1.3.4-1.3.9 0 .7.7.9 1.9 1.2 1.5.4 3 1 2.8 3.2z"/></svg>
+        </a>
+        <button class="cs-btn" title="Copy link" onclick="event.stopPropagation();copyFindingLink('4h',this)" aria-label="Copy link">
+          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
   </div>
 </article>
   </div>
@@ -685,29 +1230,46 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);-webkit-font
   <p>Every finding is sourced from the <a href="https://www.youtube.com/live/AWJmXB6IoR8" target="_blank">official council meeting video</a>. Click any story to verify.</p>
   <p>Full agenda packets at <a href="https://www.collegeparkga.gov/AgendaCenter/" target="_blank">collegeparkga.gov</a>.</p>
   <div class="foot-logo">Council<span>Watch</span></div>
-  <div class="foot-fine">College Park, Georgia &middot; Published March 25, 2026</div>
+  <div class="foot-fine">College Park, Georgia &middot; Published April 21, 2026</div>
 </footer>
 
 <script>
-const F={"1a":{"n": "1A", "t": "$4.8M Roof Contract Approved Despite Legal Warning", "tm": "59:20 &ndash; 1:29:29", "yt": 3560, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>City Attorney Winston Denmark explicitly warned that the $4.8 million GICC roof repair contract violated Georgia bidding laws because it wasn't a 'sudden and unforeseen' emergency \u2014 the city has known about roof problems for years. Council Member Carn then crafted a motion to approve it anyway, contingent on attorney review, with McKenzie adding language to immediately rebid if the attorney rejected it.</p><div class=\"o-label\">Why It Matters</div><p>Council essentially told their own attorney they don't care about his legal opinion and approved a contract he said breaks state law. This sets up potential lawsuits from excluded bidders and shows a pattern of ignoring legal guardrails when convenient.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;We cannot call something that we've known about for years an emergency. Those things are real, but those things don't constitute an emergency.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Attorney Winston Denmark</div></div><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I felt that it was my obligation to give you the benefit of my legal counsel.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Attorney Winston Denmark</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously (Gay absent)</div>"},"2a":{"n": "2A", "t": "Gay's Explosive Harassment Statement Read On Record", "tm": "2:16:28 &ndash; 2:20:07", "yt": 8188, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Roderick Gay, absent from the meeting, had his office issue a formal statement alleging harassment, intimidation, and threats by fellow council members. The statement revealed Gay told police he used the phrase 'take him out' in executive session, which triggered a police complaint, though Gay claimed it meant political accountability, not physical threats.</p><div class=\"o-label\">Why It Matters</div><p>This is an unprecedented escalation in College Park's governance dysfunction, with a sitting council member formally alleging harassment and safety concerns about his colleagues. The statement also raised concerns about employee retaliation and a disputed $631,000 payment that hasn't been pursued.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;After nearly 10 years of service, I have never witnessed this level of coordinated action that undermines transparency and accountability&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Roderick Gay (via statement)</div></div><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;He stated this decision was made out of concern for his personal and professional safety and not as an abandonment of his duties.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Gay's office statement</div></div>"},"3a":{"n": "3A", "t": "Mother Confronts Council Over Child 'Clickbait' Posts", "tm": "19:25 &ndash; 23:02", "yt": 1165, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Dr. Shakita James confronted council about Facebook posts using her son's name and AI-generated image as 'clickbait' for political content. She noted that the Facebook page admins who allow children to be exploited do business with the city and regularly engage with council members, with one actively receiving city payments for services.</p><div class=\"o-label\">Why It Matters</div><p>This reveals a disturbing pattern where city-connected individuals are weaponizing children's identities for political attacks. James questioned whether the city's defensive public announcements about private citizen posts represent independent commentary or coordinated city influence.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Instead of keeping a disagreement where it belonged between adults, he was made into a mocking political post.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Dr. Shakita James</div></div><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;When that climate reaches children and my child is gone too far, children should be off limit always.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Dr. Shakita James</div></div>"},"4a":{"n": "4A", "t": "McKenzie Accuses Mayor of Weaponizing Records", "tm": "1:41:07 &ndash; 1:46:53", "yt": 6067, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman Jamelle McKenzie accused Mayor Motley Broom of obtaining her Ward 1 celebration spending records through open records requests and sharing them with community members to generate negative media coverage. McKenzie defended her $15,000 Ward celebration that drew over 200 people, saying she spent $45,000 on her own 60th birthday.</p><div class=\"o-label\">Why It Matters</div><p>This shows council members are weaponizing transparency tools against each other rather than communicating directly. McKenzie's defense reveals the personal animosity driving city governance decisions and the breakdown of collegial relationships.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;The mayor rather than communicating with me about my state of the ward expenses did an open records request... and they were given all of my financial spending for the month of February&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Look, I spent $45,000 on my 60th birthday. If I can't spend $15,000 to celebrate the people of the city of College Park in the amazing work that we have done, shame on me.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div>"},"5a":{"n": "5A", "t": "$2.5 Million Tourism Projects Passed in 31 Seconds", "tm": "43:50 &ndash; 44:24", "yt": 2630, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council unanimously approved $2.5 million from the hospitality fund for tourism projects in just 34 seconds with no discussion. The agenda item provided no details about what specific projects would be funded with the massive expenditure.</p><div class=\"o-label\">Why It Matters</div><p>This is exactly the kind of rubber-stamp spending that creates corruption opportunities. $2.5 million deserves more than half a minute of consideration, especially when residents aren't told what they're actually funding.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"6a":{"n": "6A", "t": "$1.165 Million Park Project Approved Without Debate", "tm": "45:25 &ndash; 45:55", "yt": 2725, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council unanimously approved $1.165 million for phase one of the Godby Road Park project in 30 seconds without any discussion about scope, timeline, or oversight. The money was already budgeted but the project details weren't explained.</p><div class=\"o-label\">Why It Matters</div><p>Another million-dollar expenditure getting zero scrutiny shows council's pattern of approving massive spending without accountability. Residents have no idea what they're getting for their tax dollars.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"7a":{"n": "7A", "t": "City Manager Hicks Named Sole City Manager Finalist", "tm": "1:33:14 &ndash; 1:33:44", "yt": 5594, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Mayor Motley Broom congratulated Interim City Manager Michael Hicks on being named the sole finalist for the permanent city manager position. However, Gay's statement later alleged that Hicks' appointment was influenced by the same council 'voting block' he accused of coordinated action.</p><div class=\"o-label\">Why It Matters</div><p>Gay's allegations suggest the city manager selection process may have been compromised by the same dysfunction plaguing council. This raises questions about whether Hicks was chosen based on merit or political loyalty.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I want to congratulate you, Mr. Hicks on being the sole finalist for the city manager position&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Bianca Motley Broom</div></div>"},"8a":{"n": "8A", "t": "Resident: 'We're Exhausted from Negative Press'", "tm": "23:39 &ndash; 26:53", "yt": 1419, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Resident Tanya Austin, wearing an 'Integrity Matters' shirt, delivered a passionate plea for council to end the chaos and focus on serving residents. She defined integrity as 'doing the right thing in a reliable way' and asked what legacy each council member wants to leave behind.</p><div class=\"o-label\">Why It Matters</div><p>Austin's comments capture resident frustration with council's dysfunction becoming a national embarrassment. Her direct challenge to ask 'what will your legacy be' shows residents are holding officials accountable for the city's reputation.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;We are absolutely exhausted from the negative press and the behavior of adults that we elected to serve. We're exhausted.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Tanya Austin</div></div><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;What will your legacy be in the city of College Park? Did you leave the city and her people better off? Or will you be remembered for chaos, corruption, bullying?&rdquo;</div><div class=\"o-quote-attr\">&mdash; Tanya Austin</div></div>"},"9a":{"n": "9A", "t": "1959 Native: 'Never Seen Such Behavior'", "tm": "34:19 &ndash; 36:58", "yt": 2059, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Larry Brady Evans, a 1959 College Park native, told council he's never seen such outward behavior in 67 years. He said past officials may have disagreed privately but 'conducted themselves with dignity, respect for each other' in public meetings.</p><div class=\"o-label\">Why It Matters</div><p>When a lifelong resident says current behavior is unprecedented, it confirms this isn't normal political disagreement but a fundamental breakdown in governance standards. Evans provides historical context showing how far council has fallen.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I've never seen such behavior outward. Now, they may have did it in the back room, but when they came before the public, they conducted themselves with dignity, respect for each other&rdquo;</div><div class=\"o-quote-attr\">&mdash; Larry Brady Evans</div></div>"},"10a":{"n": "10A", "t": "Youth Council President Thanks Council for $106K DC Trip", "tm": "26:53 &ndash; 27:56", "yt": 1613, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Youth Council President Eugene Turner thanked council for approving funding for their Washington DC trip from March 12-15, where youth visited the African-American museum and Congresswoman Nikima Williams' office. The trip allowed College Park youth to bond and experience life in DC.</p><div class=\"o-label\">Why It Matters</div><p>While council dysfunction dominates headlines, this shows they do occasionally fund positive programs. The $106,000 DC trip investment in youth development stands in contrast to the political chaos surrounding adult leadership.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I just like to thank you all for investing in the youth and allowing the youth to make an impact in the city.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Eugene Turner, Youth Council President</div></div>"},"11a":{"n": "11A", "t": "Multiple Residents Support Main Street Lane Reduction", "tm": "28:26 &ndash; 33:16", "yt": 1706, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Dr. Chisulo, Aaron Lent, and Lorenzo White all spoke supporting John Duke's proposal to reconfigure Main Street from two lanes each direction to one northbound and two southbound. The speakers emphasized safety, walkability, and business benefits, with White representing multiple property owners.</p><div class=\"o-label\">Why It Matters</div><p>The coordinated public support suggests organized community backing for the lane reduction project. Multiple property owners supporting it indicates potential economic benefits, contrasting with typical resident-versus-business conflicts.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Our city of College Park can be the chief benefactor from its citizens seeking to improve the plight of all citizens in College Park.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Dr. Chisulo</div></div><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;We represent a nice chunk of what was mentioned earlier the proposal to create a more walkable main street and so we think it'll help our businesses&rdquo;</div><div class=\"o-quote-attr\">&mdash; Lorenzo White</div></div>"},"12a":{"n": "12A", "t": "Gay's Statement Alleges $631K Payment Cover-Up", "tm": "2:18:34 &ndash; 2:19:05", "yt": 8314, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Gay's formal statement alleged ongoing concerns about 'a disputed payment of approximately 631,000 to a real estate agent' related to Chelsea Gardens property that 'has not been fully pursued.' The statement connected this to code enforcement activity and tenant displacement under condemnation.</p><div class=\"o-label\">Why It Matters</div><p>This suggests a potential six-figure financial scandal involving questionable real estate payments that council hasn't investigated. The connection to code enforcement and tenant displacement implies possible abuse of government power for financial gain.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Council member Gay also raised concerns regarding prior administrative actions involving the Chelsea Gardens property, including code enforcement activity, tenant displacement under condemnation, and a disputed payment of approximately 631,000 to a real estate agent that he states has not been fully pursued.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Gay's office statement</div></div>"},"13a":{"n": "13A", "t": "Gay Statement Cites Employee Retaliation Pattern", "tm": "2:18:34 &ndash; 2:19:37", "yt": 8314, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Gay's statement cited concerns about terminations of former City Manager Lindell Miller and former Purchasing Manager Jerel Jones, who Gay says 'refused to participate in actions they believed to be improper.' Jones is reportedly pursuing a retaliation claim against the city.</p><div class=\"o-label\">Why It Matters</div><p>This suggests a pattern where employees who refuse to participate in questionable activities get terminated. The pending retaliation claim by Jones could expose more details about what 'improper actions' employees were asked to perform.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Gay sites concerns regarding the termination of former employees, including Lindell Miller and former purchasing manager Jerel Jones, who he states refused to participate in actions they believed to be improper.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Gay's office statement</div></div>"},"14a":{"n": "14A", "t": "City Manager Criticizes Attorney's Selective Energy", "tm": "1:31:09 &ndash; 1:31:40", "yt": 5469, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>City Manager Hicks publicly criticized City Attorney Denmark, saying 'I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before that we didn't get any kind of effort, memos, conversation.'</p><div class=\"o-label\">Why It Matters</div><p>This is an extraordinary public rebuke of the city attorney by the city manager, suggesting Denmark selectively enforces legal standards. It implies other questionable procurement decisions have been rubber-stamped without legal review.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before that we didn't get any kind of effort, memos, conversation.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Manager Michael Hicks</div></div>"},"15a":{"n": "15A", "t": "Council Unanimously Requires Unanimous Votes", "tm": "52:09 &ndash; 52:39", "yt": 3129, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council unanimously passed an ordinance requiring unanimous voting for certain major financial actions. This means any single council member can now block significant financial decisions, giving each member effective veto power.</p><div class=\"o-label\">Why It Matters</div><p>This creates potential gridlock where any absent member or personal grudge can paralyze city finances. Given the current dysfunction, this guarantees future budget battles and gives disgruntled members maximum leverage.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"16a":{"n": "16A", "t": "50% Reserve Requirement Sets Conservative Standard", "tm": "51:05 &ndash; 52:09", "yt": 3065, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council unanimously approved a resolution requiring a 50% minimum fund balance reserve with a goal of 60%. This is significantly higher than typical municipal reserve requirements, which usually range from 10-25% of annual budgets.</p><div class=\"o-label\">Why It Matters</div><p>While fiscal conservatism sounds good, requiring such high reserves means less money available for services residents actually need. This could be a way to restrict spending on programs certain council members oppose.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"17a":{"n": "17A", "t": "Alcohol License Ordinance Dies for Lack of Second", "tm": "46:55 &ndash; 50:34", "yt": 2815, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council Member Carn moved to approve an ordinance creating stricter alcohol license violations, but it died for lack of a second. Mayor Motley Broom criticized the ordinance for potentially putting businesses 'out of business in three days' with consecutive daily citations having no cure period.</p><div class=\"o-label\">Why It Matters</div><p>The failure to get a second shows even this dysfunctional council recognizes unfair business regulations. Carn's substitute motion with an appeals process also died, suggesting the ordinance was fundamentally flawed.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;A store could be out of business in three days and just get cited on Monday, Tuesday, and Wednesday.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Bianca Motley Broom</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Motion died for lack of second</div>"},"18a":{"n": "18A", "t": "GICC Chiller Emergency Costs $69,782", "tm": "41:42 &ndash; 42:48", "yt": 2502, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council approved $31,363 for two new chiller water pumps and $38,419 for two-month rentals at GICC arena, totaling $69,782. City Manager Hicks had already approved the emergency rental under emergency purchasing policy due to service urgency.</p><div class=\"o-label\">Why It Matters</div><p>Another GICC emergency repair adds to the pattern of deferred maintenance creating expensive crises. The city manager exercising emergency authority shows the convention center's infrastructure is failing faster than normal procurement can address.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously (consent agenda)</div>"},"19a":{"n": "19A", "t": "Arnold Quotes Madeleine Albright on Women", "tm": "2:11:40 &ndash; 2:12:43", "yt": 7900, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council Member Arnold ended her report by quoting former Secretary of State Madeleine Albright: 'There is a special place in hell for women who don't help other women.' Arnold said this quote was shared at a recent women's event she attended.</p><div class=\"o-label\">Why It Matters</div><p>Given the tension between the female council members, this quote appears directed at the dysfunction between Mayor Motley Broom and Councilwoman McKenzie. Arnold's timing makes this a pointed commentary on the Women's History Month conflicts.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;There is a special place in hell for women who don't help other women.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Madeleine Albright (quoted by Council Member Arnold)</div></div>"},"20a":{"n": "20A", "t": "Police Chief Praised for $24K Fentanyl Bust", "tm": "1:46:53 &ndash; 1:47:23", "yt": 6413, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman McKenzie gave a 'big shout out to Charus McCray and the entire police department' for a $24,000 fentanyl bust over the weekend that resulted in nine arrests. She emphasized this makes the community safer for children and families.</p><div class=\"o-label\">Why It Matters</div><p>Amid all the political dysfunction, this represents actual police work protecting residents. The significant dollar value and multiple arrests suggest a substantial drug operation was disrupted.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;That's the kind of news that we need to have in this city... having that drug off the street makes all of us safer.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div>"},"21a":{"n": "21A", "t": "$67,000 in GICC Refunds Due to Roof Leaks", "tm": "1:04:38 &ndash; 1:05:08", "yt": 3878, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>GICC Executive Director Yiannis Barner revealed the convention center spent over $67,000 giving refunds to clients because roof leaks disrupted their events. This occurred as they're entering their busy season with the roofing condition getting worse.</p><div class=\"o-label\">Why It Matters</div><p>The city is literally paying customers to leave because basic infrastructure doesn't work. These refunds represent lost revenue that could have funded other city services, showing the real cost of deferred maintenance.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;We just spent over $67,000 in giving back refunds to our clients.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Yiannis Barner, GICC Executive Director</div></div>"},"22a":{"n": "22A", "t": "Attorney: Delayed Maintenance Doesn't Equal Emergency", "tm": "1:08:56 &ndash; 1:10:00", "yt": 4136, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>City Attorney Denmark cited OCGA 36-91-22 requiring emergency procurements to address 'sudden unforeseen conditions,' then noted College Park's own policy states that 'failure to anticipate normal needs, project deadline dates... does not constitute an emergency.'</p><div class=\"o-label\">Why It Matters</div><p>Denmark provided the legal framework showing why the roof contract violated state and local law. His detailed citation of specific statutes shows he did his homework, making council's decision to ignore him even more problematic.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;The emergency exception applies only where a project is necessitated by an emergency which is generally understood to mean a sudden unforeseen condition. Sudden and unforeseen. We've just said we've been talking about this for years.&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Attorney Winston Denmark</div></div>"},"23a":{"n": "23A", "t": "Carn Pushes $10M Glideways Transportation Project", "tm": "1:59:35 &ndash; 2:03:45", "yt": 7175, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council Member Carn showed a video about the Glideways autonomous transit system connecting ATL SkyTrain to the Gateway Center Arena. He emphasized it's a $10 million investment with 'no taxpayer dollars' and positions College Park as cutting-edge for 'live, work, play environments.'</p><div class=\"o-label\">Why It Matters</div><p>While the no-taxpayer-cost claim sounds good, residents should scrutinize what College Park is providing in exchange for this 'free' system. These public-private partnerships often involve hidden costs or long-term obligations.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;That's a $10 million plus project and investment in the city of College Park. No taxpayer dollars, y'all.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Council Member Joe Carn</div></div>"},"24a":{"n": "24A", "t": "Power Department Highlighted Despite Infrastructure Issues", "tm": "2:13:17 &ndash; 2:15:52", "yt": 8597, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>City Manager Hicks played a video highlighting College Park Power, one of 52 municipal power companies in Georgia. The department serves 8,800 customers over 152 miles of lines and 10 square miles, with plans for distribution automation and expanded EV charging stations.</p><div class=\"o-label\">Why It Matters</div><p>While the power department appears well-managed, the timing is ironic given the massive infrastructure failures at GICC. This showcases the contrast between functional and dysfunctional city services.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;When you come into your house and cut on the light switch, you expect the power to stay on. It's our job to make sure it stays on.&rdquo;</div><div class=\"o-quote-attr\">&mdash; Hugh Richardson, Power Department Director</div></div>"},"25a":{"n": "25A", "t": "McKenzie Calls for Unified State of City Event", "tm": "1:45:20 &ndash; 1:46:22", "yt": 6320, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>McKenzie asked why College Park doesn't hold a unified State of the City celebration like Union City and Atlanta, instead of operating 'in silos and thriving on division.' She proposed a 2027 citywide event to 'bring our citizens together, our wards together.'</p><div class=\"o-label\">Why It Matters</div><p>McKenzie's proposal for unity comes after she spent $15,000 on her own Ward 1 celebration, creating the exact division she now criticizes. This highlights the disconnect between rhetoric and action in College Park politics.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Is there a reason why this city cannot come together and have one amazing, fantabulous state of the city event where we celebrate everything rather than operating in silos and thriving on division?&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div>"}};
+const F={"1a":{"n": "1A", "t": "Gay storms out, alleges 'coordinated action' conspiracy", "tm": "2:16:28 &ndash; 2:20:07", "yt": 8188, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Roderick Gay stormed out of the meeting mid-session and had his office read a blistering statement alleging 'harassment, intimidation, and threats of false allegations' by fellow council members. Gay claimed three council members formed a 'block voting structure' to 'assert control, avoid transparency, and limit accountability.' He acknowledged using the phrase 'take him out' during executive session, which prompted a police complaint.</p><div class=\"o-label\">Why It Matters</div><p>Gay's explosive exit and formal allegations represent an unprecedented breakdown in College Park's governance. His claims of coordinated retaliation and voting bloc manipulation suggest deep dysfunction that could paralyze city operations and invite outside investigation.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;After nearly 10 years of service, I have never witnessed this level of coordinated action that undermines transparency and accountability&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Roderick Gay</div></div>"},"1b":{"n": "1B", "t": "$4.8M roof repair blocked for violating bidding laws", "tm": "53:09 &ndash; 1:29:29", "yt": 3189, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>City Attorney Winston Denmark blocked a $4.8 million emergency roof repair contract for GICC, stating it violates Georgia bidding laws. The roof has been leaking for years, forcing $67,000 in client refunds, but Denmark said 'delayed maintenance' doesn't constitute a 'sudden unforeseen' emergency required by state law. Council eventually approved a complex contingency motion allowing the project to proceed if prior bidding was valid.</p><div class=\"o-label\">Why It Matters</div><p>This represents a massive failure in capital planning and legal compliance. The city knew about roof problems for years but failed to properly budget or bid the repairs, then tried to circumvent bidding laws through emergency procurement when the situation became critical.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;We cannot call something that we've known about for years an emergency&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Attorney Winston Denmark</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Approved unanimously with contingency conditions</div>"},"1c":{"n": "1C", "t": "McKenzie accuses mayor of 'attacking black women'", "tm": "1:40:35 &ndash; 1:46:53", "yt": 6035, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman Jamelle McKenzie detonated during her council report, accusing Mayor Motley Broom of sharing her $15,000 Ward 1 celebration spending records to create negative press coverage. McKenzie claimed the mayor was 'attacking' her rather than communicating directly, and defended spending $15,000 on a single ward event by saying 'I spent $45,000 on my 60th birthday.'</p><div class=\"o-label\">Why It Matters</div><p>This explosive confrontation reveals deep personal animosity between the city's top female officials and raises questions about financial transparency. McKenzie's defensive posture suggests she knows the spending was excessive but feels entitled to spend ward funds on lavish celebrations.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I spent $45,000 on my 60th birthday. If I can't spend $15,000 to celebrate the people of the city of College Park in the amazing work that we have done, shame on me&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div>"},"1d":{"n": "1D", "t": "Gay alleges $631K Chelsea Gardens payment coverup", "tm": "2:18:34 &ndash; 2:19:05", "yt": 8314, "c": "#82263C", "cn": "Financial Scandal", "b": "<div class=\"o-label\">What Happened</div><p>In his explosive statement, Councilman Gay alleged ongoing concerns about Chelsea Gardens property involving 'code enforcement activity, tenant displacement under condemnation, and a disputed payment of approximately $631,000 to a real estate agent that he states has not been fully pursued.' This suggests potential fraud or improper payments that council has failed to investigate.</p><div class=\"o-label\">Why It Matters</div><p>A disputed $631,000 payment that hasn't been 'fully pursued' suggests potential corruption or waste of taxpayer funds. Gay's allegation implies council may be covering up or ignoring significant financial irregularities involving real estate transactions.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;a disputed payment of approximately 631,000 to a real estate agent that he states has not been fully pursued&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Roderick Gay's statement</div></div>"},"2a":{"n": "2A", "t": "$67K in client refunds due to roof leaks", "tm": "1:04:38 &ndash; 1:05:08", "yt": 3878, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>GICC Executive Director Yiannis Barner revealed the convention center had to refund $67,000 to clients due to roof leaks disrupting events. The facility is entering its busy season with a deteriorating roof that continues to worsen, potentially costing the city hundreds of thousands in lost revenue.</p><div class=\"o-label\">Why It Matters</div><p>This represents the real cost of deferred maintenance and poor planning. The city's premier revenue-generating facility is literally falling apart, forcing expensive refunds and threatening future bookings during peak season.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;just spent over $67,000 in giving back refunds to our clients&rdquo;</div><div class=\"o-quote-attr\">&mdash; Yiannis Barner, GICC Executive Director</div></div>"},"2b":{"n": "2B", "t": "$2.5M tourism spending approved in 31 seconds", "tm": "44:23 &ndash; 44:54", "yt": 2663, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council approved $2.5 million from the hospitality fund for tourism projects in exactly 31 seconds with zero discussion. The motion, second, and unanimous vote happened so quickly that residents had no opportunity to understand what was being funded or why.</p><div class=\"o-label\">Why It Matters</div><p>This represents exactly the kind of rubber-stamp governance that undermines public trust. $2.5 million in taxpayer funds deserves more than 31 seconds of consideration, regardless of the funding source.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously without discussion</div>"},"2c":{"n": "2C", "t": "Mother confronts council over child used as 'clickbait'", "tm": "19:56 &ndash; 23:02", "yt": 1196, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Dr. Shakita James confronted council about Facebook posts using her son's name and AI-generated image as 'clickbait' for political content. She alleged the posts were connected to city officials, noting that page administrators 'do business with the city of College Park' and 'regularly engage with a few council persons.' James questioned why the city issued official public announcements responding to private citizen posts.</p><div class=\"o-label\">Why It Matters</div><p>This suggests city officials or their allies are weaponizing children's images for political attacks while using official city resources to amplify their response. It represents a disturbing escalation of political warfare that has reached the exploitation of minors.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;instead of keeping a disagreement where it belonged between adults, he was made into a mocking political post&rdquo;</div><div class=\"o-quote-attr\">&mdash; Dr. Shakita James</div></div>"},"2d":{"n": "2D", "t": "Gay alleges employee retaliation and wrongful terminations", "tm": "2:18:34 &ndash; 2:19:05", "yt": 8314, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Gay's statement alleged concerns about terminations of former City Manager Lindell Miller and former purchasing manager Jerel Jones, who 'refused to participate in actions they believed to be improper.' Gay noted that Jones is 'currently pursuing a retaliation claim,' suggesting legal action against the city.</p><div class=\"o-label\">Why It Matters</div><p>Retaliation claims typically involve employees being fired for refusing to participate in illegal or unethical activities. This suggests potential corruption or improper conduct that cost taxpayers two key administrative positions.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;refused to participate in actions they believed to be improper. He notes that Mr. Jones is currently pursuing a retaliation claim&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Roderick Gay's statement</div></div>"},"2e":{"n": "2E", "t": "$1.165M park project approved without discussion", "tm": "45:25 &ndash; 45:55", "yt": 2725, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Council approved $1.165 million for phase one of the Godby Road Park project in under 30 seconds with no discussion. This represents a massive expenditure that received less deliberation than routine administrative items.</p><div class=\"o-label\">Why It Matters</div><p>Over $1 million in taxpayer funds deserves meaningful deliberation about scope, timeline, and necessity. The pattern of rubber-stamping major expenditures suggests either poor oversight or predetermined outcomes.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously without discussion</div>"},"2f":{"n": "2F", "t": "Resident warns of 'unprecedented' council behavior", "tm": "34:19 &ndash; 36:58", "yt": 2059, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Larry Brady Evans, a 1959 College Park native, told council he had 'never seen such behavior outward' in his decades of watching city government. Evans noted that while officials 'may have did it in the back room' in the past, 'when they came before the public, they conducted themselves with dignity, respect for each other, and tried to move forward.'</p><div class=\"o-label\">Why It Matters</div><p>When longtime residents say current dysfunction is unprecedented, it signals governance has reached a crisis point. Evans' comments suggest the current council's public feuding has crossed lines that previous officials maintained even during private disagreements.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I've never seen such behavior outward. Now, they may have did it in the back room, but when they came before the public, they conducted themselves with dignity, respect for each other&rdquo;</div><div class=\"o-quote-attr\">&mdash; Larry Brady Evans, resident since 1959</div></div>"},"2g":{"n": "2G", "t": "Resident exhausted by 'negative press and behavior'", "tm": "23:39 &ndash; 26:53", "yt": 1419, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Tanya Austin, wearing an 'Integrity Matters' shirt, told council residents are 'absolutely exhausted from the negative press and the behavior of adults that we elected to serve.' She challenged officials to ask themselves daily 'How can I be a better representative?' and warned that their legacy would be defined by 'chaos, corruption, bullying, disrespectful towards your colleagues and your constituents.'</p><div class=\"o-label\">Why It Matters</div><p>Austin's comments reflect broader community frustration with council dysfunction. Her 'Integrity Matters' shirt and direct challenge suggest residents are organizing around accountability themes and demanding better behavior from elected officials.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;We are absolutely exhausted from the negative press and the behavior of adults that we elected to serve. We're exhausted&rdquo;</div><div class=\"o-quote-attr\">&mdash; Tanya Austin, resident</div></div>"},"2h":{"n": "2H", "t": "Youth council DC trip cost $106K", "tm": "27:25 &ndash; 27:56", "yt": 1645, "c": "#82263C", "cn": "Power Plays & Dysfunction", "b": "<div class=\"o-label\">What Happened</div><p>Youth Council President Eugene Turner thanked council for approving their Washington DC trip from March 12-15, which cost approximately $106,000 based on previous meeting references. The youth visited Congresswoman Nikima Williams' office and toured the African-American museum.</p><div class=\"o-label\">Why It Matters</div><p>While youth development is important, $106,000 for a 4-day trip raises questions about cost-effectiveness and fiscal responsibility. The per-participant cost appears excessive for what amounts to a field trip.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;thank you for allowing these funds to come to us so we can enjoy that experience&rdquo;</div><div class=\"o-quote-attr\">&mdash; Eugene Turner, Youth Council President</div></div>"},"3a":{"n": "3A", "t": "Councilman Carn gift-giving gesture amid dysfunction", "tm": "14:08 &ndash; 15:09", "yt": 848, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Joe Carn opened the meeting by presenting flowers to his female colleagues for Women's History Month, calling himself 'a kinder, gentler man' and praising their leadership as 'a breath of fresh air from what I was used to up here.' The gesture came at the start of what would become one of the most contentious meetings in recent memory.</p><div class=\"o-label\">Why It Matters</div><p>The irony is striking - Carn's praise for female leadership came just before explosive confrontations between the mayor and councilwoman, and Gay's allegations of harassment. It highlights how surface gestures can't mask underlying dysfunction.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I'm a kinder, gentler man. And we're going to have a good 26&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Carn</div></div>"},"3b":{"n": "3B", "t": "McKenzie defends $15K ward celebration as necessary", "tm": "1:42:12 &ndash; 1:44:49", "yt": 6132, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>McKenzie defended her $15,000 Ward 1 celebration by claiming it drew over 200 people including Sheriff Patrick Labont, the governor's office, and Congresswoman Nikima Williams' office. She justified the cost by saying 'I spent $45,000 on my 60th birthday' and argued the event showcased College Park rather than herself.</p><div class=\"o-label\">Why It Matters</div><p>McKenzie's defense reveals a fundamental misunderstanding of public vs. private spending. Comparing taxpayer funds to personal party expenses suggests she views ward money as her own discretionary budget rather than public resources requiring justification.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Our average community town hall in this city may have 20 to 30 people. We had over 200 persons that night&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div>"},"3c":{"n": "3C", "t": "Police Chief McCrary praised for $24K fentanyl bust", "tm": "1:46:53 &ndash; 1:47:23", "yt": 6413, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman McKenzie praised Police Chief Charus McCrary for leading a $24,000 fentanyl bust that resulted in nine arrests over the weekend. The announcement drew applause from council and provided a rare moment of unity during an otherwise contentious meeting.</p><div class=\"o-label\">Why It Matters</div><p>The drug bust represents actual accomplishment amid governance dysfunction. It shows city services can function effectively even when leadership is in chaos, and provides positive news to offset the constant political warfare.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Thank you, College Park Police. Because having that drug off the street makes all of us safer&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div>"},"3d":{"n": "3D", "t": "Multiple Main Street lane reduction supporters speak", "tm": "28:26 &ndash; 33:16", "yt": 1706, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Three speakers - Dr. Chisulo, Aaron Lent, and Lorenzo White - voiced support for John Duke's proposal to reconfigure Main Street from two lanes each direction to one northbound and two southbound. Business owners said it would help attract local customers and make the street safer for pedestrians.</p><div class=\"o-label\">Why It Matters</div><p>The unified support for the lane reduction shows residents organizing around specific infrastructure improvements. It represents a constructive policy discussion amid the personal attacks and governance dysfunction dominating the meeting.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;we think it'll help our businesses because we want to attract more of the locals&rdquo;</div><div class=\"o-quote-attr\">&mdash; Lorenzo White, business owner</div></div>"},"3e":{"n": "3E", "t": "Liquor license ordinance dies for lack of second", "tm": "46:55 &ndash; 49:01", "yt": 2815, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>An ordinance to revise alcoholic beverage license violations died for lack of a second after Councilman Carn raised concerns about fairness. He warned that under the proposal, 'someone could come in on Monday, Tuesday, and Wednesday and issue the same citation' leading to license revocation in three days with no opportunity to cure violations.</p><div class=\"o-label\">Why It Matters</div><p>The ordinance's failure shows council occasionally exercises oversight over punitive policies that could harm local businesses. Carn's intervention prevented what could have been devastating 'gotcha' enforcement against establishments.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;a a store could be out of business in three days and just get cited on Monday, Tuesday, and Wednesday&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Carn</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Motion died for lack of a second</div>"},"3f":{"n": "3F", "t": "Unanimous vote requirement for financial decisions approved", "tm": "52:39 &ndash; 52:55", "yt": 3159, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Council unanimously approved an ordinance requiring unanimous votes for certain major financial actions, effectively giving any single council member veto power over significant spending decisions. The measure was sponsored by Mayor Pro Tem Joe Carn.</p><div class=\"o-label\">Why It Matters</div><p>This creates a system where any one council member can block financial decisions, potentially leading to gridlock. While intended to improve oversight, it could paralyze city operations if personal conflicts prevent consensus.</p><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"3g":{"n": "3G", "t": "50% fund reserve requirement with 60% goal approved", "tm": "51:05 &ndash; 52:09", "yt": 3065, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Council approved a resolution requiring a minimum 50% fund balance reserve with a goal of 60%, far exceeding typical municipal reserve requirements. The policy was described as signaling financial stability to developers, lenders, and rating agencies.</p><div class=\"o-label\">Why It Matters</div><p>While fiscal responsibility is important, requiring 50-60% reserves is extremely conservative and could limit the city's ability to invest in needed infrastructure and services. It suggests either poor budgeting confidence or political positioning.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;minimum fund balance would be at 50%. However, we will set a goal for 60% fund balance reserve&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Carn</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Passed unanimously</div>"},"3h":{"n": "3H", "t": "Michael Hicks congratulated as 'sole finalist' for permanent city manager", "tm": "1:33:14 &ndash; 1:33:44", "yt": 5594, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Mayor Motley Broom congratulated Michael Hicks on being the 'sole finalist' for the permanent city manager position, suggesting he has effectively secured the job after serving as interim manager during recent tumultuous periods.</p><div class=\"o-label\">Why It Matters</div><p>Hicks' apparent appointment provides stability after significant administrative turnover. However, his permanent selection during ongoing governance dysfunction raises questions about whether he can effectively manage the feuding council.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;congratulate you, Mr. Hicks on being the sole finalist for the city manager uh position&rdquo;</div><div class=\"o-quote-attr\">&mdash; Mayor Bianca Motley Broom</div></div>"},"3i":{"n": "3I", "t": "$10M autonomous transit project showcased by Carn", "tm": "1:59:35 &ndash; 2:03:14", "yt": 7175, "c": "#897240", "cn": "Public Comment", "b": "<div class=\"o-label\">What Happened</div><p>Councilman Carn showed a video highlighting the $10 million autonomous transit pilot project connecting Hartsfield-Jackson Airport to Gateway Center Arena. He emphasized that no taxpayer dollars were involved and described it as 'nationwide showcase technology for College Park.'</p><div class=\"o-label\">Why It Matters</div><p>The project represents a legitimate accomplishment that could enhance College Park's profile and economic development. However, Carn's lengthy presentation seemed designed to offset negative news and political dysfunction dominating the meeting.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;That's a $10 million plus project and investment in the city of College Park. No taxpayer dollars, y'all&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Joe Carn</div></div>"},"4a":{"n": "4A", "t": "Gay's 'take him out' comment prompted police complaint", "tm": "2:18:03 &ndash; 2:18:34", "yt": 8283, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>Gay's statement acknowledged he used the phrase 'take him out' during executive session, which he 'clearly qualified as professionally, referring to political accountability.' However, the comment was serious enough that 'a complaint was made to police chief Charus McCra,' though both mayor and city manager indicated it wasn't interpreted as a physical threat.</p><div class=\"o-label\">Why It Matters</div><p>The fact that threatening language in executive session prompted a police complaint shows how toxic relationships have become. Even 'professional' threats are being taken seriously enough to involve law enforcement.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;using the phrase take him out, which he clearly qualified as professionally, referring to polit political accountability&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilman Roderick Gay's statement</div></div>"},"4b":{"n": "4B", "t": "Arnold warns of special place in hell for unsupportive women", "tm": "2:12:11 &ndash; 2:12:43", "yt": 7931, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>Councilwoman Tracy Arnold concluded her report by quoting former Secretary of State Madeleine Albright: 'There is a special place in hell for women who don't help other women.' The timing was pointed, coming after explosive confrontations between Mayor Motley Broom and Councilwoman McKenzie.</p><div class=\"o-label\">Why It Matters</div><p>Arnold's quote was clearly directed at the female leadership conflict dominating the meeting. Her pointed reference to women not helping women served as a public rebuke of the dysfunction between her female colleagues.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;There is a special place in hell for women who don't help other women&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Tracy Arnold, quoting Madeleine Albright</div></div>"},"4c":{"n": "4C", "t": "Roof bidding process plagued by administrative chaos", "tm": "1:03:03 &ndash; 1:03:33", "yt": 3783, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>The roof repair project was originally bid in November 2025, but the process was abandoned due to administrative turnover and management changes. A second bidding process through Omnia Cooperative was then pursued, which the city attorney rejected as insufficient for the project size.</p><div class=\"o-label\">Why It Matters</div><p>The chaotic bidding process reflects broader administrative instability and poor project management. Critical infrastructure repairs have been delayed by bureaucratic confusion while the facility continues deteriorating.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;with the turnover, I'm not really sure what happened with that process&rdquo;</div><div class=\"o-quote-attr\">&mdash; City procurement representative</div></div>"},"4d":{"n": "4D", "t": "City Manager requests same energy from attorney", "tm": "1:31:09 &ndash; 1:31:40", "yt": 5469, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>City Manager Hicks publicly criticized City Attorney Denmark, saying 'I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before that we didn't get any kind of effort, memos, conversation.' This was a direct rebuke of Denmark's legal oversight.</p><div class=\"o-label\">Why It Matters</div><p>The public confrontation between city manager and city attorney signals breakdown in administrative coordination. Hicks' criticism suggests Denmark has been selectively rigorous in his legal review, potentially for political reasons.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;I certainly want to see the same type of energy from the city attorney on some other things that I've seen on the agenda before&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Manager Michael Hicks</div></div>"},"4e":{"n": "4E", "t": "Complex roof repair voting motion confuses clerk", "tm": "1:24:13 &ndash; 1:29:29", "yt": 5053, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>The roof repair motion became so complex with amendments, contingencies, and substitutions that City Clerk Kelly struggled to accurately record it. The final motion included contingencies for city attorney review, alternative bidding processes, and clarifications that it was not an emergency procurement.</p><div class=\"o-label\">Why It Matters</div><p>The legislative confusion reflects council's struggle to navigate legal requirements while addressing urgent infrastructure needs. Complex motions suggest either poor preparation or attempts to paper over legal deficiencies.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Far from clear&rdquo;</div><div class=\"o-quote-attr\">&mdash; Council discussion on motion clarity</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Approved unanimously with multiple contingencies</div>"},"4f":{"n": "4F", "t": "McKenzie calls for unified state of the city celebration", "tm": "1:45:50 &ndash; 1:46:22", "yt": 6350, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>McKenzie proposed holding a unified state of the city event in 2027 instead of individual ward celebrations, comparing College Park to Union City and Atlanta which hold citywide events. She asked why the city 'cannot come together and have one amazing, fantabulous state of the city event where we celebrate everything rather than operating in silos.'</p><div class=\"o-label\">Why It Matters</div><p>McKenzie's proposal came immediately after defending her expensive Ward 1 celebration, suggesting she recognizes the political liability while trying to reframe the issue as promoting unity rather than eliminating waste.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;Is there a reason why this city cannot come together and have one amazing, fantabulous state of the city event where we celebrate everything rather than operating in silos&rdquo;</div><div class=\"o-quote-attr\">&mdash; Councilwoman Jamelle McKenzie</div></div>"},"4g":{"n": "4G", "t": "Zero accidents reported citywide in February", "tm": "1:32:12 &ndash; 1:32:43", "yt": 5532, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>City Manager Hicks praised HR Director Crystal Gilbert and safety coordinator Chris Wilson for achieving zero accidents citywide in February. He noted that Wilson 'will show up in your department or he'll ride around the city and you don't know he's there, but he's looking for those things that could get us in trouble.'</p><div class=\"o-label\">Why It Matters</div><p>The safety achievement represents competent city operations continuing despite governance dysfunction. It also suggests the city is proactively managing liability risks through monitoring and prevention.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;in February we had no accidents. citywide we had no accidents. So, that's a great thing&rdquo;</div><div class=\"o-quote-attr\">&mdash; City Manager Michael Hicks</div></div>"},"4h":{"n": "4H", "t": "Council removes 15-person limit from comprehensive plan appointments", "tm": "16:13 &ndash; 17:47", "yt": 973, "c": "#897240", "cn": "Voting & Accountability", "b": "<div class=\"o-label\">What Happened</div><p>Council amended the comprehensive plan steering committee motion to remove the 15-person limit after realizing each ward wanted to appoint four members. The change allows unlimited appointments to ensure all wards have equal representation.</p><div class=\"o-label\">Why It Matters</div><p>The change reflects either poor initial planning or political pressure to ensure ward parity. Unlimited committee size could make the comprehensive plan process unwieldy and less effective.</p><div class=\"o-quote\"><div class=\"o-quote-text\">&ldquo;That's cleaner to take the number out&rdquo;</div><div class=\"o-quote-attr\">&mdash; Council discussion</div></div><div class=\"o-vote\"><span class=\"o-vote-label\">Vote</span> Amended and passed unanimously</div>"}};
+const FINDING_URL_BASE="https://councilwatch.app/meetings/2026-03-23/AWJmXB6IoR8/f/";
+function findingShareUrl(id){return FINDING_URL_BASE+id+'/';}
 function openCard(id){
   const f=F[id];if(!f)return;
   const el=document.getElementById('overlay-content');
-  const shareUrl=window.location.origin+window.location.pathname+'#'+id;
+  const shareUrl=findingShareUrl(id);
   const shareText=f.t;
-  el.innerHTML=`<div class="overlay-rule"></div><div class="overlay-body"><button class="overlay-close" onclick="closeCard()">&#10005;</button><div class="overlay-cat" style="color:${f.c}">${f.cn} &middot; ${f.n}</div><h2>${f.t}</h2><div class="overlay-time">${f.tm}</div><div class="overlay-vid"><iframe src="https://www.youtube.com/embed/AWJmXB6IoR8?start=${f.yt}&rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div>${f.b}<a class="o-yt-link" href="https://www.youtube.com/live/AWJmXB6IoR8?t=${f.yt}" target="_blank">&#9654; Watch on YouTube</a><div class="o-share"><a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}" target="_blank">Facebook</a><a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}" target="_blank">X</a><a href="sms:?&body=${encodeURIComponent(shareText+' '+shareUrl)}">Text</a><button onclick="navigator.clipboard.writeText('${shareUrl}');this.textContent='Copied'">Copy Link</button></div></div>`;
+  const eu=encodeURIComponent(shareUrl);
+  const et=encodeURIComponent(shareText);
+  el.innerHTML=`<div class="overlay-rule"></div><div class="overlay-body"><button class="overlay-close" onclick="closeCard()">&#10005;</button><div class="overlay-cat" style="color:${f.c}">${f.cn} &middot; ${f.n}</div><h2>${f.t}</h2><div class="overlay-time">${f.tm}</div><div class="overlay-vid"><iframe src="https://www.youtube.com/embed/AWJmXB6IoR8?start=${f.yt}&rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div>${f.b}<a class="o-yt-link" href="https://www.youtube.com/live/AWJmXB6IoR8?t=${f.yt}" target="_blank">&#9654; Watch on YouTube</a><div class="o-share"><a href="https://www.facebook.com/sharer/sharer.php?u=${eu}" target="_blank">Facebook</a><a href="https://twitter.com/intent/tweet?url=${eu}&text=${et}" target="_blank">X</a><a href="https://www.threads.net/intent/post?text=${et}%20${eu}" target="_blank">Threads</a><a href="sms:?&body=${encodeURIComponent(shareText+' '+shareUrl)}">Text</a><button onclick="navigator.clipboard.writeText('${shareUrl}');this.textContent='Copied'">Copy Link</button></div></div>`;
   document.getElementById('overlay').classList.add('show');
   document.body.style.overflow='hidden';
+  // Update browser URL to deep-link anchor for this finding
+  if(history.replaceState)history.replaceState(null,'','#finding-'+id);
 }
 function closeCard(){
   document.getElementById('overlay').classList.remove('show');
   document.body.style.overflow='';
   document.getElementById('overlay-content').innerHTML='';
+  if(history.replaceState)history.replaceState(null,'',window.location.pathname);
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCard()});
 function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{const m=document.getElementById('copyMsg');m.style.display='inline';setTimeout(()=>m.style.display='none',2000)})}
-// Deep link: open finding from URL hash
-if(window.location.hash){const id=window.location.hash.slice(1);if(F[id])setTimeout(()=>openCard(id),300)}
+function copyFindingLink(id,btn){
+  const url=findingShareUrl(id);
+  navigator.clipboard.writeText(url).then(()=>{
+    if(btn){btn.classList.add('copied');setTimeout(()=>btn.classList.remove('copied'),1500);}
+  });
+}
+// Deep link: open finding from URL hash (supports both '#<id>' and '#finding-<id>')
+if(window.location.hash){
+  let h=window.location.hash.slice(1);
+  if(h.startsWith('finding-'))h=h.slice(8);
+  if(F[h])setTimeout(()=>openCard(h),300);
+}
 </script>
 </body>
 </html>
