@@ -16,25 +16,29 @@
           "seconds": 5168,
           "label": "The answer: one vote",
           "quote": "This item is going to be voted on as one single consent agenda item. Now, of course, we read the items individually, but we're going to vote on them all together. Not going to do 14 votes or whatever.",
-          "speaker": "Councilman Joe Carn"
+          "speaker": "Councilman Joe Carn",
+          "gloss": "Carn answers her directly. The reading will be item by item; the vote will not be. That distinction is the whole design \u2014 the public hears fourteen things, the record shows one decision."
         },
         {
           "seconds": 5228,
           "label": "She names the item and asks the city attorney",
           "quote": "It seems to me that this is very diverse subjects. Some seem to suggest rules and procedures for conducting a meeting, but then there are others that I would suggest effect changes [to] the form of government \u2014 such as the item that deals with the council having the ability to determine terminations of city employees. So I will tell you, if that's voted on along with other more procedural items, I have deep concerns.",
-          "speaker": "Mayor Bianca Motley Broom, to City Attorney Winston Denmark"
+          "speaker": "Mayor Bianca Motley Broom, to City Attorney Winston Denmark",
+          "gloss": "She turns to the lawyer because she knows the bundling is the problem, and she points at the one motion that proves it. This is her trying to stop it through the process rather than by objecting after the fact."
         },
         {
           "seconds": 5253,
           "label": "The question is never answered",
           "quote": "My understanding is that there's nothing in here that's a substantial change to form of government at all. / I disagree. / Well, that's why we have a city attorney. / [reading] I'm reading them all, sir. We're doing them collectively, we're voting collectively.",
-          "speaker": "Councilman Joe Carn, then the Mayor, then Carn again"
+          "speaker": "Councilman Joe Carn, then the Mayor, then Carn again",
+          "gloss": "Watch who answers. She asked the city attorney a legal question; Carn responds instead, and the attorney never speaks. She says she disagrees, Carn says that's why we have a city attorney, and the reading starts anyway. The question stays open to this day."
         },
         {
           "seconds": 5317,
           "label": "Motion three, eleven seconds later",
           "quote": "While presiding over the deliberations of the city council in accordance with the charter, the mayor shall be prohibited from commenting or expressing opinions on the matters being discussed.",
-          "speaker": "Read into the record as motion three"
+          "speaker": "Read into the record as motion three",
+          "gloss": "Now you know what was inside the bundle she was trying to slow down. Motion three arrives in the middle of a list, read at the same pace as the rest, and it removes her voice from every debate that follows."
         }
       ]
     },
@@ -92,7 +96,8 @@
           "seconds": 564,
           "label": "Down the line",
           "quote": "Council member Arnold, I will pass the gavel to you. / I decline. / Council member McKenzie, I will pass the\u2014 / I decline, because I'm the one that's made the motion, and I'm making a motion with discussion, so I'm unable to do that.",
-          "speaker": "The Mayor, then Councilwoman Tracy Arnold, then Councilwoman Jamelle McKenzie"
+          "speaker": "The Mayor, then Councilwoman Tracy Arnold, then Councilwoman Jamelle McKenzie",
+          "gloss": "She keeps going down the line anyway. Arnold refuses. McKenzie refuses and explains that she made the motion, so she can't preside. The Mayor Pro Tem is following the guidance the attorney just gave, and every seat after him does the same. Nobody has to argue with her. They simply decline, and she stays in the chair, unable to speak."
         }
       ],
       "note": "The meeting was called to consider rescinding the Council's termination of City Manager Stanley Hawthorne. That is the conversation the Mayor was asking to speak to."
@@ -111,19 +116,22 @@
           "seconds": 447,
           "label": "Why she is handing it off",
           "quote": "I've relinquished presiding duties to the Mayor Pro Tem, as I wish to speak to this conversation. / The Mayor Pro Tem may elect not to assume the gavel. / I'd like not to assume the gavel at this time.",
-          "speaker": "The Mayor, an unidentified voice, then the Mayor Pro Tem"
+          "speaker": "The Mayor, an unidentified voice, then the Mayor Pro Tem",
+          "gloss": "She explains herself: she is stepping down from the chair only so she can speak, exactly as they told the Mayor Pro Tem to do six days earlier. Then a voice cuts in to remind him he doesn't have to take it \u2014 and he immediately doesn't."
         },
         {
           "seconds": 483,
           "label": "She asks the city attorney whether she may speak at all",
           "quote": "Mr. Denmark \u2014 in regard to my ability to speak when I am not presiding over these meetings, I wish to do that. Is that permissible, or am I prohibited from speaking altogether?",
-          "speaker": "Mayor Bianca Motley Broom"
+          "speaker": "Mayor Bianca Motley Broom",
+          "gloss": "She has run out of options at the table, so she asks the lawyer in the room whether she is allowed to speak at all. Listen to how carefully she asks it. She is not arguing; she is trying to find out what is left."
         },
         {
           "seconds": 540,
           "label": "The city attorney confirms the refusal is theirs to make",
           "quote": "You could pass the gavel to the Mayor Pro Tem or colleague if they were inclined to accept \u2014 but it's their decision. And if [you] wish to participate in discussions, that would be inconsistent with the ordinance that the council passed.",
-          "speaker": "City Attorney Winston Denmark"
+          "speaker": "City Attorney Winston Denmark",
+          "gloss": "This is the answer that settles it. The way out exists, but only a colleague can open it, and he says plainly that the choice is theirs. From this point everyone in the room knows that refusing the gavel is enough to keep her silent."
         }
       ],
       "note": "A voice tells the Mayor Pro Tem he may decline, immediately before he declines a second time. The phrasing is a lawyer's, but automatic captions carry no speaker labels, so this page does not put a name to it. Denmark's formal answer is attributed because the Mayor addresses him by name first."
@@ -240,7 +248,8 @@
           "seconds": 4448,
           "label": "Six minutes, inside the thirty-six",
           "quote": "The timer is 36 minutes \u2014 does that include the six minutes for email? / Yes ma'am, I believe it does include the six minutes. The 36 minutes total.",
-          "speaker": "A council member, then the chair"
+          "speaker": "A council member, then the chair",
+          "gloss": "The clarification is the part that matters. A resident asks whether the six minutes are on top of the thirty-six or inside them. Inside. So the guarantee for everyone who couldn't attend comes out of the same clock as everyone who did."
         }
       ]
     },
@@ -294,13 +303,15 @@
           "seconds": 2100,
           "label": "What he was not allowed to play",
           "quote": "It is odd to me that the city would finance the voice that I was just playing for you \u2014 and an opportunity not to run against their own person. But I can't play his words in here.",
-          "speaker": "Mose James IV, at the podium"
+          "speaker": "Mose James IV, at the podium",
+          "gloss": "He keeps his composure and makes the point without the tape: the city is considering paying this man to speak for it. He is not allowed to let the room hear what that voice actually sounds like."
         },
         {
           "seconds": 2131,
           "label": "What was on the recording",
           "quote": "I was kind enough to actually bleep out over 30 curse words that you're going to hear in the next three and a half minutes from the person that this council has decided to be the voice piece of College Park. You'll go on to hear him repeatedly refer to the mayor as a B\u2014",
-          "speaker": "Mose James IV, at the podium"
+          "speaker": "Mose James IV, at the podium",
+          "gloss": "Here is what was on the recording, described rather than played. He had already bleeped more than thirty obscenities before bringing it into the chamber. The council still would not hear it \u2014 while considering a contract with the person who said it."
         }
       ]
     },
