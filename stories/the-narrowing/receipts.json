@@ -1,16 +1,42 @@
 {
-  "_comment": "One entry per documented moment. `seconds` is where playback should start, backed up a few seconds so the viewer hears the lead-in. `videoDate`, when present and different from `date`, means the footage comes from a later meeting that recounts the event rather than from the event itself, and the card says so. `note` explains a gap or a caveat and is shown to the reader. Quotes from auto-captions are cleaned up for punctuation only; confirm against the audio before publishing.",
+  "_comment": "One entry per documented moment. `seconds` is where playback should start, backed up a few seconds so the viewer hears the lead-in. `videoDate`, when present and different from `date`, means the footage comes from a later meeting that recounts the event rather than from the event itself, and the page says so. `note` adds a caveat shown to the reader. Entries with no `seconds` are ones the meeting video does not let us locate; the page states what happened and why it is not on tape. Quotes from automatic captions are cleaned for punctuation only and checked against the audio.",
   "_updated": "2026-09-23",
   "moments": [
     {
       "id": "omnibus-block-vote",
       "date": "2024-01-02",
-      "title": "Fourteen actions, one vote",
+      "title": "Fourteen actions, one vote \u2014 on a document she had not seen",
       "videoId": "DxnM8o6URvc",
-      "seconds": 5286,
-      "quote": "I'm reading them all sir, we're doing them collectively, we're voting collectively.",
-      "speaker": "Councilman Joe Carn",
-      "verified": true
+      "seconds": 5088,
+      "quote": "I did not have the benefit of receiving these ahead of the meeting. I note there are 14 motions. Normally with a motion there are individual seconds after a motion is made, and then a vote, so I'm hoping that's the intent. The Mayor and Council recently approved as one of our core values transparency. So I hope it's the intent with these, since they didn't get any public notice, that not only will they be read but that they will be acted upon in accordance with the way this document is structured \u2014 individually.",
+      "speaker": "Mayor Bianca Motley Broom, asking for fourteen separate votes",
+      "verified": true,
+      "clips": [
+        {
+          "seconds": 5168,
+          "label": "The answer: one vote",
+          "quote": "This item is going to be voted on as one single consent agenda item. Now, of course, we read the items individually, but we're going to vote on them all together. Not going to do 14 votes or whatever.",
+          "speaker": "Councilman Joe Carn"
+        },
+        {
+          "seconds": 5228,
+          "label": "She names the item and asks the city attorney",
+          "quote": "It seems to me that this is very diverse subjects. Some seem to suggest rules and procedures for conducting a meeting, but then there are others that I would suggest effect changes [to] the form of government \u2014 such as the item that deals with the council having the ability to determine terminations of city employees. So I will tell you, if that's voted on along with other more procedural items, I have deep concerns.",
+          "speaker": "Mayor Bianca Motley Broom, to City Attorney Winston Denmark"
+        },
+        {
+          "seconds": 5253,
+          "label": "The question is never answered",
+          "quote": "My understanding is that there's nothing in here that's a substantial change to form of government at all. / I disagree. / Well, that's why we have a city attorney. / [reading] I'm reading them all, sir. We're doing them collectively, we're voting collectively.",
+          "speaker": "Councilman Joe Carn, then the Mayor, then Carn again"
+        },
+        {
+          "seconds": 5317,
+          "label": "Motion three, eleven seconds later",
+          "quote": "While presiding over the deliberations of the city council in accordance with the charter, the mayor shall be prohibited from commenting or expressing opinions on the matters being discussed.",
+          "speaker": "Read into the record as motion three"
+        }
+      ]
     },
     {
       "id": "mayor-prohibited",
@@ -35,7 +61,7 @@
     {
       "id": "legislative-staff",
       "date": "2024-01-05",
-      "title": "Legislative staff reassigned",
+      "title": "The legislative assistants are reassigned",
       "videoId": "lPblrRo_ufM",
       "seconds": 408,
       "verified": true,
@@ -55,22 +81,52 @@
     {
       "id": "gavel-declined",
       "date": "2024-01-22",
-      "title": "All four decline the gavel",
+      "title": "All four refuse to take it",
       "videoId": "DhOms7V6AR0",
-      "seconds": 433,
-      "quote": "I decline.",
-      "speaker": "Mayor Pro Tem Gay, then Carn, Arnold and McKenzie in turn",
-      "verified": true
+      "seconds": 464,
+      "quote": "I would turn those over to Council member Carn. / No, you will not.",
+      "speaker": "The Mayor, then Councilman Joe Carn",
+      "verified": true,
+      "clips": [
+        {
+          "seconds": 564,
+          "label": "Down the line",
+          "quote": "Council member Arnold, I will pass the gavel to you. / I decline. / Council member McKenzie, I will pass the\u2014 / I decline, because I'm the one that's made the motion, and I'm making a motion with discussion, so I'm unable to do that.",
+          "speaker": "The Mayor, then Councilwoman Tracy Arnold, then Councilwoman Jamelle McKenzie"
+        }
+      ],
+      "note": "The meeting was called to consider rescinding the Council's termination of City Manager Stanley Hawthorne. That is the conversation the Mayor was asking to speak to."
     },
     {
       "id": "gavel-relinquished",
       "date": "2024-01-22",
-      "title": "The Mayor tries to hand off the gavel",
+      "title": "She tries to use the way out the rule describes",
       "videoId": "DhOms7V6AR0",
-      "seconds": 443,
-      "quote": "I've relinquished presiding duties to the Mayor Pro Tem as I wish to speak to this conversation.",
-      "speaker": "Mayor Bianca Motley Broom",
-      "verified": true
+      "seconds": 428,
+      "quote": "Has the Mayor Pro Tem accepted the gavel? / I decline.",
+      "speaker": "The Mayor, then Mayor Pro Tem Roderick Gay",
+      "verified": true,
+      "clips": [
+        {
+          "seconds": 447,
+          "label": "Why she is handing it off",
+          "quote": "I've relinquished presiding duties to the Mayor Pro Tem, as I wish to speak to this conversation. / The Mayor Pro Tem may elect not to assume the gavel. / I'd like not to assume the gavel at this time.",
+          "speaker": "The Mayor, an unidentified voice, then the Mayor Pro Tem"
+        },
+        {
+          "seconds": 483,
+          "label": "She asks the city attorney whether she may speak at all",
+          "quote": "Mr. Denmark \u2014 in regard to my ability to speak when I am not presiding over these meetings, I wish to do that. Is that permissible, or am I prohibited from speaking altogether?",
+          "speaker": "Mayor Bianca Motley Broom"
+        },
+        {
+          "seconds": 540,
+          "label": "The city attorney confirms the refusal is theirs to make",
+          "quote": "You could pass the gavel to the Mayor Pro Tem or colleague if they were inclined to accept \u2014 but it's their decision. And if [you] wish to participate in discussions, that would be inconsistent with the ordinance that the council passed.",
+          "speaker": "City Attorney Winston Denmark"
+        }
+      ],
+      "note": "A voice tells the Mayor Pro Tem he may decline, immediately before he declines a second time. The phrasing is a lawyer's, but automatic captions carry no speaker labels, so this page does not put a name to it. Denmark's formal answer is attributed because the Mayor addresses him by name first."
     },
     {
       "id": "special-meetings",
@@ -172,13 +228,21 @@
     {
       "id": "email-last",
       "date": "2024-10-10",
-      "title": "Emailed comment ranked last",
+      "title": "Thirty minutes for the room, six for everyone else",
       "videoId": "Lz_JAnM_yyg",
-      "seconds": 4276,
+      "seconds": 4385,
       "verified": true,
-      "quote": "So the priority, as we had determined, was the people that came for public comment that signed in; the people that have come after the sign-in, as the meeting has commenced, second priority; then the email comments.",
-      "speaker": "The chair, explaining the tiers",
-      "note": "The stated reason was to put people who showed up in person ahead of email. The documented effect is that email comments are read last and are routinely never reached before the cutoff."
+      "quote": "Council member McKenzie, what was your motion? / The motion was that we would adhere to 30 minutes here for in-person comments and 6 minutes for email comments. / What was happening is email comments weren't getting read at all, so we said we would make sure that we would give 6 minutes for email comments.",
+      "speaker": "The Mayor, then Councilwoman Jamelle McKenzie",
+      "note": "Carn voted in favor, Gay abstained.",
+      "clips": [
+        {
+          "seconds": 4448,
+          "label": "Six minutes, inside the thirty-six",
+          "quote": "The timer is 36 minutes \u2014 does that include the six minutes for email? / Yes ma'am, I believe it does include the six minutes. The 36 minutes total.",
+          "speaker": "A council member, then the chair"
+        }
+      ]
     },
     {
       "id": "topic-cap",
@@ -218,12 +282,27 @@
     },
     {
       "id": "cut-it-off",
-      "date": "2025-09-15",
-      "title": "Cut it off",
-      "videoId": "s6VPeR5CH7E",
-      "seconds": null,
-      "verified": false,
-      "note": "Captions exist for all three uploads of this date and the exchange at the podium appears in none of them. Mose has photographs of the officers at the podium; those may carry this entry instead of video."
+      "date": "2025-09-02",
+      "title": "Police at the podium",
+      "videoId": "StvLXNO_GVc",
+      "seconds": 2070,
+      "verified": true,
+      "quote": "No, no, this isn't me. This is the guy that they're hiring, sir. This is Councilwoman McKenzie and Joe Carn. They want to spend $40,000. / Hold on, Chief. Chief, hold on. Mr. James \u2014 we won't allow profanity to be played.",
+      "speaker": "A resident at the podium, then the chair",
+      "clips": [
+        {
+          "seconds": 2100,
+          "label": "What he was not allowed to play",
+          "quote": "It is odd to me that the city would finance the voice that I was just playing for you \u2014 and an opportunity not to run against their own person. But I can't play his words in here.",
+          "speaker": "Mose James IV, at the podium"
+        },
+        {
+          "seconds": 2131,
+          "label": "What was on the recording",
+          "quote": "I was kind enough to actually bleep out over 30 curse words that you're going to hear in the next three and a half minutes from the person that this council has decided to be the voice piece of College Park. You'll go on to hear him repeatedly refer to the mayor as a B\u2014",
+          "speaker": "Mose James IV, at the podium"
+        }
+      ]
     },
     {
       "id": "pattern-named",
@@ -244,7 +323,7 @@
       "verified": true,
       "quote": "Is there a motion to approve the regular session minutes from October 20th? / Motion. / Thank you, Council Member Carn. Is there a second? / Second.",
       "speaker": "The chair, moving the minutes",
-      "note": "Nothing is said aloud about the format changing. The change is visible by comparing the documents: the minutes approved from this night forward record actions only, where earlier sets carried speaker-by-speaker discussion. The receipt anchors the date; the proof is the paperwork."
+      "note": "Nothing is said aloud about the format changing. You can see it by comparing the documents: the minutes approved from this night forward record actions only, where earlier sets carried the discussion speaker by speaker. The clip fixes the date; the paperwork is the proof."
     },
     {
       "id": "yielding-allowed",
@@ -316,6 +395,20 @@
       "quote": "Consideration of action to approve a resolution for the establishment of 9:30 p.m. end time for regular business and 3 minute comment limit per elected official. This item is council-sponsored by Councilwoman Tracy Arnold. / Is there a motion? / [seven seconds of silence] / Motion dies for lack of a second.",
       "speaker": "City Clerk reading the item, then the chair",
       "note": "Arnold sponsored the item and no colleague would second it, so this particular restriction never took effect. The seven seconds of silence are the record."
+    },
+    {
+      "id": "order-against-a-resident",
+      "date": "2026-09-21",
+      "title": "An order against a resident, the night before she could speak",
+      "videoId": null,
+      "seconds": null,
+      "verified": false,
+      "links": [
+        {
+          "label": "Mayor Bianca Motley Broom's statement",
+          "url": "https://www.facebook.com/share/v/1AXyv6YYzL/"
+        }
+      ]
     }
   ]
 }
