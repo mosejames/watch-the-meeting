@@ -1,0 +1,321 @@
+{
+  "_comment": "One entry per documented moment. `seconds` is where playback should start, backed up a few seconds so the viewer hears the lead-in. `videoDate`, when present and different from `date`, means the footage comes from a later meeting that recounts the event rather than from the event itself, and the card says so. `note` explains a gap or a caveat and is shown to the reader. Quotes from auto-captions are cleaned up for punctuation only; confirm against the audio before publishing.",
+  "_updated": "2026-09-23",
+  "moments": [
+    {
+      "id": "omnibus-block-vote",
+      "date": "2024-01-02",
+      "title": "Fourteen actions, one vote",
+      "videoId": "DxnM8o6URvc",
+      "seconds": 5286,
+      "quote": "I'm reading them all sir, we're doing them collectively, we're voting collectively.",
+      "speaker": "Councilman Joe Carn",
+      "verified": true
+    },
+    {
+      "id": "mayor-prohibited",
+      "date": "2024-01-02",
+      "title": "The Mayor is barred from commenting",
+      "videoId": "DxnM8o6URvc",
+      "seconds": 5326,
+      "quote": "While presiding over the deliberations of the city council in accordance with the charter, the mayor shall be prohibited from commenting or expressing opinions on the matters being discussed.",
+      "speaker": "Read into the record as motion three",
+      "verified": true
+    },
+    {
+      "id": "mayor-objects",
+      "date": "2024-01-05",
+      "title": "The Mayor states the objection on the record",
+      "videoId": "lPblrRo_ufM",
+      "seconds": 42,
+      "quote": "Motion three, in regard to this omnibus motion that was dealt with at our meeting, among others, infringes my rights under the First Amendment of the US Constitution to participate in these meetings. As a duly elected official, the charter vested me the power to preside over the meetings of this governing body, and the omnibus motion seeks to strip those duties and responsibilities from the office of the mayor.",
+      "speaker": "Mayor Bianca Motley Broom",
+      "verified": true
+    },
+    {
+      "id": "legislative-staff",
+      "date": "2024-01-05",
+      "title": "Legislative staff reassigned",
+      "videoId": "lPblrRo_ufM",
+      "seconds": 408,
+      "verified": true,
+      "quote": "In terms of legislative assistants reorganization, we're going to have assistants report directly to council and mayor, and administratively to the office of the city manager.",
+      "speaker": "Councilman Joe Carn, reading the amended omnibus"
+    },
+    {
+      "id": "ordinance-2024-01",
+      "date": "2024-01-16",
+      "title": "Ordinance 2024-01 adopted",
+      "videoId": "fTSc3UP0pSo",
+      "seconds": 6405,
+      "verified": true,
+      "quote": "I would like to make a comment and then entertain\u2014 / Point of order. While you're presiding you may not make a comment. The chair cannot make a comment. So when it's time to vote, you can hand the gavel back to the mayor and then she'll call for a vote, or you make comment at that time once she's presiding once more.",
+      "speaker": "Mayor Pro Tem, then a council member raising the point of order"
+    },
+    {
+      "id": "gavel-declined",
+      "date": "2024-01-22",
+      "title": "All four decline the gavel",
+      "videoId": "DhOms7V6AR0",
+      "seconds": 433,
+      "quote": "I decline.",
+      "speaker": "Mayor Pro Tem Gay, then Carn, Arnold and McKenzie in turn",
+      "verified": true
+    },
+    {
+      "id": "gavel-relinquished",
+      "date": "2024-01-22",
+      "title": "The Mayor tries to hand off the gavel",
+      "videoId": "DhOms7V6AR0",
+      "seconds": 443,
+      "quote": "I've relinquished presiding duties to the Mayor Pro Tem as I wish to speak to this conversation.",
+      "speaker": "Mayor Bianca Motley Broom",
+      "verified": true
+    },
+    {
+      "id": "special-meetings",
+      "date": "2024-02-05",
+      "title": "Special meetings no longer the Mayor's call",
+      "videoId": "mJ7rwQ8UQdY",
+      "seconds": 1551,
+      "verified": true,
+      "quote": "Changing the requirement for special meetings removes authority from the mayor to call special meetings, and then decreases the number required from four to three. I don't think this is a good idea. Special meetings infer that there is urgency. It also removes a critical component of feedback from the public \u2014 council is taking actions and the public doesn't have a voice in that regard.",
+      "speaker": "Mayor Bianca Motley Broom"
+    },
+    {
+      "id": "questions-out-of-order",
+      "date": "2024-02-19",
+      "title": "Questions to staff ruled out of order",
+      "videoId": "vR_mI00I_3I",
+      "seconds": 4946,
+      "verified": true,
+      "quote": "Point of order \u2014 we're out of order here, this is the city manager's report. / I had a question for him during his report. We haven't moved on to the next item yet. So, sir, I do have questions.",
+      "speaker": "A council member, then Mayor Bianca Motley Broom"
+    },
+    {
+      "id": "delegation-reassigned",
+      "date": "2024-03-04",
+      "title": "Federal delegation lead reassigned",
+      "videoId": "LcO3VnBaUz0",
+      "seconds": null,
+      "verified": false,
+      "note": "The federal delegation is discussed at several points in the 3h meeting, but no single moment states the reassignment plainly enough to quote. Needs a watch-through of 1:16:00-1:22:00."
+    },
+    {
+      "id": "budget-off-air",
+      "date": "2024-04-15",
+      "title": "Budget hearings taken off the air",
+      "videoId": "dsTxpMD77VM",
+      "seconds": 4247,
+      "verified": true,
+      "quote": "That's probably where the best \u2014 would be the better place to do it. / Are you making a motion to not televise the budget hearings? / I am.",
+      "speaker": "The chair, confirming the motion with its maker"
+    },
+    {
+      "id": "closing-remarks-cap",
+      "date": "2024-05-06",
+      "title": "Closing remarks capped at five minutes",
+      "videoId": "5vIJaMoSWik",
+      "seconds": null,
+      "verified": false,
+      "note": "The 4h36m meeting is captioned, but the captioner drops most of the late-agenda procedural exchange where this vote happened. The ordinance text is the better citation here; the video is confirmation, not the primary source."
+    },
+    {
+      "id": "resident-livestream",
+      "date": "2024-05-09",
+      "title": "A resident livestreams the budget hearing",
+      "videoId": null,
+      "seconds": null,
+      "verified": false,
+      "note": "No city video exists. The Council had voted not to stream these hearings. The only recording was the resident's phone."
+    },
+    {
+      "id": "comment-to-end",
+      "date": "2024-06-17",
+      "title": "Comment moved to the end of the agenda, for one night",
+      "videoId": "AszbDKY3hVE",
+      "seconds": null,
+      "verified": false,
+      "note": "Only 1h19m across two uploads for a meeting that ran longer, and the agenda discussion isn't in the captioned portion. Likely a partial upload."
+    },
+    {
+      "id": "out-of-order-question",
+      "date": "2024-08-05",
+      "title": "Council votes the Mayor out of order for a question",
+      "videoId": "R8EcugqL4oA",
+      "seconds": 1536,
+      "verified": true,
+      "quote": "You're discussing items, Mayor, which is out of order of how we do things. And so actually doing a second one would be out of order as well.",
+      "speaker": "Councilwoman Jamelle McKenzie"
+    },
+    {
+      "id": "censure-room-cleared",
+      "date": "2024-08-09",
+      "title": "Censure, and the room is cleared",
+      "videoId": "u7xJslV9Svk",
+      "seconds": 4172,
+      "verified": true,
+      "note": "The August 9 meeting is posted but carries no captions, so the moment cannot be located inside it by transcript. This is the next regular meeting, August 19, where a television report on the cleared gallery was played into the record. A contemporaneous account, not footage of the clearing.",
+      "quote": "The Georgia attorney general's office is demanding answers from College Park officials after the gallery was cleared by police during a specially called meeting last Friday. Two people were led away in handcuffs as the interim city manager told police to eject the residents from the room. The meeting was held to censure Mayor Bianca Motley Broom for what the city council says was ongoing disruptive behavior.",
+      "speaker": "A television news report, played into the record",
+      "videoDate": "2024-08-19"
+    },
+    {
+      "id": "podium-as-resident",
+      "date": "2024-08-19",
+      "title": "The Mayor speaks from the public podium",
+      "videoId": "u7xJslV9Svk",
+      "seconds": null,
+      "verified": false,
+      "note": "The meeting is captioned and the Mayor is audible throughout, but the captions never render the line where she gives her name and address at the podium. Needs a watch-through."
+    },
+    {
+      "id": "email-last",
+      "date": "2024-10-10",
+      "title": "Emailed comment ranked last",
+      "videoId": "Lz_JAnM_yyg",
+      "seconds": 4276,
+      "verified": true,
+      "quote": "So the priority, as we had determined, was the people that came for public comment that signed in; the people that have come after the sign-in, as the meeting has commenced, second priority; then the email comments.",
+      "speaker": "The chair, explaining the tiers",
+      "note": "The stated reason was to put people who showed up in person ahead of email. The documented effect is that email comments are read last and are routinely never reached before the cutoff."
+    },
+    {
+      "id": "topic-cap",
+      "date": "2025-02-17",
+      "title": "Fifteen minutes per topic",
+      "videoId": "g5qqsXRsdDo",
+      "seconds": null,
+      "verified": false,
+      "note": "The full 2h53m meeting is posted, but this upload carries no auto-captions at all, so the moment can't be located by transcript search. Needs a watch-through."
+    },
+    {
+      "id": "override-chair",
+      "date": "2025-04-07",
+      "title": "Motion to override the chair",
+      "videoId": "iIeYMKdOt3w",
+      "seconds": null,
+      "verified": false,
+      "note": "Five uploads exist for this date and none of them carries captions. Needs a watch-through of the 2h02m council meeting."
+    },
+    {
+      "id": "escorted-out-may",
+      "date": "2025-05-05",
+      "title": "A resident told to step outside",
+      "videoId": "qmQWWPLbqN8",
+      "seconds": null,
+      "verified": false,
+      "note": "Two problems. Only 5 minutes of a full regular session was posted, and that upload has no captions. This is the thinnest spot in the city's record for any date on this timeline."
+    },
+    {
+      "id": "protester-removed",
+      "date": "2025-06-16",
+      "title": "Housing protester escorted out",
+      "videoId": "FSuOnCaXn1w",
+      "seconds": null,
+      "verified": false,
+      "note": "Captions exist for the 3h40m meeting, but nothing matching a removal appears in them. Either the exchange was off-mic or the captioner dropped it. Needs a watch-through."
+    },
+    {
+      "id": "cut-it-off",
+      "date": "2025-09-15",
+      "title": "Cut it off",
+      "videoId": "s6VPeR5CH7E",
+      "seconds": null,
+      "verified": false,
+      "note": "Captions exist for all three uploads of this date and the exchange at the podium appears in none of them. Mose has photographs of the officers at the podium; those may carry this entry instead of video."
+    },
+    {
+      "id": "pattern-named",
+      "date": "2025-09-15",
+      "title": "A resident names the pattern from the podium",
+      "videoId": "s6VPeR5CH7E",
+      "seconds": 1300,
+      "quote": "The role of the mayor is not ceremonial. The mayor is elected citywide and trusted by residents to represent their interests. When council actively blocks her from adding items, it's not simply silencing one official. It's cutting off an avenue for the public's concerns to be heard and addressed through their elected representative. We've seen a pattern of silencing the mayor, limiting transparency, and rushing initiatives without proper vetting. This isn't governance that's rooted in accountability. This is governance that's just rooted in control.",
+      "speaker": "A resident, during public comment",
+      "verified": true
+    },
+    {
+      "id": "action-minutes",
+      "date": "2025-11-03",
+      "title": "Posted minutes become action-only",
+      "videoId": "TYiwy5WLEkA",
+      "seconds": 1400,
+      "verified": true,
+      "quote": "Is there a motion to approve the regular session minutes from October 20th? / Motion. / Thank you, Council Member Carn. Is there a second? / Second.",
+      "speaker": "The chair, moving the minutes",
+      "note": "Nothing is said aloud about the format changing. The change is visible by comparing the documents: the minutes approved from this night forward record actions only, where earlier sets carried speaker-by-speaker discussion. The receipt anchors the date; the proof is the paperwork."
+    },
+    {
+      "id": "yielding-allowed",
+      "date": "2025-11-03",
+      "title": "Yielding time, while it was still allowed",
+      "videoId": "TYiwy5WLEkA",
+      "seconds": 6370,
+      "quote": "Mario Malcolm also waives his time. So that'll be six additional minutes.",
+      "speaker": "The chair, counting yielded time",
+      "verified": true,
+      "note": "Kept here as the before picture. Residents pooled their minutes as a matter of routine in November 2025. In August 2026 the council prohibited it."
+    },
+    {
+      "id": "thirty-minute-cap",
+      "date": "2025-11-03",
+      "title": "The 30-minute cap, enforced",
+      "videoId": "TYiwy5WLEkA",
+      "seconds": 7562,
+      "quote": "I would like to address the public. The in-person public comment is allowed for 30 minutes and we have exhausted the 30 minute time. The remainder of the six minutes is for emailed public comments.",
+      "speaker": "Mayor Bianca Motley Broom, announcing the cutoff",
+      "verified": true,
+      "note": "The cap in operation. Everyone still waiting to speak in the room is done, with the balance of the period going to email."
+    },
+    {
+      "id": "email-ended",
+      "date": "2025-11-17",
+      "title": "Resolution 2025-44 ends email comment",
+      "videoId": "szlehD0eLgg",
+      "seconds": 4883,
+      "verified": true,
+      "quote": "Approve a resolution regarding City of College Park public comment policy. This item is sponsored by city attorney.",
+      "speaker": "Clerk, reading Resolution 2025-44"
+    },
+    {
+      "id": "ordinance-2026-12",
+      "date": "2026-05-18",
+      "title": "Ordinance 2026-12 and the 60-minute cap",
+      "videoId": "lRKyXxgiris",
+      "seconds": 3067,
+      "verified": true,
+      "quote": "Someone make [a motion] for 60 minutes, please. We need someone to make a motion that we can cut off the public hearing at 60 minutes.",
+      "speaker": "The chair, soliciting the motion"
+    },
+    {
+      "id": "yielding-banned",
+      "date": "2026-08-17",
+      "title": "Yielding time prohibited",
+      "videoId": "-kspZD36sSY",
+      "seconds": null,
+      "verified": false,
+      "note": "The 1h30m meeting is posted without captions. Needs a watch-through."
+    },
+    {
+      "id": "hearing-30-min",
+      "date": "2026-09-08",
+      "title": "Public hearing capped at 30 minutes",
+      "videoId": "xhg4EDvWAAk",
+      "seconds": null,
+      "verified": false,
+      "note": "A single 5h45m upload with no captions. The longest meeting on the timeline and the hardest to search."
+    },
+    {
+      "id": "motion-no-second",
+      "date": "2026-09-21",
+      "title": "A limit on the Council dies for lack of a second",
+      "videoId": "rgbMWy19pxw",
+      "seconds": 3580,
+      "verified": true,
+      "quote": "Consideration of action to approve a resolution for the establishment of 9:30 p.m. end time for regular business and 3 minute comment limit per elected official. This item is council-sponsored by Councilwoman Tracy Arnold. / Is there a motion? / [seven seconds of silence] / Motion dies for lack of a second.",
+      "speaker": "City Clerk reading the item, then the chair",
+      "note": "Arnold sponsored the item and no colleague would second it, so this particular restriction never took effect. The seven seconds of silence are the record."
+    }
+  ]
+}
