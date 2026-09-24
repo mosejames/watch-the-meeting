@@ -313,7 +313,12 @@
           "speaker": "Mose James IV, at the podium",
           "gloss": "Here is what was on the recording, described rather than played. He had already bleeped more than thirty obscenities before bringing it into the chamber. The council still would not hear it \u2014 while considering a contract with the person who said it."
         }
-      ]
+      ],
+      "photo": {
+        "src": "police-podium.jpg",
+        "alt": "Three College Park police officers standing at the public comment podium beside Mose James IV as he speaks into the microphone",
+        "caption": "Three officers at the public comment podium, September 2, 2025. He is still inside his three minutes."
+      }
     },
     {
       "id": "pattern-named",
