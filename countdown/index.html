@@ -3,25 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Track Election Day and candidate qualifying for the 2027 College Park, Georgia municipal election.">
+<meta name="description" content="The live countdown to November 2, 2027. College Park will vote for mayor and two City Council seats.">
 <title>College Park Election Countdown</title>
 <meta name="theme-color" content="#080808">
 <style>
 :root{color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:#000;color:#fff;font-family:system-ui,sans-serif}
-main{min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:1rem}
-.stage{width:min(100%,69rem);position:relative}
-h1{position:absolute;bottom:calc(100% + clamp(1.4rem,4vw,3.5rem));width:100%;margin:0;text-align:center;font-size:clamp(1rem,2.5vw,2rem);font-weight:650;letter-spacing:.04em;line-height:1.25}
+main{min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:clamp(2rem,7vh,5rem) 1rem;background:radial-gradient(ellipse at 50% 58%,#1a0304 0%,#080001 39%,#000 72%)}
+.stage{width:min(100%,69rem);text-align:center}
+h1{margin:0 0 clamp(1.5rem,5vw,4rem);font-size:clamp(1.25rem,4vw,2.6rem);font-weight:650;letter-spacing:.025em;line-height:1.2}
 h1 span{display:block;margin-top:.45rem;font-size:.68em;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
 [hidden]{display:none!important}
 .clock{width:min(100%,69rem);display:grid;grid-template-columns:1.28fr repeat(3,1fr);text-align:center;position:relative;isolation:isolate}
 .unit{position:relative;min-width:0}
 .unit:not(:last-child)::after{content:"";position:absolute;top:33%;right:0;width:clamp(4px,1.45vw,22px);aspect-ratio:1;background:#ff0900;transform:translateX(50%);box-shadow:0 0 18px #ff160080,0 clamp(10px,4vw,65px) #ff0900}
-.digits{display:block;color:#ff0900;font-family:Impact,"Arial Black",system-ui,sans-serif;font-size:clamp(2.85rem,16vw,15rem);line-height:.9;font-weight:900;letter-spacing:-.06em;font-variant-numeric:tabular-nums;transform:scaleX(.66);text-shadow:0 0 .18em #f10a0066,0 0 .42em #ff16004a;position:relative}
+.digits{display:block;color:#ff0900;font-family:Impact,"Arial Black",system-ui,sans-serif;font-size:clamp(2rem,min(15vw,24vh),13rem);line-height:.9;font-weight:900;letter-spacing:-.06em;font-variant-numeric:tabular-nums;transform:scaleX(.66);text-shadow:0 0 .18em #f10a0066,0 0 .42em #ff16004a;position:relative}
 .digits::after{content:attr(data-reflection);position:absolute;inset:0;transform:translateY(122%) scaleY(-.55);filter:blur(4px);opacity:.62;mask-image:linear-gradient(transparent 10%,#000 100%);pointer-events:none}
 .label{display:block;margin-top:clamp(.55rem,1.6vw,1.45rem);font-size:clamp(.56rem,2.1vw,1.85rem);font-weight:650;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:420px){.label{letter-spacing:.06em}.digits{transform:scaleX(.62)}}
+.message{position:relative;margin:clamp(3rem,8vw,7rem) auto 0;max-width:34rem}
+.message strong{display:block;font-size:clamp(1.45rem,5vw,2.4rem);line-height:1.15;letter-spacing:-.025em}
+.message p{margin:.8rem 0 0;color:#d6cbd0;font-size:clamp(.95rem,2vw,1.15rem);line-height:1.5}
 .notice{margin:0;text-align:center;font-size:clamp(1.8rem,7vw,5rem);letter-spacing:-.045em;font-weight:650}
 </style>
 <meta property="og:type" content="website">
@@ -37,7 +40,7 @@ h1 span{display:block;margin-top:.45rem;font-size:.68em;font-weight:500;letter-s
 <body>
 <main>
 <div class="stage">
-<h1>Countdown to Election Day<span>College Park, Georgia · 2027</span></h1>
+<h1>Countdown to Election Day<span>College Park, Georgia · November 2, 2027</span></h1>
 <div class="clock" id="clock" role="timer" aria-label="Time until polls open" hidden>
 <div class="unit"><span class="digits" id="days"></span><span class="label">Days</span></div>
 <div class="unit"><span class="digits" id="hours"></span><span class="label">Hours</span></div>
@@ -46,6 +49,10 @@ h1 span{display:block;margin-top:.45rem;font-size:.68em;font-weight:500;letter-s
 </div>
 <p class="notice" id="notice" role="status" hidden></p>
 <noscript><p class="notice">Polls open November 2, 2027 at 7:00 AM Eastern.</p></noscript>
+<div class="message">
+<strong>College Park has a voice.<br>This is when we use it.</strong>
+<p>The mayor and two City Council seats are on the ballot. What happens next is up to us.</p>
+</div>
 </div>
 </main>
 <script>
