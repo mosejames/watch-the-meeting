@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Track Election Day and candidate qualifying for the 2027 College Park, Georgia municipal election.">
+<title>College Park Election Countdown</title>
+<meta name="theme-color" content="#080808">
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:#fff;font-family:system-ui,sans-serif}
+main{min-height:100vh;min-height:100svh;display:grid;place-items:center;padding:1rem}
+.stage{width:min(100%,69rem);position:relative}
+h1{position:absolute;bottom:calc(100% + clamp(1.4rem,4vw,3.5rem));width:100%;margin:0;text-align:center;font-size:clamp(1rem,2.5vw,2rem);font-weight:650;letter-spacing:.04em;line-height:1.25}
+h1 span{display:block;margin-top:.45rem;font-size:.68em;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+[hidden]{display:none!important}
+.clock{width:min(100%,69rem);display:grid;grid-template-columns:1.28fr repeat(3,1fr);text-align:center;position:relative;isolation:isolate}
+.unit{position:relative;min-width:0}
+.unit:not(:last-child)::after{content:"";position:absolute;top:33%;right:0;width:clamp(4px,1.45vw,22px);aspect-ratio:1;background:#ff0900;transform:translateX(50%);box-shadow:0 0 18px #ff160080,0 clamp(10px,4vw,65px) #ff0900}
+.digits{display:block;color:#ff0900;font-family:Impact,"Arial Black",system-ui,sans-serif;font-size:clamp(2.85rem,16vw,15rem);line-height:.9;font-weight:900;letter-spacing:-.06em;font-variant-numeric:tabular-nums;transform:scaleX(.66);text-shadow:0 0 .18em #f10a0066,0 0 .42em #ff16004a;position:relative}
+.digits::after{content:attr(data-reflection);position:absolute;inset:0;transform:translateY(122%) scaleY(-.55);filter:blur(4px);opacity:.62;mask-image:linear-gradient(transparent 10%,#000 100%);pointer-events:none}
+.label{display:block;margin-top:clamp(.55rem,1.6vw,1.45rem);font-size:clamp(.56rem,2.1vw,1.85rem);font-weight:650;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:420px){.label{letter-spacing:.06em}.digits{transform:scaleX(.62)}}
+.notice{margin:0;text-align:center;font-size:clamp(1.8rem,7vw,5rem);letter-spacing:-.045em;font-weight:650}
+</style>
+</head>
+<body>
+<main>
+<div class="stage">
+<h1>Countdown to Election Day<span>College Park, Georgia · 2027</span></h1>
+<div class="clock" id="clock" role="timer" aria-label="Time until polls open" hidden>
+<div class="unit"><span class="digits" id="days"></span><span class="label">Days</span></div>
+<div class="unit"><span class="digits" id="hours"></span><span class="label">Hours</span></div>
+<div class="unit"><span class="digits" id="minutes"></span><span class="label">Minutes</span></div>
+<div class="unit"><span class="digits" id="seconds"></span><span class="label">Seconds</span></div>
+</div>
+<p class="notice" id="notice" role="status" hidden></p>
+<noscript><p class="notice">Polls open November 2, 2027 at 7:00 AM Eastern.</p></noscript>
+</div>
+</main>
+<script>
+// November 2 falls before the 2027 Eastern daylight saving time change.
+const opens = Date.parse('2027-11-02T07:00:00-04:00');
+const closes = Date.parse('2027-11-02T19:00:00-04:00');
+const nodes = Object.fromEntries(
+  ['clock', 'notice', 'days', 'hours', 'minutes', 'seconds']
+    .map(id => [id, document.getElementById(id)])
+);
+function setText(node, value) {
+  if (node.textContent !== value) node.textContent = value;
+}
+function setDigit(node, value) {
+  setText(node, value);
+  if (node.dataset.reflection !== value) node.dataset.reflection = value;
+}
+function render(now = Date.now()) {
+  const status = now < opens ? '' : now < closes ? 'Polls are open.' : 'The election is over.';
+  nodes.clock.hidden = Boolean(status);
+  nodes.notice.hidden = !status;
+  setText(nodes.notice, status);
+  if (status) return;
+
+  const seconds = Math.ceil((opens - now) / 1000);
+  setDigit(nodes.days, String(Math.floor(seconds / 86400)).padStart(2, '0'));
+  setDigit(nodes.hours, String(Math.floor(seconds / 3600) % 24).padStart(2, '0'));
+  setDigit(nodes.minutes, String(Math.floor(seconds / 60) % 60).padStart(2, '0'));
+  setDigit(nodes.seconds, String(seconds % 60).padStart(2, '0'));
+}
+render();
+setInterval(render, 1000);
+</script>
+</body>
+</html>
